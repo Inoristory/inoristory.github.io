@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html data-theme="light"  data-theme-color="pink" data-cover-size="default" data-avatar-size="default">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" name="viewport">
+<title>スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ | Bangumi 番组计划</title>
+<meta name="keywords" content="打了300年的史莱姆，不知不觉就练到了满级 第二季,スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～,ACG,anime,comic,game,music,动漫,音乐,游戏,动画,漫画,番组,bangumi,chii,chobits" />
+<meta name="description" content="スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ 打了300年的史莱姆，不知不觉就练到了满级 第二季的介绍、章节信息、人物介绍" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://bangumi.tv/static/xml/opensearch_bgm.xml" title="Bangumi 番组计划" />
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" href="/img/ico/ico_ios.png" />
+
+<!--[if lte IE 6]>
+<script src="/js/pngfixed.js" type="text/javascript"></script>
+<script>
+  DD_belatedPNG.fix('.png_bg,img,#wrapper');
+</script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/css/dist/bangumi.min.css?r771" />
+<script type="text/javascript">
+var SHOW_ROBOT = '0', CHOBITS_UID = 0, CHOBITS_USERNAME = '', SITE_URL = 'https://bangumi.tv', CHOBITS_VER = 'r771';</script>
+</head>
+<body class="bangumi">
+<div id="wrapperNeue" class="wrapperNeue mainXL">
+<div id="headerNeue2">
+    <div class="headerNeueInner clearit">
+         <div class="bg musume_2"></div>
+    <a href="/" class="logo">Bangumi 番组计划</a>
+    
+<input type="checkbox" id="navMenuNeueToggle" class="menu-toggle" />
+<label for="navMenuNeueToggle" class="menuCompact" role="button" aria-label="菜单" onclick="document.getElementById('search-bar-toggle').checked = false;">
+<div class="icon"></div>
+</label>
+<input type="checkbox" id="search-bar-toggle" class="menu-toggle" />
+<label for="search-bar-toggle" class="search-menu-compact" role="button" aria-label="搜索" onclick="document.getElementById('navMenuNeueToggle').checked = false; setTimeout(function(){ var searchInput = document.getElementById('search_text'); if(searchInput) searchInput.focus(); }, 300);">
+<div class="ico ico_search"></div>
+</label>
+
+    
+<div id="navNeue2">
+<div id="menuNeue">
+<ul id="navMenuNeue" class="clearit">
+<li><a href="/anime" class="focus chl anime"><span>动画</span></a>
+    			<div class="clear"></div>
+<ul class="explore clearit">
+<li class="group">
+<a href="/anime/browser/?sort=trends" class="nav">近期注目</a>
+<a href="/anime/chart" class="nav">排行榜</a>
+<a href="/anime/browser" class="nav">分类浏览</a>
+<a href="/anime/tag" class="nav">动画标签</a>
+</li>
+<li class="single"><a href="/calendar" class="nav">每日放送</a></li>
+<li class="single"><a href="/anime/blog" class="nav">动画日志</a></li>
+</ul>
+</li>
+<li><a href="/book" class="top chl"><span>书籍</span></a>
+<div class="clear"></div>
+<ul class="explore clearit">
+<li class="group">
+<a href="/book/browser/?sort=trends" class="nav">近期注目</a>
+<a href="/book/chart" class="nav">排行榜</a>
+<a href="/book/browser" class="nav">分类浏览</a>
+<a href="/book/tag" class="nav">图书标签</a>
+</li>
+<li class="single"><a href="/book/blog" class="nav">图书日志</a></li>
+</ul>
+</li>
+<li><a href="/music" class="top chl"><span>音乐</span></a>
+<div class="clear"></div>
+<ul class="explore clearit">
+<li class="group">
+<a href="/music/browser/?sort=trends" class="nav">近期注目</a>
+<a href="/music/chart" class="nav">排行榜</a>
+<a href="/music/browser" class="nav">浏览全部</a>
+<a href="/music/tag" class="nav">音乐标签</a>
+</li>
+<li class="single"><a href="/music/blog" class="nav">音乐日志</a></li>
+</ul>
+</li>
+<li><a href="/game" class="top chl"><span>游戏</span></a>
+<div class="clear"></div>
+<ul class="explore clearit">
+<li class="group">
+<a href="/game/browser/?sort=trends" class="nav">近期注目</a>
+<a href="/game/chart" class="nav">排行榜</a>
+<a href="/game/browser" class="nav">平台浏览</a>
+<a href="/game/tag" class="nav">游戏标签</a>
+</li>
+<li class="single"><a href="/game/blog" class="nav">游戏日志</a></li>
+</ul>
+</li>
+<li><a href="/real" class="top chl real"><span>三次元</span></a>
+<div class="clear"></div>
+<ul class="explore clearit">
+<li class="group">
+<a href="/real/browser/?sort=trends" class="nav">近期注目</a>
+<a href="/real/chart" class="nav">排行榜</a>
+<a href="/real/browser" class="nav">分类浏览</a>
+<a href="/real/tag" class="nav">三次元标签</a>
+</li>
+<li class="single"><a href="/real/blog" class="nav">三次元日志</a></li>
+</ul>
+</li>
+            <li><a href="/mono" class="top"><span>人物</span></a>
+<div class="clear"></div>
+<ul class="clearit">
+<li><a href="/character" class="nav">虚构角色</a></li>
+<li><a href="/person" class="nav">现实人物</a></li>
+</ul>
+</li>
+<li><a href="/rakuen" class="top_lite"><span>超展开</span></a></li>
+<li><a href="/group"class="top"><span>小组</span></a>
+<div class="clear"></div>
+<ul class="clearit">
+<li><a href="/group/discover" class="nav">随便看看</a></li>
+<li><a href="/group/all" class="nav">所有小组</a></li>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="top"><span>探索</span></a>
+<div class="clear"></div>
+<ul class="explore clearit">
+<li class="single"><a href="/timeline">时空管理局</a></li>
+                <li class="group">
+<span><a href="/blog">日志</a><a href="/index">目录</a><a href="/wiki">维基人</a></span>
+</li>
+<li class="single"><a href="/dev">开发者平台</a></li>
+<li class="group"><span><a href="/magi">MAGI 问答</a><a href="/dollars">Dollars</a></span></li>
+                <li class="group">
+<span class="root">客户端</span>
+<span><a href="/onair">onAir</a><a href="/group/topic/5155">Mobile</a></span>
+</li>
+<li class="single"><a href="http://doujin.bangumi.tv">天窗联盟</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    <div id="headerSearchWrapper">
+<div id="headerSearch">
+        <form action="/subject_search" method="post">
+<div class="inner">
+<select name="cat" id="siteSearchSelect">
+<option value="all">全部</option>
+<option value="2" selected="selected">动画</option>
+<option value="1">书籍</option>
+<option value="4">游戏</option>
+<option value="3">音乐</option>
+<option value="6">三次元</option>
+<option value="person">人物</option>
+</select>
+<input id="search_text" name="search_text" class="textfield" type="text" autocomplete="off" />
+<input type="submit" name="submit" value="搜索" class="search" />
+</div>
+<div id="searchSuggestions" class="search-suggestions">
+</div>
+</form>
+    </div>
+</div>    <div class="idBadgerNeue">
+    <div class="guest"><a href="https://bangumi.tv/login" class="guest login">登录</a><a href="https://bangumi.tv/signup" class="guest signup">注册</a></div>
+</div>    </div>
+</div>
+
+<div id="main" class="mainWrapper">
+</div>
+<div id="headerSubject" class="headerHero clearit" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Movie">
+<h1 class="nameSingle">
+   <a href="/subject/364844" title="打了300年的史莱姆，不知不觉就练到了满级 第二季" property="v:itemreviewed">スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～</a>
+                 <small class="grey">TV</small>   </h1>
+
+        
+    <div class="subjectNav">
+<ul class="navTabs clearit">
+        <li><a href="/subject/364844" class="focus">概览</a></li>
+        <li><a href="/subject/364844/ep" >章节</a></li>        <li><a href="/subject/364844/characters" >角色</a></li>
+        <li><a href="/subject/364844/persons?group=position" >制作人员</a></li>
+                <li><a href="/subject/364844/relations" >关联</a></li>        <li><a href="/subject/364844/comments" >吐槽</a></li>
+        <li><a href="/subject/364844/reviews" >评论</a></li>
+        <li><a href="/subject/364844/board" >讨论版</a></li>
+        <li><a href="/subject/364844/stats" >透视</a></li>
+        </ul>
+	
+</div>
+</div>
+<div class="mainWrapper mainXL">
+<div class="columns clearit" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Movie">
+<div id="columnSubjectHomeA" class="column">
+    <div id="bangumiInfo">
+<div class="infobox">
+    	    		    		<div align="center">
+    		<a href="//lain.bgm.tv/pic/cover/l/3b/a9/364844_GIb43.jpg" title="スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ 打了300年的史莱姆，不知不觉就练到了满级 第二季" alt="スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ 打了300年的史莱姆，不知不觉就练到了满级 第二季" class="thickbox cover"><img src="//lain.bgm.tv/r/400/pic/cover/l/3b/a9/364844_GIb43.jpg" class="cover" /></a>
+    		</div>
+    		<div class="infobox_container">
+<ul id="infobox">
+                                                        <li class=""><span class="tip">中文名: </span>打了300年的史莱姆，不知不觉就练到了满级 第二季</li>
+            
+                                                    <li class=""><span class="tip">话数: </span>12</li>
+            
+                                                    <li class=""><span class="tip">放送开始: </span>2025年4月5日</li>
+            
+                                                    <li class=""><span class="tip">放送星期: </span>星期六</li>
+            
+                                                    <li class=""><span class="tip">原作: </span>森田季節（GAノベル／SBクリエイティブ刊）</li>
+            
+                                                    <li class="  folded"><span class="tip">原作协力: </span>GA文庫編集部、細谷光弘</li>
+            
+                                                    <li class=""><span class="tip">导演: </span><a href="/person/949" class="l" title="杉岛邦久">杉島邦久</a></li>
+            
+                                                    <li class=""><span class="tip">系列构成: </span><a href="/person/13341" class="l" title="福岛直浩">福島直浩</a></li>
+            
+                                                    <li class=""><span class="tip">脚本: </span><a href="/person/54336" class="l">葛原秀治</a>、<a href="/person/13341" class="l" title="福岛直浩">福島直浩</a>、<a href="/person/21208" class="l" title="安永丰">安永豊</a></li>
+            
+                                                    <li class=""><span class="tip">分镜: </span><a href="/person/949" class="l" title="杉岛邦久">杉島邦久</a></li>
+            
+                                                    <li class=""><span class="tip">演出: </span><a href="/person/26671" class="l">山本隆太</a>、<a href="/person/2663" class="l">神原敏昭</a>、<a href="/person/11955" class="l">小野田雄亮</a>、<a href="/person/37078" class="l" title="高桥雅和">高橋雅和</a>、<a href="/person/58937" class="l" title="谷泽笃二">谷澤篤二</a></li>
+            
+                                                    <li class=""><span class="tip">人物原案: </span><a href="/person/28180" class="l" title="红绪">紅緒</a></li>
+            
+                                                    <li class=""><span class="tip">人物设定: </span><a href="/person/34490" class="l" title="儿玉光">児玉ひかる</a></li>
+            
+                                                    <li class=""><span class="tip">总作画监督: </span><a href="/person/34490" class="l" title="儿玉光">児玉ひかる</a>、<a href="/person/42535" class="l">承山菜美</a></li>
+            
+                                                    <li class=""><span class="tip">作画监督: </span><a href="/person/42535" class="l">承山菜美</a>、<a href="/person/2076" class="l" title="岩井优器">岩井優器</a>、<a href="/person/53763" class="l" title="李文静（二维作画）">李文静</a>、<a href="/person/38455" class="l">ハン･ミンギ</a>、<a href="/person/28031" class="l" title="小仓恭平">小倉恭平</a>、<a href="/person/3366" class="l" title="冈野幸男">岡野幸男</a>、<a href="/person/53976" class="l">赵玲</a>、<a href="/person/30559" class="l">清水明日香</a>、<a href="/person/53974" class="l">杭新华</a>、<a href="/person/34490" class="l" title="儿玉光">児玉ひかる</a>、<a href="/person/37095" class="l" title="小岛绘里">小島えり</a>、<a href="/person/53449" class="l">陈玉峰</a>、<a href="/person/11399" class="l">青木真理子</a>、<a href="/person/60920" class="l" title="刘婧（二维作画）">刘婧</a>、<a href="/person/63129" class="l">大石健二</a>、<a href="/person/3751" class="l" title="松下纯子">松下純子</a></li>
+            
+                                                    <li class="  folded"><span class="tip">原画: </span><a href="/person/57674" class="l">福田萌花</a>、<a href="/person/11399" class="l">青木真理子</a>、<a href="/person/63129" class="l">大石健二</a>、<a href="/person/3366" class="l" title="冈野幸男">岡野幸男</a>、<a href="/person/42633" class="l" title="莲沼一树">蓮沼一樹</a>、<a href="/person/34491" class="l">古俣拓磨</a></li>
+            
+                                                    <li class="  folded"><span class="tip">第二原画: </span><a href="/person/68472" class="l" title="饭田千寻">飯田千尋</a></li>
+            
+                                                    <li class=""><span class="tip">色彩设计: </span>喜納久美</li>
+            
+                                                    <li class=""><span class="tip">特效: </span><a href="/person/205" class="l">桑良人</a></li>
+            
+                                                    <li class=""><span class="tip">美术监督: </span><a href="/person/14929" class="l" title="仓田宪一">倉田憲一</a>、水谷利治</li>
+            
+                                                    <li class="  folded"><span class="tip">背景美术: </span><a href="/person/14929" class="l" title="仓田宪一">倉田憲一</a></li>
+            
+                                                    <li class=""><span class="tip">摄影监督: </span>板倉まゆみ；摄影监修：<a href="/person/205" class="l">桑良人</a></li>
+            
+                                                    <li class="  folded"><span class="tip">3DCG: </span><a href="/person/2782" class="l" title="柳泽宏明">柳沢宏明</a></li>
+            
+                                                    <li class=""><span class="tip">剪辑: </span>JAY・FILM、<a href="/person/23555" class="l" title="渡边直树（剪辑）">渡辺直樹</a></li>
+            
+                                                    <li class=""><span class="tip">音响监督: </span><a href="/person/501" class="l">本山哲</a></li>
+            
+                                                    <li class=""><span class="tip">音响: </span><a href="/person/20894" class="l" title="STUDIO MAUSU">スタジオマウス</a></li>
+            
+                                                    <li class=""><span class="tip">音效: </span><a href="/person/53210" class="l">中原隆太</a></li>
+            
+                                                    <li class=""><span class="tip">音乐: </span><a href="/person/8344" class="l" title="井内启二">井内啓二</a></li>
+            
+                                                    <li class=""><span class="tip">音乐制作: </span><a href="/person/228" class="l" title="日本哥伦比亚">日本コロムビア</a></li>
+            
+                                                    <li class=""><span class="tip">主题歌演出: </span><a href="/person/30810" class="l" title="大西亚玖璃">大西亜玖璃</a>、<a href="/person/6447" class="l" title="小仓唯">小倉唯</a></li>
+            
+                                                    <li class=""><span class="tip">OP・ED 分镜: </span><a href="/person/949" class="l" title="杉岛邦久">杉島邦久</a></li>
+            
+                                                    <li class=""><span class="tip">动画制作: </span><a href="/person/43242" class="l" title="泰迪">テディー</a></li>
+            
+                                                    <li class=""><span class="tip">动画制片人: </span><a href="/person/37078" class="l" title="高桥雅和">高橋雅和</a></li>
+            
+                                                    <li class=""><span class="tip">设定制作: </span><a href="/person/72999" class="l" title="吉冈莲">吉岡蓮</a></li>
+            
+                                                    <li class=""><span class="tip">制片人: </span><a href="/person/65621" class="l">天野大地</a>、<a href="/person/97776" class="l" title="松本一贵">松本一貴</a>、<a href="/person/41607" class="l" title="田中隆弘">山中隆弘</a>、<a href="/person/42868" class="l">大和田智之</a>、<a href="/person/43088" class="l" title="饭冢彩">飯塚彩</a>、<a href="/person/42827" class="l">外川明宏</a>、<a href="/person/43017" class="l" title="小泽文启">小澤文啓</a>、<a href="/person/65788" class="l" title="植木达也">植木達也</a>、畑洋平、<a href="/person/50249" class="l">藤村智子</a></li>
+            
+                                                    <li class=""><span class="tip">企画: </span><a href="/person/48422" class="l">北田展久</a>、三浦晃揮、<a href="/person/65510" class="l" title="小岐须泰世">小岐須泰世</a>、<a href="/person/76969" class="l" title="羽川宽">羽川寛</a>、<a href="/person/59677" class="l">佐野圭介</a>、<a href="/person/50444" class="l" title="高桥龙（企画）">髙橋竜</a>、<a href="/person/12368" class="l">武智恒雄</a>、<a href="/person/97862" class="l">成田耕祐</a>、<a href="/person/49998" class="l">伊藤拓己</a>、<a href="/person/83376" class="l" title="松浦克义">松浦克義</a></li>
+            
+                                                    <li class=""><span class="tip">製作: </span>喫茶魔女の家（<a href="/person/228" class="l" title="日本哥伦比亚">日本コロムビア</a>、<a href="/person/6991" class="l" title="软银创意">SBクリエイティブ</a> 、<a href="/person/3278" class="l" title="博报堂DY音乐与影视">博報堂DYミュージック&amp;ピクチャーズ</a>、<a href="/person/28584" class="l">日本BS放送</a>、<a href="/person/230" class="l">AT-X</a>、<a href="/person/310" class="l" title="Movic">ムービック</a>、<a href="/person/1492" class="l" title="时钟世界传媒有限责任公司">クロックワークス</a>、<a href="/person/10556" class="l" title="武士道">ブシロード</a>、<a href="/person/20894" class="l" title="STUDIO MAUSU">スタジオマウス</a>、<a href="/person/34357" class="l" title="Medicos Entertainment">メディコス・エンタテインメント</a>、<a href="/person/497" class="l" title="史克威尔·艾尼克斯">スクウェア・エニックス</a>）</li>
+            
+                                    
+    
+                <li class="sub_container">
+            <ul>
+                                                                                                                                <li class="sub_section"><span class="tip">别名: </span>スライム倒して300年、知らないうちにレベルMAXになってました 第2期</li>
+                                                                                                                                                                                    <li class="sub"><span class="tip" style="display: none;">别名: </span>打了300年的史莱姆，不知不觉就练到了满级 ～其二～</li>
+                                                                                                                                                        <li class="sub"><span class="tip" style="display: none;">别名: </span>打了三百年的史莱姆，不知不觉就练到了满等 第二季</li>
+                                                                                                                                                        <li class="sub"><span class="tip" style="display: none;">别名: </span>持续狩猎史莱姆三百年，不知不觉就练到LV MAX 第二季</li>
+                                                                                                                                                        <li class="sub"><span class="tip" style="display: none;">别名: </span>Slime Taoshite 300-nen, Shiranai Uchi ni Level Max ni Nattemashita 2nd Season</li>
+                                                                                                                                                        <li class="sub"><span class="tip" style="display: none;">别名: </span>I`ve Been Killing Slimes for 300 Years and Maxed Out My Level 2nd Season</li>
+                                                                                                        </ul>
+        </li>
+                    
+                                                    <li class=""><span class="tip">播放电视台: </span>TOKYO MX / BS11 / AT-X</li>
+            
+                                                    <li class=""><span class="tip">播放结束: </span>2025年6月21日</li>
+            
+                                                    <li class=""><span class="tip">Copyright: </span>©森田季節・SBクリエイティブ／喫茶魔女の家</li>
+            
+                                                                    <li class=""><span class="tip">官方网站: </span><a class="tag link thumbTipSmall" href="https://slime300-anime.com/" title="https://slime300-anime.com/" rel="nofollow external noopener noreferrer" target="_blank"><span class="ico ico_link"></span>slime300-anime.com/</a></li>
+            
+            </ul>
+<div class="infobox_expand"><a href="javascript:void(0);">更多制作人员 +</a></div>
+</div>        </div>
+</div>
+    <div id="subjectPanelIndex" class="SimpleSidePanel">
+<h2>推荐本条目的目录</h2>
+<ul class="groupsLine">            	    	<li class="clearit" data-item-user="itomiku1012"><a href="/user/itomiku1012" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/82/14/821476_0srRC.jpg?r=1787314932&hd=1')"></span></a>
+    	<div class="innerWithAvatar"><a href="/index/61730" class="avatar l">伊藤美来补番目录</a><br />
+    	<small class="grey">by <a href="/user/itomiku1012" class="avatar">TheDoomsdayNight</a></small></div>
+    	</li>
+    	            	    	<li class="clearit" data-item-user="kyoto"><a href="/user/kyoto" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/74/93/749305.jpg?r=1708829256&hd=1')"></span></a>
+    	<div class="innerWithAvatar"><a href="/index/46491" class="avatar l">动画金毛主角目录</a><br />
+    	<small class="grey">by <a href="/user/kyoto" class="avatar">Ō𝓶𝓪𝓮 𝓚𝓾𝓶𝓲𝓴𝓸</a></small></div>
+    	</li>
+    	            	    	<li class="clearit" data-item-user="estero"><a href="/user/estero" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/55/98/559886.jpg?r=1704393970&hd=1')"></span></a>
+    	<div class="innerWithAvatar"><a href="/index/71474" class="avatar l">bangumi厕纸百科</a><br />
+    	<small class="grey">by <a href="/user/estero" class="avatar">Estero</a></small></div>
+    	</li>
+    	            	    	<li class="clearit" data-item-user="557902"><a href="/user/557902" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/55/79/557902_dD9X7.jpg?r=1789813030&hd=1')"></span></a>
+    	<div class="innerWithAvatar"><a href="/index/73750" class="avatar l">使用AI大模型搜的“异世界人生顺利”番剧</a><br />
+    	<small class="grey">by <a href="/user/557902" class="avatar">vec</a></small></div>
+    	</li>
+    	            	    	<li class="clearit" data-item-user="mrwangbote"><a href="/user/mrwangbote" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/23/33/233345_f3xQa.jpg?r=1779237302&hd=1')"></span></a>
+    	<div class="innerWithAvatar"><a href="/index/52747" class="avatar l">全年代日本动画佳作榜 中日英三网站综合资深评分[5001-6000]</a><br />
+    	<small class="grey">by <a href="/user/mrwangbote" class="avatar">隔壁的王某某</a></small></div>
+    	</li>
+    	            	            	            	            	            	</ul>
+<span class="tip_i">
+ / <a href="/subject/364844/index" class="l">更多目录</a></span>
+</div>
+
+<div id="subjectPanelCollect" class="SimpleSidePanel">
+<h2>谁看这部动画? </h2>
+<ul class="groupsLine"><li class="clearit" data-item-user="421349">
+<a href="/user/421349" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/42/13/421349_lffz2.jpg?r=1773570812&hd=1')"></span></a>
+<div class="innerWithAvatar"><a href="/user/421349" class="avatar">Maho</a><br />
+<small class="grey">1小时51分钟前看过</small></div></li><li class="clearit" data-item-user="1058437">
+<a href="/user/1058437" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/icon.jpg')"></span></a>
+<div class="innerWithAvatar"><a href="/user/1058437" class="avatar">darjeeling</a><br />
+<small class="grey">2小时17分钟前想看</small></div></li><li class="clearit" data-item-user="1290999">
+<a href="/user/1290999" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/001/29/09/1290999_qKj0m.jpg?r=1791875704&hd=1')"></span></a>
+<div class="innerWithAvatar"><a href="/user/1290999" class="avatar">柒</a><br />
+<small class="grey">2小时40分钟前想看</small></div></li><li class="clearit" data-item-user="1295037">
+<a href="/user/1295037" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/icon.jpg')"></span></a>
+<div class="innerWithAvatar"><a href="/user/1295037" class="avatar">notify</a><br />
+<small class="grey">5小时52分钟前看过</small></div></li><li class="clearit" data-item-user="1258633">
+<a href="/user/1258633" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/icon.jpg')"></span></a>
+<div class="innerWithAvatar"><a href="/user/1258633" class="avatar">jjcha</a><br />
+<small class="grey">7小时53分钟前想看</small></div></li></ul>
+<span class="tip_i"> / <a href="/subject/364844/wishes" class="l">1381人想看</a> / <a href="/subject/364844/collections" class="l">4396人看过</a> / <a href="/subject/364844/doings" class="l">1287人在看</a> / <a href="/subject/364844/on_hold" class="l">445人搁置</a> / <a href="/subject/364844/dropped" class="l">426人抛弃</a></span>
+</div>
+
+</div>
+<div id="columnSubjectHomeB" class="column">
+   <div id="columnSubjectInHomeB" class="clearit">
+        	<div id="subject_detail">
+     
+<div class="subject_prg">
+<span class="tip">章节列表</span>  <a href="/subject/364844/ep" class="l">[全部]</a>:
+<br />
+<ul class="prg_list">                    <li><a href="/ep/1446512"  id="prg_1446512" class="load-epinfo epBtnAir" title="ep.1 神様が来た" rel="#prginfo_1446512">01</a></li>
+            <li><a href="/ep/1446513"  id="prg_1446513" class="load-epinfo epBtnAir" title="ep.2 アンデッドを捜索した" rel="#prginfo_1446513">02</a></li>
+            <li><a href="/ep/1446514"  id="prg_1446514" class="load-epinfo epBtnAir" title="ep.3 ベルゼブブの家に行った" rel="#prginfo_1446514">03</a></li>
+            <li><a href="/ep/1446515"  id="prg_1446515" class="load-epinfo epBtnAir" title="ep.4 マンドラゴラを探すことになった" rel="#prginfo_1446515">04</a></li>
+            <li><a href="/ep/1446516"  id="prg_1446516" class="load-epinfo epBtnAir" title="ep.5 ユフフママの娘になった" rel="#prginfo_1446516">05</a></li>
+            <li><a href="/ep/1446517"  id="prg_1446517" class="load-epinfo epBtnAir" title="ep.6 ライカが武術大会に出た" rel="#prginfo_1446517">06</a></li>
+            <li><a href="/ep/1446518"  id="prg_1446518" class="load-epinfo epBtnAir" title="ep.7 松の精霊に会った" rel="#prginfo_1446518">07</a></li>
+            <li><a href="/ep/1446519"  id="prg_1446519" class="load-epinfo epBtnAir" title="ep.8 海水浴に行った" rel="#prginfo_1446519">08</a></li>
+            <li><a href="/ep/1446520"  id="prg_1446520" class="load-epinfo epBtnAir" title="ep.9 悪霊の陛下と会った" rel="#prginfo_1446520">09</a></li>
+            <li><a href="/ep/1446521"  id="prg_1446521" class="load-epinfo epBtnAir" title="ep.10 魔王のお誕生会に行った" rel="#prginfo_1446521">10</a></li>
+            <li><a href="/ep/1446522"  id="prg_1446522" class="load-epinfo epBtnAir" title="ep.11 伝統ある神様と戦った" rel="#prginfo_1446522">11</a></li>
+            <li><a href="/ep/1446523"  id="prg_1446523" class="load-epinfo epBtnAir" title="ep.12 今年も喫茶店を開いた" rel="#prginfo_1446523">12</a></li>
+    </ul>
+<div class="clear"></div>
+<script type="text/javascript">var INTEREST_TYPE = 0;var EpBtn = 'N';var CHOBITS_UID = 0;</script>
+<script src="/min/g=ajax?r771" type="text/javascript"></script>
+<div id="subject_prg_content"><div id="prginfo_1446512" class="prg_popup"><span class="tip">中文标题: 神明来了<br />首播: 2025-04-05<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446512" class="l icons_cmt">讨论</a> <small class="na">(+70)</small></span></span></div><div id="prginfo_1446513" class="prg_popup"><span class="tip">中文标题: 搜索不死族了<br />首播: 2025-04-12<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446513" class="l icons_cmt">讨论</a> <small class="na">(+52)</small></span></span></div><div id="prginfo_1446514" class="prg_popup"><span class="tip">中文标题: 去别西卜的家了<br />首播: 2025-04-19<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446514" class="l icons_cmt">讨论</a> <small class="na">(+27)</small></span></span></div><div id="prginfo_1446515" class="prg_popup"><span class="tip">中文标题: 去找曼德拉草了<br />首播: 2025-04-26<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446515" class="l icons_cmt">讨论</a> <small class="na">(+32)</small></span></span></div><div id="prginfo_1446516" class="prg_popup"><span class="tip">中文标题: 成为悠芙芙妈妈的女儿了<br />首播: 2025-05-03<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446516" class="l icons_cmt">讨论</a> <small class="na">(+46)</small></span></span></div><div id="prginfo_1446517" class="prg_popup"><span class="tip">中文标题: 莱卡参加武术大赛了<br />首播: 2025-05-10<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446517" class="l icons_cmt">讨论</a> <small class="na">(+25)</small></span></span></div><div id="prginfo_1446518" class="prg_popup"><span class="tip">中文标题: 见了松树仙灵<br />首播: 2025-05-17<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446518" class="l icons_cmt">讨论</a> <small class="na">(+46)</small></span></span></div><div id="prginfo_1446519" class="prg_popup"><span class="tip">中文标题: 去海水浴了<br />首播: 2025-05-24<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446519" class="l icons_cmt">讨论</a> <small class="na">(+27)</small></span></span></div><div id="prginfo_1446520" class="prg_popup"><span class="tip">中文标题: 去见恶灵的陛下了<br />首播: 2025-05-31<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446520" class="l icons_cmt">讨论</a> <small class="na">(+33)</small></span></span></div><div id="prginfo_1446521" class="prg_popup"><span class="tip">中文标题: 参加了魔王的庆生会<br />首播: 2025-06-07<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446521" class="l icons_cmt">讨论</a> <small class="na">(+39)</small></span></span></div><div id="prginfo_1446522" class="prg_popup"><span class="tip">中文标题: 和传统悠久的神明战斗了<br />首播: 2025-06-14<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446522" class="l icons_cmt">讨论</a> <small class="na">(+32)</small></span></span></div><div id="prginfo_1446523" class="prg_popup"><span class="tip">中文标题: 今年也经营咖啡馆了<br />首播: 2025-06-21<br />时长: 00:23:40<br /><hr class="board" /><span class="cmt clearit"><a href="/subject/ep/1446523" class="l icons_cmt">讨论</a> <small class="na">(+25)</small></span></span></div></div>
+<script type="text/javascript">initSubjectPrgs(364844);</script>
+</div>
+    		    			<div id="subject_summary" class="subject_summary collapsed" property="v:summary">亚梓莎在女神大人的安排下，成为了不老不死的魔女，并被转生到了一个充满奇幻色彩的异世界。<br />
+由于前世因为过劳而死亡，为此她深刻地反省，许愿可以过着悠悠哉哉的生活。为了维持生计，她每天固定打倒史莱姆，持续打了三百年――。<br />
+结果一回神过来就练到满级、成为了世界最强!<br />
+成为世界最强的传闻传开后，身怀隐情的龙族女孩、史莱姆的妖精、精灵和幽灵等女孩们接踵而至。<br />
+亚梓莎无法对他们的烦恼和困境坐视不管，因此四处奔走解决问题让他们加入成为家人，和大家一起展开新的慢活人生。<br />
+但新生活以慢活来说稍显得热闹过头了――！？<br />
+前往红龙的故乡泡了温泉，去了魔族之国参加典礼，攻略了被称为世界树的巨大地下城。<br />
+今天也要开始愉快的一天!<br />
+<br />
+<br />
+<br />
+[简介原文]<br />
+女神様の計らいで不老不死の魔女となって 異世界に転生したアズサ。 過労死した前世の反省からスローライフを願い、 生活費の足しにと日課でスライムを倒すこと300年――。<br />
+気づけばレベルMAXの世界最強になっていた！<br />
+最強の噂は広まり、 静かだった高原の家に事情を抱えたドラゴン娘やスライムの精霊、 エルフの幽霊といった娘たちが押しかけてくる。 彼女たちの悩みやおかれた状況を見過ごせないアズサは奔走し事態を解決、 家族として迎え入れ、みんなとの新しいスローライフを始めることにする。 しかしその新生活は、スローライフというには少し賑やかなもので――！？<br />
+レッドドラゴンの故郷に行って温泉に入ってみたり、魔族の国の式典に行ってみたり、 世界樹と呼ばれる巨大ダンジョンを攻略したり。<br />
+今日も楽しい一日が始まります！</div>
+    			<small class="gery clearit"><a href="#;" id="show_summary"  class="rr l">more...</a></small>
+    		            <div class="subject_tag_section">
+<h2 class="subtitle">大家将 スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ 标注为</h2>
+<div class="inner"><a href="/anime/tag/%E7%99%BE%E5%90%88" class="l meta"><span>百合</span> <small class="grey">684</small></a><a href="/anime/tag/TV" class="l meta"><span>TV</span> <small class="grey">369</small></a><a href="/anime/tag/%E6%97%A5%E6%9C%AC" class="l meta"><span>日本</span> <small class="grey">182</small></a><a href="/anime/tag/%E7%A9%BF%E8%B6%8A" class="l meta"><span>穿越</span> <small class="grey">22</small></a><a href="/anime/tag/%E6%97%A5%E5%B8%B8" class="l meta"><span>日常</span> <small class="grey">587</small></a><a href="/anime/tag/%E5%B0%8F%E8%AF%B4%E6%94%B9" class="l meta"><span>小说改</span> <small class="grey">217</small></a><a href="/anime/tag/%E5%BC%82%E4%B8%96%E7%95%8C" class="l"><span>异世界</span> <small class="grey">743</small></a><a href="/anime/tag/%E5%87%A4%E5%82%B2%E5%A4%A9" class="l"><span>凤傲天</span> <small class="grey">545</small></a><a href="/anime/tag/2025%E5%B9%B44%E6%9C%88" class="l"><span>2025年4月</span> <small class="grey">502</small></a><a href="/anime/tag/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E6%94%B9" class="l"><span>轻小说改</span> <small class="grey">336</small></a><a href="/anime/tag/2025" class="l"><span>2025</span> <small class="grey">233</small></a><a href="/anime/tag/%E7%BB%AD%E4%BD%9C" class="l"><span>续作</span> <small class="grey">173</small></a><a href="/anime/tag/%E5%A5%87%E5%B9%BB" class="l"><span>奇幻</span> <small class="grey">137</small></a><a href="/anime/tag/%E6%90%9E%E7%AC%91" class="l"><span>搞笑</span> <small class="grey">128</small></a><a href="/anime/tag/REVOROOT" class="l"><span>REVOROOT</span> <small class="grey">115</small></a><a href="/anime/tag/%E8%BD%BB%E6%94%B9" class="l"><span>轻改</span> <small class="grey">93</small></a><a href="/anime/tag/%E8%BD%BB%E7%99%BE%E5%90%88" class="l"><span>轻百合</span> <small class="grey">28</small></a><a href="/anime/tag/%E6%B2%BB%E6%84%88" class="l"><span>治愈</span> <small class="grey">19</small></a><a href="/anime/tag/%E6%82%A0%E6%9C%A8%E7%A2%A7" class="l"><span>悠木碧</span> <small class="grey">11</small></a><a href="/anime/tag/%E8%90%9D%E8%8E%89" class="l"><span>萝莉</span> <small class="grey">10</small></a><a href="/anime/tag/%E6%9C%AA%E7%A1%AE%E5%AE%9A" class="l"><span>未确定</span> <small class="grey">10</small></a><a href="/anime/tag/%E5%8E%95%E7%BA%B8" class="l"><span>厕纸</span> <small class="grey">9</small></a><a href="/anime/tag/%E8%90%8C" class="l"><span>萌</span> <small class="grey">7</small></a><a href="/anime/tag/2025%E5%B9%B4" class="l"><span>2025年</span> <small class="grey">6</small></a><a href="/anime/tag/%E6%9C%AA%E5%AE%9A%E6%A1%A3" class="l"><span>未定档</span> <small class="grey">6</small></a><a href="/anime/tag/%E5%90%8E%E5%AE%AB" class="l"><span>后宫</span> <small class="grey">6</small></a></div>
+</div>
+    		
+    	   </div>
+    	   <div id="panelInterestWrapper">
+    	   <div class="SidePanel png_bg">
+<h2>收藏盒</h2>
+<div rel="v:rating">
+<a href="/subject/364844/stats">
+<div class="global_rating score6">
+<div class="rateEmo"></div>
+<div class="global_score">
+<span class="number" property="v:average">6.0</span>
+<span property="v:best" content="10.0"></span>
+<span class="description">还行</span><div><small class="grey">Bangumi Anime Ranked:</small><small class="alarm">#7900</small></div>
+</div>
+</div>
+</a>
+<div class="clear"></div>
+
+<div id="ChartWarpper" class="chartWrapper">
+    <div class="chart_desc"><small class="grey"><span property="v:votes">2469</span> votes</small></div>
+    <ul class="horizontalChart">
+        <li><a href="javascript:void(0)" title="1.01% (25人)" class="textTip"><span class="label">10</span><span class="count" style="height:2.08%">(25)</span></a></li>
+        <li><a href="javascript:void(0)" title="0.93% (23人)" class="textTip"><span class="label">9</span><span class="count" style="height:1.91%">(23)</span></a></li>
+        <li><a href="javascript:void(0)" title="4.46% (110人)" class="textTip"><span class="label">8</span><span class="count" style="height:9.14%">(110)</span></a></li>
+        <li><a href="javascript:void(0)" title="20.25% (500人)" class="textTip"><span class="label">7</span><span class="count" style="height:41.57%">(500)</span></a></li>
+        <li><a href="javascript:void(0)" title="45.81% (1131人)" class="textTip"><span class="label">6</span><span class="count" style="height:94.02%">(1131)</span></a></li>
+        <li><a href="javascript:void(0)" title="20.82% (514人)" class="textTip"><span class="label">5</span><span class="count" style="height:42.73%">(514)</span></a></li>
+        <li><a href="javascript:void(0)" title="5.02% (124人)" class="textTip"><span class="label">4</span><span class="count" style="height:10.31%">(124)</span></a></li>
+        <li><a href="javascript:void(0)" title="1.13% (28人)" class="textTip"><span class="label">3</span><span class="count" style="height:2.33%">(28)</span></a></li>
+        <li><a href="javascript:void(0)" title="0.20% (5人)" class="textTip"><span class="label">2</span><span class="count" style="height:0.42%">(5)</span></a></li>
+        <li><a href="javascript:void(0)" title="0.36% (9人)" class="textTip"><span class="label">1</span><span class="count" style="height:0.75%">(9)</span></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+    	   <div class="shareBtn">
+        <span class="action">
+    <a href="javascript:void(0);" title="复制到剪贴板" class="icon share_pasteboard">
+        <span class="ico ico_copy">&nbsp;</span>
+        <span class="title">复制</span>
+    </a>
+    </span>
+        <span class="shareText">分享</span>
+    <a href="javascript:void(0);" title="分享到新浪微博" class="share share_sina">&nbsp;</a>
+    <a href="javascript:void(0);" title="分享到豆瓣网" class="share share_douban">&nbsp;</a>
+    <a href="javascript:void(0);" title="分享到 Twitter" class="share share_twitter">&nbsp;</a>
+    </div>    	   </div>
+        </div>
+
+        <div class="subject_section clearit">
+<div class="flex-center-v rr">
+<a href="javascript:void(0);" class="icon toggleCrtListStyle"><span class="ico ico_list"></span></a>
+<div class="castTypeFilter dropdown" style="display: none;">
+<a href="javascript:void(0);" class="icon icon-t"><span class="ico ico_filter"></span><span class="title">筛选</span></a>
+<ul></ul>
+</div>
+</div>
+<h2 class="subtitle">角色介绍</h2>
+<div class="content_inner scrollable-gradient">
+    <ul id="browserItemList" class="castTypeFilterList browserCoverMedium crtList oneLine scrollable">
+        <li class="item clearit">
+        <a href="/character/72391" title="亚梓莎·埃札瓦" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/58/a4/72391_crt_rzo6B.jpg?r=1571534471')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72391" class="title">アズサ・アイザワ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+13) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/5076">悠木碧</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72392" title="莱卡" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/fa/06/72392_crt_2OYk6.jpg?r=1571534437')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72392" class="title">ライカ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+10) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/19560">本渡楓</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72393" title="法露法" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/52/51/72393_crt_6cwmo.jpg?r=1571534432')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72393" class="title">ファルファ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+5) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/10838">千本木彩花</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72394" title="夏露夏" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/81/59/72394_crt_5OrJi.jpg?r=1571534432')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72394" class="title">シャルシャ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+5) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/13683">田中美海</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72395" title="哈尔卡拉" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/c8/4e/72395_crt_RdY91.jpg?r=1571534430')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72395" class="title">ハルカラ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+3) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/24793">原田彩楓</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72397" title="芙拉特露蒂" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/74/9f/72397_crt_Q587E.jpg?r=1571534409')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72397" class="title">フラットルテ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+10) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/19353">和氣あず未</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72398" title="罗莎莉" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/bf/fb/72398_crt_XVJjx.jpg?r=1571534400')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72398" class="title">ロザリー</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+5) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/32253">杉山里穂</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/165613" title="桑朵拉" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/d0/7c/165613_crt_CK99l.jpg?r=1736774352')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/165613" class="title">サンドラ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="1">主角</span><small class="primary"> (+4) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/6447">小倉唯</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/72396" title="别西卜" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/57/45/72396_crt_0wSYS.jpg?r=1571534420')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/72396" class="title">ベルゼブブ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="2">配角</span><small class="primary"> (+8) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/5824">沼倉愛美</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/95942" title="佩可菈" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/3c/63/95942_crt_zQk7k.jpg?r=1620948294')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/95942" class="title">ペコラ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="2">配角</span><small class="primary"> (+8) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/3965">田村ゆかり</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/96649" title="艾诺" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/16/2f/96649_crt_1D9he.jpg?r=1622322168')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/96649" class="title">エノ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="2">配角</span><small class="primary"> (+1) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/32639">遠野ひかる</a>
+</p></div>
+</div>
+    </li>
+        <li class="item clearit">
+        <a href="/character/169913" title="甘达达" class="thumbTip">
+            <span class="avatarNeue avatarCoverPortrait avatarTop spoilerable" style="background-image:url('//lain.bgm.tv/pic/crt/m/35/40/169913_crt_O5en0.jpg')"></span>
+        </a>
+<div class="inner spoilerable">
+<p class="title">
+<a href="/character/169913" class="title">ガンダダ</a>
+</p>
+<div class="info">
+<p class="jobs">
+<span class="badge_job_tip" attr-crt-type="2">配角</span><small class="primary"> (+0) </small>
+</p><p class="badge_actor" attr-rlt-type="0" att-rlt-type-name="CV" attr-rlt-primary="1">
+<span class="tip_i">CV</span>
+<a href="/person/35796">宮城一貴</a>
+</p></div>
+</div>
+    </li>
+        </ul>
+</div>
+
+<a href="/subject/364844/characters" class="more">更多角色 &raquo;</a></div>
+        
+        <div class="subject_section">
+<div class="clearit">
+<h2 class="subtitle">关联条目</h2>
+</div>
+<div class="content_inner">
+<ul class="browserCoverMedium clearit">    <li class="sep">
+<span class="sub">前传</span>
+<a href="/subject/292969" title="打了300年的史莱姆，不知不觉就练到了满级" class="avatar thumbTip"><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/01/e4/292969_RLbg9.jpg')"></span></a>
+<a href="/subject/292969" class="title">スライム倒して300年、知らないうちにレベルMAXになってました</a>
+</li>    <li class="sep">
+<span class="sub">书籍</span>
+<a href="/subject/208489" title="打了300年的史莱姆，不知不觉就练到了满级" class="avatar thumbTip"><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/1c/dd/208489_PnXRP.jpg')"></span></a>
+<a href="/subject/208489" class="title">スライム倒して300年、知らないうちにレベルMAXになってました</a>
+</li>    <li class="sep">
+<span class="sub">游戏</span>
+<a href="/subject/535758"  class="avatar "><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/1d/1a/535758_Q3ccc.jpg')"></span></a>
+<a href="/subject/535758" class="title">異世界∞異世界 ～次はどの作品を、集めよう～</a>
+</li>    <li class="sep">
+<span class="sub">原声集</span>
+<a href="/subject/550259"  class="avatar "><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/6a/32/550259_16961.jpg')"></span></a>
+<a href="/subject/550259" class="title">スライム倒して300年、知らないうちにレベルMAXになってました ～そのに～ オリジナルサウンドトラックCD</a>
+</li>    <li class="sep">
+<span class="sub">片头曲</span>
+<a href="/subject/532659"  class="avatar "><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/7c/92/532659_y91qr.jpg')"></span></a>
+<a href="/subject/532659" class="title">So☆Lucky</a>
+</li>    <li class="sep">
+<span class="sub">片尾曲</span>
+<a href="/subject/532831"  class="avatar "><span class="coverNeue avatarSize75" style="background-image:url('//lain.bgm.tv/r/200/pic/cover/l/ec/7d/532831_F25rg.jpg')"></span></a>
+<a href="/subject/532831" class="title">イニミニマニモ</a>
+</li></ul>
+<div class="relationMoreLinks clearit">
+<a href="/subject/364844/relations/graph" class="more">系列关联</a><a href="/subject/364844/relations" class="more">更多关联 &raquo;</a></div>
+</div>
+</div>
+        
+                <div class="subject_section">
+<h2 class="subtitle">评论</h2>
+<div class="content_inner clearit">
+    <div id="entry_list" class="entry-list "><div class="item clearit" data-item-user="966970"  >
+        <p class="cover">
+    <a href="/blog/356849" title="萌是真萌，穷是真穷" class="avatar">
+        <img src="//lain.bgm.tv/pic/user/l/000/96/69/966970.jpg?r=1751277006&hd=1" class="avatarCover" />
+    </a>
+    </p>
+        <div class="entry">
+        <h2 class="title"><a href="/blog/356849" class="l">萌是真萌，穷是真穷</a></h2>
+        <div class="content"><a href="/blog/356849">这一季好多画面有点穷的过头了，剧情也有点公式化，不过因为很可爱我还是看完了，反正喜欢第一季的话第二季看下去也没啥问题，闲着没事的时候看一看还是可以的</a></div>
+        <div class="tools">
+             <div class="time">
+                                    <a href="/user/966970" class="l">DSKJK</a>&nbsp;·
+                                                                2025-6-30 23:24&nbsp;·
+                                <a href="/blog/356849" class="l">0 回复</a>
+            </div>
+                    </div>
+                            </div>
+    
+</div><div class="item clearit" data-item-user="709806"  >
+        <p class="cover">
+    <a href="/blog/356778" title="讨论讨论日常类的作品-2025年4月新番评鉴" class="avatar">
+        <img src="//lain.bgm.tv/pic/user/l/000/70/98/709806.jpg?r=1661288130" class="avatarCover" />
+    </a>
+    </p>
+        <div class="entry">
+        <h2 class="title"><a href="/blog/356778" class="l">讨论讨论日常类的作品-2025年4月新番评鉴</a></h2>
+        <div class="content"><a href="/blog/356778">前言
+ 上个季度没有写日志，一个原因是个人感觉除了母鸡卡没什么好讨论的，而母鸡卡讨论的人实在是太多了，感觉会被卷进什么漩涡就没写（其实只是单纯懒）。
+ 这一次还是老样子，我对动画的评分分为主观分和客观分，分数就丢在前言部分了。
+ 客观分是我的bang ...</a></div>
+        <div class="tools">
+             <div class="time">
+                                    <a href="/user/709806" class="l">ak2333</a>&nbsp;·
+                                                                2025-6-29 23:56&nbsp;·
+                                <a href="/blog/356778" class="l">0 回复</a>
+            </div>
+                    </div>
+                            </div>
+    
+</div><div class="item clearit" data-item-user="kufuuchino"  >
+        <p class="cover">
+    <a href="/blog/353849" title="屑魔女" class="avatar">
+        <img src="//lain.bgm.tv/r/200x200/pic/photo/l/20/14/720735_1rTmx.jpg" class="avatarCover" />
+    </a>
+    </p>
+        <div class="entry">
+        <h2 class="title"><a href="/blog/353849" class="l">屑魔女</a></h2>
+        <div class="content"><a href="/blog/353849">好久不见了，一如既往的屑啊</a></div>
+        <div class="tools">
+             <div class="time">
+                                    <a href="/user/kufuuchino" class="l">萌田薰子</a>&nbsp;·
+                                                                2025-4-27 15:03&nbsp;·
+                                <a href="/blog/353849" class="l">2 回复</a>
+            </div>
+                    </div>
+                            </div>
+    
+</div><div class="item clearit" data-item-user="545377"  >
+        <p class="cover">
+    <a href="/blog/345913" title="✏️ Bangumi 动画条目错误 tag 收集 ✏️" class="avatar">
+        <img src="//lain.bgm.tv/pic/user/l/000/54/53/545377.jpg?r=1728438307&hd=1" class="avatarCover" />
+    </a>
+    </p>
+        <div class="entry">
+        <h2 class="title"><a href="/blog/345913" class="l">✏️ Bangumi 动画条目错误 tag 收集 ✏️</a></h2>
+        <div class="content"><a href="/blog/345913">由于标签系统的固有缺陷，只要有一个人标错，后来的用户在加tag时就会一个接一个将错就错扩大影响，这样的例子在你ban数不胜数（并且还在不断增加）。极端情况下正确的tag反而会被挤到后面，给读者造成误导。
+
+本文尝试收集动画条目中的无关或错误tag。以下只 ...</a></div>
+        <div class="tools">
+             <div class="time">
+                                    <a href="/user/545377" class="l">momo</a>&nbsp;·
+                                                                2024-10-28 22:25&nbsp;·
+                                <a href="/blog/345913" class="l">1 回复</a>
+            </div>
+                    </div>
+                            </div>
+    
+</div></div><div class="rr"><a href="/subject/364844/reviews" class="more">更多影评 »</a></div>
+    </div>
+</div>
+<a name="subject_board"></a>
+<div class="subject_section">
+<h2 class="subtitle">讨论版</h2>
+
+
+</div><div class="subject_section">
+<h2 class="subtitle">吐槽箱</h2><div id="comment_box" class="comment-box comment_box_lr">
+<div class="item clearit" data-item-user="681419">
+<a href="/user/681419" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/icon.jpg')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/681419" class="l">wjlk</a>
+<span class="starstop-s"><span class="starlight stars6"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-21 17:25</small>
+    		<p class="comment">一般的异世界萌豚厕纸，比较轻松愉快，给6分</p><div class="likes_grid" id="likes_grid_34970213">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="1274282">
+<a href="/user/1274282" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/001/27/42/1274282_cmMH2.jpg?r=1792158250&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/1274282" class="l">雪蛉</a>
+<span class="starstop-s"><span class="starlight stars6"></span></span><small class="grey"> 搁置 </small>
+<small class="grey">@ 2026-10-18 21:30</small>
+    		<p class="comment">没第一季有趣啊</p><div class="likes_grid" id="likes_grid_54439271">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="615875">
+<a href="/user/615875" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/61/58/615875_bWcQH.jpg?r=1784235254&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/615875" class="l">Qenternal</a>
+<span class="starstop-s"><span class="starlight stars3"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-15 20:42</small>
+    		<p class="comment">本以为木村延景是躺赢狗，没想到离了木村延景你什么都不是</p><div class="likes_grid" id="likes_grid_54340379">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="kamekame">
+<a href="/user/kamekame" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/20/40/204077.jpg?r=1743952632&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/kamekame" class="l">乌龟</a>
+<small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-10 12:25</small>
+    		<p class="comment">这种没啥大冲突的轻百合还是比较好的（下饭菜）</p><div class="likes_grid" id="likes_grid_50936860">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="1265244">
+<a href="/user/1265244" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/icon.jpg')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/1265244" class="l">Weiss</a>
+<span class="starstop-s"><span class="starlight stars7"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-7 21:24</small>
+    		<p class="comment">蓝龙好可爱，魔王组的双胞胎管家也好可爱。我吃的人设永远是这一类</p><div class="likes_grid" id="likes_grid_54039696">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="640031">
+<a href="/user/640031" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/64/00/640031_Rq6c6.jpg?r=1788630809&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/640031" class="l">究极极限火花</a>
+<span class="starstop-s"><span class="starlight stars5"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-7 11:18</small>
+    		<p class="comment">剧情非常随意的冻鳗，随便认妈妈倒是符合现在的大环境</p><div class="likes_grid" id="likes_grid_40970005">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="744115">
+<a href="/user/744115" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/74/41/744115.jpg?r=1716918156&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/744115" class="l">艾啊啊</a>
+<span class="starstop-s"><span class="starlight stars6"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-10-4 22:17</small>
+    		<p class="comment">有几回挺无聊的，感觉没活了；有几回又还行；主要是人物越写越扁平了。</p><div class="likes_grid" id="likes_grid_32075132">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="1280898">
+<a href="/user/1280898" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/001/28/08/1280898_lLCff.jpg?r=1790869029&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/1280898" class="l">二兎</a>
+<span class="starstop-s"><span class="starlight stars6"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-9-30 10:12</small>
+    		<p class="comment">第一季更好點</p><div class="likes_grid" id="likes_grid_53739328">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="takagi2333mmm">
+<a href="/user/takagi2333mmm" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/001/28/40/1284077_JO61x.jpg?r=1790138424&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/takagi2333mmm" class="l">takagi桑咩</a>
+<span class="starstop-s"><span class="starlight stars5"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-9-23 17:35</small>
+    		<p class="comment">有意思的异世界养老番，轻松</p><div class="likes_grid" id="likes_grid_53519401">
+</div>
+</div>
+</div>
+</div>
+<div class="item clearit" data-item-user="948196">
+<a href="/user/948196" class="avatar"><span class="avatarNeue avatarSize32 ll" style="background-image:url('//lain.bgm.tv/pic/user/l/000/94/81/948196.jpg?r=1735974191&hd=1')"></span></a>
+<div class="text_container text_main_even">
+<div class="text">
+<div class="actions_container">
+<div class="post_actions"></div>
+</div>
+
+    		<a href="/user/948196" class="l">狂风</a>
+<span class="starstop-s"><span class="starlight stars6"></span></span><small class="grey"> 看过 </small>
+<small class="grey">@ 2026-9-22 12:03</small>
+    		<p class="comment">基本一集一个新人物，感觉没啥活了</p><div class="likes_grid" id="likes_grid_53400212">
+</div>
+</div>
+</div>
+</div></div>
+<template id="likes_reaction_grid_item" type="text/template">
+    <a class="item {selected_class}"
+          href="javascript:void(0);"
+          data-like-type="{type}"
+          data-like-main-id="{main_id}"
+          data-like-related-id="{related_id}"
+          data-like-value="{value}"
+          title="{users}"
+          data-toggle="tooltip">
+        <span class="emoji" style="background-image: url('/img/smiles/tv/{emoji}.gif');"></span>
+        <span class="num">{num}</span>
+    </a>
+</template>
+
+
+<script>
+        var data_likes_list = {"50936860":{"80":{"type":40,"main_id":"364844","value":"80","total":12,"emoji":"41","users":[{"username":"537449","nickname":"Conchelle"},{"username":"765990","nickname":"loili\u8d5b\u9ad8"},{"username":"604230","nickname":"\u51b7\u9177\u7684k\u9171"},{"username":"shawn_hsueh","nickname":"Shawn\u5b66"},{"username":"1173814","nickname":"Astrologer"},{"username":"1157253","nickname":"\u4eba\u751f\u5931\u8d25\u7ec4\u7cbe\u9510"},{"username":"236604","nickname":"\u7d05-Stellar-"},{"username":"913835","nickname":"kurukuru"},{"username":"1191707","nickname":"Weiheng"},{"username":"bonboru313","nickname":"Bonboru"},{"username":"kamekame","nickname":"\u4e4c\u9f9f"},{"username":"518791","nickname":"kamian"}]},"140":{"type":40,"main_id":"364844","value":"140","total":1,"emoji":"101","users":[{"username":"1245034","nickname":"\u5c0f\u996d\u76d2"}]}},"32075132":[{"type":40,"main_id":"364844","value":"0","total":1,"emoji":"44","users":[{"username":"simonthedeer","nickname":"Simonthedeer"}]}]};
+        var data_like_reaction_motion_map = {"141":"Question","62":"Squint","85":"Shock","54":"Bgm38","90":"Sad"};
+</script>
+<a href="/subject/364844/comments" class="more">更多吐槽 »</a>
+</div>        
+</div>
+</div><div id="footer">
+<ul id="footerLinks" class="clearit">
+<li class="first">
+    <dl>
+        <dt>关于我们</dt>
+        <dd><a href="https://bangumi.tv/about">关于我们</a></dd>
+        <dd><a href="https://bangumi.tv/about/guideline">社区指导原则</a><dd>
+        <dd><a href="https://bangumi.tv/about/copyright">版权声明</a><dd>
+        <dd><a href="https://bangumi.tv/about/link2us">链接我们</a><dd>
+    </dl>
+</li>
+<li>
+    <dl>
+    <dt>获取帮助</dt>
+        <dd><a href="https://bangumi.tv/help/bbcode">BBCode</a></dd>
+        <dd><a href="https://bangumi.tv/group/forum">站务论坛</a></dd>
+        <dd><a href="https://bangumi.tv/group/dev">番组开发</a></dd>
+        <dd><a href="https://bangumi.tv/group/issues">BUG追踪</a></dd>
+        <dd><a href="https://bangumi.tv/group/doujin">天窗站务</a></dd>
+    </dl>
+</li>
+<li>
+<dl>
+    <dt>特别推荐</dt>
+        <dd><a href="https://bangumi.tv/award/2025">年鉴 2025</a> | <a href="https://bangumi.tv/award/2024">24</a> | <a href="https://bangumi.tv/award/2023">23</a> | <a href="https://bangumi.tv/award/2022">22</a> | <a href="https://bangumi.tv/award/2021">21</a> | <a href="https://bangumi.tv/award/2020">20</a> | <a href="https://bangumi.tv/award/2019">19</a> | <a href="https://bangumi.tv/award/2018">18</a> | <a href="https://bangumi.tv/award/2017">17</a> |  <a href="https://bangumi.tv/award/2016">16</a> |  <a href="https://bangumi.tv/award/2015">15</a> | <a href="https://bangumi.tv/award/2014">14</a> |  <a href="https://bangumi.tv/award/2013">13</a> | <a href="https://bangumi.tv/award/2012">12</a> | <a href="https://bangumi.tv/award/2011">11</a> | <a href="https://bangumi.tv/award/2010">10</a></dd>
+        <dd><a href="https://bangumi.tv/award/2025/winner">TBA 2025</a> | <a href="https://bangumi.tv/award/2024/winner">24</a></dd>
+        <dd><a href="https://bangumi.tv/group/wiki">番組WIKI計画</a></dd>
+        <dd><a href="https://bangumi.tv/onair">onAir 客户端</a></dd>
+        <dd><a href="https://bangumi.tv/tokei">etokei 绘时计</a></dd>
+    </dl>
+</li>
+<li class="last">
+    <dl>
+    <dt>更多</dt>
+        <dd><a href="https://bangumi.tv/dev">开发者平台</a></dd>
+        <dd><a href="https://bangumi.tv/index">目录</a></dd>
+        <dd><a href="https://bangumi.tv/wiki">维基人</a></dd>
+        <dd><a href="https://bangumi.tv/magi">MAGI 问答</a></dd>
+        <dd><a href="https://bangumi.tv/goodies">周边</a></dd>
+        <dd><a href="https://bangumi.tv/dollars">Dollars</a></dd>
+    </dl>
+</li>
+</ul><div class="copyright"><small class="grey">&copy; 2008-2026 Bangumi (a.k.a.Chobits), some rights reserved | r771</small></div>
+</div>
+</div></div>
+<div class="homeBg"></div>
+<div id="dock">
+    <div class="content">
+        <ul class="clearit">
+                <li class="first"><a href="https://bangumi.tv/login">登录</a><a href="https://bangumi.tv/signup">注册</a></li>
+                <li><a href="javascript:void(0);" class="toggle-customize" title="个性化"><span class="ico ico-sq ico_customize">个性化</span></a></li>
+        <li class="last"><a href="javascript:void(0);" id="showrobot" class="toggle-robot">&nbsp;</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="robot"  style="display:none;">
+<div id="ukagaka_shell" data-shell="1" data-balloon="2">
+<div class="ui_12">
+<div id="robot_balloon" class="ukagaka_balloon_pink">
+    <div class="inner">
+<div id="robot_speech" class="speech">
+没<a href="https://bangumi.tv/signup"  class="nav">注册</a>时我很沉默</div>
+<div id="robot_speech_js" class="speech" style="display:none;"></div>
+</div>
+</div>
+<div class="ukagaka_body shell_1"><div id="ukagaka_voice"></div></div>
+</div>
+</div>
+</div>
+<script src="/min/g=js?r771" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(document).share({
+        title: "\u300c\u30b9\u30e9\u30a4\u30e0\u5012\u3057\u3066300\u5e74\u3001\u77e5\u3089\u306a\u3044\u3046\u3061\u306b\u30ec\u30d9\u30ebMAX\u306b\u306a\u3063\u3066\u307e\u3057\u305f \uff5e\u305d\u306e\u306b\uff5e\u300d(\u6765\u81ea Bangumi \u756a\u7ec4\u8ba1\u5212)",
+        content: "",
+        url: document.URL    });
+});
+</script>
+<script type="text/javascript">chiiLib.subject.init();chiiLib.likes.init();</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1109JLGMHN');
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-1109JLGMHN';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body></html>

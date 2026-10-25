@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:halo="https://halo.run">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#f9a8d4"/>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin="anonymous"/>
+  <link rel="dns-prefetch" href="https://gcore.jsdelivr.net"/>
+  <!-- SEO：动态标题 + 描述 + OG/Twitter + canonical + RSS + JSON-LD（见 modules/seo.html） -->
+  
+
+  <title>250king</title>
+
+  
+
+    <meta name="description" content="耀の小站"/>
+    
+    <link rel="canonical" href="https://250king.top/"/>
+
+    <meta property="og:site_name" content="250king"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="250king"/>
+    <meta property="og:description" content="耀の小站"/>
+    <meta property="og:url" content="https://250king.top/"/>
+    <meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&amp;nk=2789260300&amp;s=0"/>
+    
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="250king"/>
+    <meta name="twitter:description" content="耀の小站"/>
+    <meta name="twitter:image" content="https://q1.qlogo.cn/g?b=qq&amp;nk=2789260300&amp;s=0"/>
+
+    <link rel="alternate" type="application/rss+xml" title="250king" href="/rss.xml"/>
+
+    
+  
+
+
+  <!-- 编译后的样式（Vite + PostCSS 产物） -->
+  <link rel="stylesheet" href="/themes/moesora/assets/dist/moesora.css?v=1.1.9"/>
+
+  <!-- 主题色（来自后台设置；用 th:utext 直接构造 CSS，不依赖 inline 模式；置于主样式后以覆盖默认值） -->
+  <style>:root{--moe-theme:#f9a8d4;--moe-ol-hover:#ff7eb3;}html.dark{--moe-theme:#f0a5cb;}</style>
+
+  <!-- 灰色哀悼模式 -->
+  
+
+  <!-- 自定义：外部 CSS -->
+  
+  <!-- 自定义：内嵌 CSS -->
+  
+  <!-- 自定义：外部 JS（head） -->
+  
+  <!-- 自定义：内嵌 JS（head） -->
+  
+
+  <!-- 百度链接自动推送（加快收录；仅百度支持此 JS 方式） -->
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var c = window.location.protocol.split(':')[0];
+      bp.src = (c === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  <!-- 把主题设置注入前端，供脚本读取 -->
+  <script>
+    /*<![CDATA[*/
+    window.MoesoraConfig = {
+      assetBase: "\/themes\/moesora\/assets",
+      hiddenTitle: "(\u3064_<)~ \u4F60\u53BB\u54EA\u513F\u4E86\uFF01",
+      visibleTitle: "(*\u00B4\u2207\uFF40*) \u6B22\u8FCE\u56DE\u6765\uFF01",
+      defaultTheme: "auto",
+      effectsBg: "sakura",
+      effectsBgMode: "all",
+      effectsClick: "firework",
+      effectsMove: "none",
+      cursorStyle: "Sakura",
+      pjax: true,
+      codeFoldLine: 0,
+      imgFoldHeight: 0,
+      enableLightbox: true,
+      headingAnim: true,
+      defaultCodeLang: "",
+      commentUpload: {
+        url: "",
+        field: "file",
+        resp: "data.url",
+        header: ""
+      },
+      siteName: "250king",
+      extRedirect: {
+        on: false,
+        delay: 9,
+        whitelist: ""
+      },
+      cdnBase: "https:\/\/gcore.jsdelivr.net",
+      live2d: {
+        on: false,
+        position: "bottom-right",
+        scale: 1,
+        models: "\u516B\u5343\u4EE3\u8F89\u591C\u59EC|https:\/\/gcore.jsdelivr.net\/gh\/7l4i8y1a4n3g8-7l4i8y1a4n3g8-1438-9748\/Yachiyo@master\/Yachiyo.model3.json\n"
+      }
+    };
+    /*]]>*/
+  </script>
+
+  <!-- 顶部加载进度条（首屏加载时显示） -->
+  <script>
+    (function () {
+      var tc = (getComputedStyle(document.documentElement).getPropertyValue("--moe-theme") || "#f9a8d4").trim() || "#f9a8d4";
+      var bar = document.createElement("div");
+      bar.style.cssText = "position:fixed;top:0;left:0;height:3px;width:0;z-index:3000;border-radius:0 2px 2px 0;" +
+        "background:linear-gradient(90deg," + tc + ",#c8a8ff);box-shadow:0 0 8px " + tc + ";" +
+        "transition:width .3s ease,opacity .4s ease";
+      (document.body || document.documentElement).appendChild(bar);
+      var w = 0, done = false;
+      requestAnimationFrame(function () { bar.style.width = "28%"; });
+      var t = setInterval(function () { if (done) return; w = Math.min(90, w + Math.random() * 12); bar.style.width = w + "%"; }, 300);
+      function finish() {
+        if (done) return; done = true; clearInterval(t);
+        bar.style.width = "100%";
+        setTimeout(function () { bar.style.opacity = "0"; setTimeout(function () { if (bar.parentNode) bar.remove(); }, 450); }, 200);
+      }
+      if (document.readyState === "complete") finish();
+      else window.addEventListener("load", finish);
+      setTimeout(finish, 8000);
+    })();
+  </script>
+  <script>
+    (function () {
+      var cfg = window.MoesoraConfig || {};
+      var saved = null;
+      try { saved = localStorage.getItem("moesora-theme"); } catch (e) {}
+      var def = cfg.defaultTheme || "auto";
+      var dark;
+      if (saved === "dark") dark = true;
+      else if (saved === "light") dark = false;
+      else if (def === "dark") dark = true;
+      else if (def === "light") dark = false;
+      else dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (dark) document.documentElement.classList.add("dark");
+      document.documentElement.setAttribute("data-color-scheme", dark ? "dark" : "light");
+      if (cfg.headingAnim === false) document.documentElement.classList.add("moe-no-anim");
+    })();
+  </script>
+<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4815867_yqmp4k6g1p.css" >
+<script type="text/javascript" src="https://api.tongjiniao.com/c?_=739985853509046272" async></script>
+<meta content="Halo 2.27.0" name="generator"/><!-- plugin-comment-widget start -->
+<link rel="modulepreload" href="/plugins/PluginCommentWidget/assets/static/comment-widget.js?version=3.3.0">
+<link rel="stylesheet" href="/plugins/PluginCommentWidget/assets/static/index.css?version=3.3.0" />
+<!-- plugin-comment-widget end -->
+<!-- plugin-editor-hyperlink-card start -->
+<script src="/plugins/editor-hyperlink-card/assets/static/index.iife.js?version=1.9.2"></script>
+<link rel="stylesheet" href="/plugins/editor-hyperlink-card/assets/static/index.css?version=1.9.2" />
+<!-- plugin-editor-hyperlink-card end -->
+<!-- PluginSearchWidget start -->
+<script src="/plugins/PluginSearchWidget/assets/static/search-widget.iife.js?version=1.7.1" defer></script>
+<link rel="stylesheet" href="/plugins/PluginSearchWidget/assets/static/style.css?version=1.7.1" />
+<!-- PluginSearchWidget end -->
+              <meta name="baidu-site-verification" content="codeva-GEBpKAasy3" />
+<link rel="icon" href="https://static.250king.top/image/2026/09/scnfymas.ico" />
+<meta name="keywords" content="250king,250king.top,耀,个人网站,二次元,科技,开发,攻略" />
+<meta name="description" content="耀の小站，杂七杂八什么都有，二次元、科技、开发、攻略" />
+</head>
+<body>
+  <!-- 全站背景层（地址放 data-bg，由脚本赋给 background-image，最稳） -->
+  
+
+  <!-- 少女祈祷中... 加载层 -->
+  <div id="moesora-loading">少女祈祷中...</div>
+
+  <!-- 顶部导航 -->
+  <header class="moe-navbar">
+  <div class="moe-navbar-inner">
+    <a class="moe-brand" href="/">
+      <img class="moe-brand-logo" src="https://q1.qlogo.cn/g?b=qq&amp;nk=2789260300&amp;s=0" alt="logo"/>
+      <span class="moe-brand-title">250king</span>
+    </a>
+
+    <nav class="moe-nav">
+      <!-- 有主菜单则渲染菜单项，否则回退为「首页」。图标按菜单名关键字匹配，风格与全站统一。 -->
+      
+        <div class="moe-nav-item">
+          <a class="moe-nav-link"
+           href="/categories">
+          <span class="moe-nav-ico">
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h3.6l2 2.4H19a2 2 0 0 1 2 2V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+          <span class="moe-nav-text">分类</span>
+          
+        </a>
+        
+        </div>
+        <div class="moe-nav-item">
+          <a class="moe-nav-link"
+           href="/tags">
+          <span class="moe-nav-ico">
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11V5a2 2 0 0 1 2-2h6l9.5 9.5a1.5 1.5 0 0 1 0 2.1l-6 6a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.4" cy="7.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+          <span class="moe-nav-text">标签</span>
+          
+        </a>
+        
+        </div>
+        <div class="moe-nav-item">
+          <a class="moe-nav-link"
+           href="/about">
+          <span class="moe-nav-ico">
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+          <span class="moe-nav-text">关于</span>
+          
+        </a>
+        
+        </div>
+        <div class="moe-nav-item">
+          <a class="moe-nav-link"
+           href="/links">
+          <span class="moe-nav-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+          <span class="moe-nav-text">友人帐</span>
+          
+        </a>
+        
+        </div>
+        <div class="moe-nav-item  has-sub">
+          <a class="moe-nav-link"
+           href="/">
+          <span class="moe-nav-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+          <span class="moe-nav-text">公共服务</span>
+          <span class="moe-nav-caret" aria-hidden="true"><svg viewBox="0 0 12 8" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 2 6 6.2 10.5 2"/></svg></span>
+        </a>
+        <ul class="moe-nav-sub">
+          <li><a class="moe-nav-sublink" href="https://250king.top/categories/DVGSRa3v"><span class="moe-nav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span><span>短链系统</span></a></li>
+          <li><a class="moe-nav-sublink" href="https://auth.250king.top/"><span class="moe-nav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span><span>认证门户</span></a></li>
+          <li><a class="moe-nav-sublink" href="https://status.250king.top/"><span class="moe-nav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span><span>状态监控</span></a></li>
+          <li><a class="moe-nav-sublink" href="https://gochiusa.cafe/"><span class="moe-nav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span><span>Gochiusa Hub</span></a></li>
+        </ul>
+        </div>
+      
+      
+    </nav>
+
+    <div class="moe-search" id="moe-search">
+      <span class="moe-search-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+        </svg>
+      </span>
+      <input class="moe-search-input" id="moe-search-input" type="search"
+             placeholder="搜索文章…" autocomplete="off" aria-label="搜索文章"/>
+      <div class="moe-search-panel" id="moe-search-panel" hidden></div>
+    </div>
+    <script>
+    (function () {
+      var POSTS = [];
+      
+      POSTS.push({ t: "\u77ED\u94FE\u670D\u52A1\u6B63\u5F0F\u4E0A\u7EBF", u: "\/archives\/VkYCMNL2"});
+      POSTS.push({ t: "\u53D1\u4E2A\u7535", u: "\/archives\/ZgRhsMoL"});
+      POSTS.push({ t: "\u62DB\u884C\u84DD\u8475\u5361\u5B9E\u6D4B", u: "\/archives\/aV2zs2sL"});
+      POSTS.push({ t: "\u73A9\u742A\u62C9\u62C9\u73A9\u7684", u: "\/archives\/2UMnX2K7"});
+      POSTS.push({ t: "\u4E3B\u6D41\u65E5\u6DD8\u7F51\u7AD9\u9650\u5236\u673A\u5236", u: "\/archives\/0wKqTlPF"});
+      POSTS.push({ t: "Flutter\u4ECE\u5165\u95E8\u5230\u9000\u5751", u: "\/archives\/ANG8nEhc"});
+      POSTS.push({ t: "\u8BB0\u4E00\u6B21\u65E5\u6E38\u6C2A\u91D1\u8E29\u5751", u: "\/archives\/XgUyPfRI"});
+      POSTS.push({ t: "\u5E7F\u53D1Lucky\u5361\u5B9E\u6D4B", u: "\/archives\/i65qmJZI"});
+      POSTS.push({ t: "\u5404\u4E2A\u5382\u5546CDN\u7EB5\u6A2A\u6BD4\u8F83", u: "\/archives\/VrCnKL4A"});
+      POSTS.push({ t: "\u4E2D\u884C\u83AB\u5948\u5361\u5B9E\u6D4B", u: "\/archives\/2dpwxRLC"});
+      POSTS.push({ t: "\u53D1\u4E2A\u7535", u: "\/archives\/eooXwtgD"});
+      POSTS.push({ t: "\u300A\u6D77\u6D0B\u4E4B\u6B4C\u300B\u624B\u7A3F\u5206\u4EAB", u: "\/archives\/8pBgBbMO"});
+      
+      var box = document.getElementById("moe-search");
+      var input = document.getElementById("moe-search-input");
+      var panel = document.getElementById("moe-search-panel");
+      if (!box || !input || !panel) return;
+      function esc(s){return (s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+      function hits(kw){return POSTS.filter(function(p){return (p.t||"").toLowerCase().indexOf(kw)>-1;});}
+      function render(){
+        var kw=input.value.trim().toLowerCase();
+        if(!kw){panel.hidden=true;panel.innerHTML="";return;}
+        var list=hits(kw).slice(0,8);
+        if(!list.length){panel.innerHTML='<div class="moe-search-empty">没有匹配的文章</div>';panel.hidden=false;return;}
+        panel.innerHTML=list.map(function(p){return '<a class="moe-search-item" href="'+p.u+'">'+esc(p.t)+'</a>';}).join("");
+        panel.hidden=false;
+      }
+      input.addEventListener("input",render);
+      input.addEventListener("keydown",function(e){
+        if(e.key==="Enter"){var h=hits(input.value.trim().toLowerCase())[0];if(h)location.href=h.u;}
+      });
+      box.addEventListener("click",function(){input.focus();});
+      document.addEventListener("click",function(e){if(!box.contains(e.target)){panel.hidden=true;}});
+    })();
+    </script>
+
+    <button id="moe-theme-toggle" class="moe-icon-btn" type="button" aria-label="切换明暗模式">
+      <svg class="moe-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>
+      </svg>
+      <svg class="moe-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+      </svg>
+    </button>
+
+    <div class="moe-user-entry">
+      <a class="moe-user-login" href="https://250king.top/oauth2/authorization/sso" title="登录" aria-label="登录">
+        <span class="moe-user-login-ico" aria-hidden="true">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+        <span class="moe-user-login-text">登录</span>
+      </a>
+
+      
+    </div>
+
+    <!-- 移动端汉堡菜单按钮（窄屏显示） -->
+    <button id="moe-nav-toggle" class="moe-nav-toggle" type="button" aria-label="菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <script>
+  (function(){
+    var t=document.getElementById("moe-nav-toggle");
+    var bar=document.querySelector(".moe-navbar");
+    if(!t||!bar) return;
+    function close(){ bar.classList.remove("nav-open"); t.setAttribute("aria-expanded","false"); document.documentElement.classList.remove("moe-drawer-open"); var du=document.getElementById("moe-drawer-user"); if(du) du.classList.remove("open"); }
+    t.addEventListener("click",function(e){
+      e.stopPropagation();
+      var open=bar.classList.toggle("nav-open");
+      t.setAttribute("aria-expanded", open?"true":"false");
+      document.documentElement.classList.toggle("moe-drawer-open", open && window.matchMedia("(max-width:1024px)").matches);
+    });
+    bar.querySelectorAll(".moe-nav-link,.moe-nav-sublink").forEach(function(a){ a.addEventListener("click",close); });
+    document.addEventListener("click",function(e){
+      if(!bar.classList.contains("nav-open")) return;
+      if(bar.contains(e.target)) return;
+      var dr=document.getElementById("moe-drawer");
+      if(dr && dr.contains(e.target)) return;
+      close();
+    });
+  })();
+  </script>
+  <script>
+  (function(){
+    var menu=document.querySelector(".moe-user-menu");
+    if(!menu) return;
+    var trigger=menu.querySelector(".moe-user-trigger");
+    if(!trigger) return;
+    trigger.addEventListener("click",function(e){
+      e.stopPropagation();
+      var open=menu.classList.toggle("is-open");
+      trigger.setAttribute("aria-expanded", open?"true":"false");
+    });
+    document.addEventListener("click",function(e){
+      if(!menu.contains(e.target)){ menu.classList.remove("is-open"); trigger.setAttribute("aria-expanded","false"); }
+    });
+    document.addEventListener("keydown",function(e){
+      if(e.key==="Escape"){ menu.classList.remove("is-open"); trigger.setAttribute("aria-expanded","false"); }
+    });
+  })();
+  </script>
+</header>
+
+  <!-- 移动端右侧抽屉(独立于 navbar) -->
+  
+  <div class="moe-drawer-mask" id="moe-drawer-mask"></div>
+  <aside class="moe-drawer" id="moe-drawer">
+    <div class="moe-drawer-wrap">
+
+      <!-- 个人信息(与侧栏一致) -->
+      <div class="moe-drawer-card moe-drawer-profile">
+        <img class="moe-drawer-avatar" src="https://q1.qlogo.cn/g?b=qq&amp;nk=2789260300&amp;s=0" alt="avatar"/>
+        <h3 class="moe-drawer-name">250king</h3>
+        <p class="moe-drawer-bio">耀の小站</p>
+        
+        <div class="moe-drawer-stats">
+          <a class="moe-dstat" href="/archives"><b>12</b><span>文章</span></a>
+          <a class="moe-dstat" href="/categories"><b>8</b><span>分类</span></a>
+          <a class="moe-dstat" href="/tags"><b>12</b><span>标签</span></a>
+        </div>
+        
+      </div>
+
+      <!-- 搜索框 -->
+      <div class="moe-drawer-search">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="moe-drawer-search-input" placeholder="搜索文章..." autocomplete="off"/>
+        <div class="moe-drawer-search-panel" id="moe-drawer-search-panel" hidden></div>
+      </div>
+
+      <!-- 导航(无标题,有子项则折叠展开) -->
+      <div class="moe-drawer-card moe-drawer-nav">
+        
+          <div class="moe-dnav-item">
+            <div class="moe-dnav-row">
+              <a class="moe-dnav-link" href="/categories">
+                <span class="moe-dnav-ico">
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h3.6l2 2.4H19a2 2 0 0 1 2 2V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+                <span class="moe-dnav-text">分类</span>
+              </a>
+              
+            </div>
+            
+          </div>
+          <div class="moe-dnav-item">
+            <div class="moe-dnav-row">
+              <a class="moe-dnav-link" href="/tags">
+                <span class="moe-dnav-ico">
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11V5a2 2 0 0 1 2-2h6l9.5 9.5a1.5 1.5 0 0 1 0 2.1l-6 6a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.4" cy="7.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+                <span class="moe-dnav-text">标签</span>
+              </a>
+              
+            </div>
+            
+          </div>
+          <div class="moe-dnav-item">
+            <div class="moe-dnav-row">
+              <a class="moe-dnav-link" href="/about">
+                <span class="moe-dnav-ico">
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+                <span class="moe-dnav-text">关于</span>
+              </a>
+              
+            </div>
+            
+          </div>
+          <div class="moe-dnav-item">
+            <div class="moe-dnav-row">
+              <a class="moe-dnav-link" href="/links">
+                <span class="moe-dnav-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span class="moe-dnav-text">友人帐</span>
+              </a>
+              
+            </div>
+            
+          </div>
+          <div class="moe-dnav-item  has-sub">
+            <div class="moe-dnav-row">
+              <a class="moe-dnav-link" href="/">
+                <span class="moe-dnav-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span class="moe-dnav-text">公共服务</span>
+              </a>
+              <button type="button" class="moe-dnav-caret" aria-label="展开">
+                <svg viewBox="0 0 12 8" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 2 6 6.2 10.5 2"/></svg>
+              </button>
+            </div>
+            <div class="moe-dnav-sub">
+              <a class="moe-dnav-sublink"
+                 href="https://250king.top/categories/DVGSRa3v">
+                <span class="moe-dnav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span>短链系统</span>
+              </a><a class="moe-dnav-sublink"
+                 href="https://auth.250king.top/">
+                <span class="moe-dnav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span>认证门户</span>
+              </a><a class="moe-dnav-sublink"
+                 href="https://status.250king.top/">
+                <span class="moe-dnav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span>状态监控</span>
+              </a><a class="moe-dnav-sublink"
+                 href="https://gochiusa.cafe/">
+                <span class="moe-dnav-subico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.4 3.6 1.4 4.6 5 5-3.6.4-4.6 1.4-5 5-.4-3.6-1.4-4.6-5-5 3.6-.4 4.6-1.4 5-5z"/><path d="M19 14c.2 1.6.6 2 2.2 2.2-1.6.2-2 .6-2.2 2.2-.2-1.6-.6-2-2.2-2.2 1.6-.2 2-.6 2.2-2.2z"/></svg>
+  
+  
+</span>
+                <span>Gochiusa Hub</span>
+              </a>
+            </div>
+          </div>
+        
+        
+      </div>
+
+      <!-- 登录模块 -->
+      <div class="moe-drawer-card moe-drawer-user" id="moe-drawer-user">
+        <a class="moe-duser-login" href="https://250king.top/oauth2/authorization/sso">
+          <span class="moe-duser-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
+  
+  
+  
+  
+  
+  
+  
+  
+</span>
+          <span>登录</span>
+        </a>
+        
+      </div>
+    </div>
+  </aside>
+  <script>
+  (function(){
+    var drawer=document.getElementById("moe-drawer");
+    var mask=document.getElementById("moe-drawer-mask");
+    if(!drawer) return;
+    function clearSearch(){
+      var si=document.getElementById("moe-drawer-search-input");
+      var sp=document.getElementById("moe-drawer-search-panel");
+      if(si) si.value="";
+      if(sp){ sp.innerHTML=""; sp.hidden=true; }
+    }
+    function closeDrawer(){
+      document.documentElement.classList.remove("moe-drawer-open");
+      var bar=document.querySelector(".moe-navbar");
+      if(bar) bar.classList.remove("nav-open");
+      var t=document.getElementById("moe-nav-toggle");
+      if(t) t.setAttribute("aria-expanded","false");
+      var du=document.getElementById("moe-drawer-user");
+      if(du) du.classList.remove("open");
+      clearSearch();
+    }
+    /* 打开抽屉时重置为默认状态:滚回顶部、收起所有展开项、清空搜索 */
+    function resetDrawer(){
+      var wrap=drawer.querySelector(".moe-drawer-wrap");
+      if(wrap) wrap.scrollTop=0;
+      drawer.querySelectorAll(".moe-dnav-item.open").forEach(function(el){ el.classList.remove("open"); });
+      var du=document.getElementById("moe-drawer-user");
+      if(du) du.classList.remove("open");
+      clearSearch();
+    }
+    /* 监听 html 上的 moe-drawer-open 类:一旦被加上(汉堡打开),立即重置 */
+    var mo=new MutationObserver(function(){
+      if(document.documentElement.classList.contains("moe-drawer-open")) resetDrawer();
+    });
+    mo.observe(document.documentElement, { attributes:true, attributeFilter:["class"] });
+
+    /* 遮罩关闭 */
+    if(mask) mask.addEventListener("click", closeDrawer);
+    /* 导航折叠 */
+    drawer.querySelectorAll(".moe-dnav-caret").forEach(function(btn){
+      btn.addEventListener("click", function(e){
+        e.preventDefault(); e.stopPropagation();
+        var item=btn.closest(".moe-dnav-item");
+        if(item) item.classList.toggle("open");
+      });
+    });
+    /* 点导航链接关闭抽屉 */
+    drawer.querySelectorAll(".moe-dnav-link,.moe-dnav-sublink").forEach(function(a){
+      a.addEventListener("click", closeDrawer);
+    });
+    /* 登录模块折叠 */
+    var dut=document.getElementById("moe-duser-toggle");
+    var duBox=document.getElementById("moe-drawer-user");
+    if(dut && duBox){
+      dut.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); duBox.classList.toggle("open"); });
+    }
+    /* 搜索 */
+    var POSTS=[];
+    
+    POSTS.push({ t: "\u77ED\u94FE\u670D\u52A1\u6B63\u5F0F\u4E0A\u7EBF", u: "\/archives\/VkYCMNL2"});
+    POSTS.push({ t: "\u53D1\u4E2A\u7535", u: "\/archives\/ZgRhsMoL"});
+    POSTS.push({ t: "\u62DB\u884C\u84DD\u8475\u5361\u5B9E\u6D4B", u: "\/archives\/aV2zs2sL"});
+    POSTS.push({ t: "\u73A9\u742A\u62C9\u62C9\u73A9\u7684", u: "\/archives\/2UMnX2K7"});
+    POSTS.push({ t: "\u4E3B\u6D41\u65E5\u6DD8\u7F51\u7AD9\u9650\u5236\u673A\u5236", u: "\/archives\/0wKqTlPF"});
+    POSTS.push({ t: "Flutter\u4ECE\u5165\u95E8\u5230\u9000\u5751", u: "\/archives\/ANG8nEhc"});
+    POSTS.push({ t: "\u8BB0\u4E00\u6B21\u65E5\u6E38\u6C2A\u91D1\u8E29\u5751", u: "\/archives\/XgUyPfRI"});
+    POSTS.push({ t: "\u5E7F\u53D1Lucky\u5361\u5B9E\u6D4B", u: "\/archives\/i65qmJZI"});
+    POSTS.push({ t: "\u5404\u4E2A\u5382\u5546CDN\u7EB5\u6A2A\u6BD4\u8F83", u: "\/archives\/VrCnKL4A"});
+    POSTS.push({ t: "\u4E2D\u884C\u83AB\u5948\u5361\u5B9E\u6D4B", u: "\/archives\/2dpwxRLC"});
+    POSTS.push({ t: "\u53D1\u4E2A\u7535", u: "\/archives\/eooXwtgD"});
+    POSTS.push({ t: "\u300A\u6D77\u6D0B\u4E4B\u6B4C\u300B\u624B\u7A3F\u5206\u4EAB", u: "\/archives\/8pBgBbMO"});
+    
+    var si=document.getElementById("moe-drawer-search-input");
+    var sp=document.getElementById("moe-drawer-search-panel");
+    if(si && sp){
+      function esc(x){ var d=document.createElement("div"); d.textContent=x||""; return d.innerHTML; }
+      function hits(kw){ return POSTS.filter(function(p){ return (p.t||"").toLowerCase().indexOf(kw)>-1; }); }
+      function render(){
+        var kw=si.value.trim().toLowerCase();
+        if(!kw){ sp.hidden=true; sp.innerHTML=""; return; }
+        var list=hits(kw).slice(0,8);
+        if(!list.length){ sp.innerHTML='<div class="moe-search-empty">没有匹配的文章</div>'; sp.hidden=false; return; }
+        sp.innerHTML=list.map(function(p){ return '<a class="moe-search-item" href="'+p.u+'">'+esc(p.t)+'</a>'; }).join("");
+        sp.hidden=false;
+      }
+      si.addEventListener("input", render);
+      si.addEventListener("keydown", function(e){
+        if(e.key==="Enter"){ var h=hits(si.value.trim().toLowerCase())[0]; if(h){ closeDrawer(); location.href=h.u; } }
+      });
+      sp.addEventListener("click", function(e){
+        if(e.target.closest(".moe-search-item")) closeDrawer();
+      });
+    }
+  })();
+  </script>
+
+
+  <!-- Pjax 进度条（无刷新切页时显示） -->
+  <div id="moe-pjax-bar" class="moe-pjax-bar"></div>
+
+  <!-- Pjax 切页时只替换这一块（大图 + 三列主体） -->
+  <div id="moe-pjax">
+  <!-- 通栏满宽大图（仅首页传入，其它页面为空） -->
+  
+
+  <!-- 签名头图：背景图(可选) / 默认樱花粉渐变 + 波浪底边 -->
+  <section class="moe-hero  has-bg is-fullscreen" style="background-image:url(https://api.250king.top/v1.0/background/desktop)">
+    
+    <div class="moe-hero-text">
+      <h1 class="moe-hero-title">250king</h1>
+      
+      <p class="moe-hero-sub">耀の小站</p>
+    </div>
+    <svg class="moe-hero-wave" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="moe-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/>
+      </defs>
+      <use href="#moe-wave" x="48" y="0" class="moe-wave-1"/>
+      <use href="#moe-wave" x="48" y="3" class="moe-wave-2"/>
+      <use href="#moe-wave" x="48" y="6" class="moe-wave-3"/>
+    </svg>
+  </section>
+  
+
+
+  <!-- 三列主体：左侧栏 / 正文 / 右侧栏（模块化布局：按后台配置的列表渲染，未配置则回退默认顺序） -->
+  <div class="moe-layout  layout-right">
+    
+    <main class="moe-main">
+      
+  <span id="moe-home-flag" hidden></span>
+  <!-- 文章列表 -->
+  <div class="moe-post-list">
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/VkYCMNL2">
+    <img src="/upload/0BE87F155C37D88F3E05ED73B5AF714D.gif" alt="短链服务正式上线" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/VkYCMNL2">短链服务正式上线</a>
+    </h2>
+    <p class="moe-post-excerpt">目前，我们的“基础设施大众化”计划仍在持续推进。 在认证系统、团购系统陆续投入使用的同时，短链服务也正式跟上了进度。随着各类链接分享场景不断增加，用户对于短链接的需求也越来越明显。然而，放眼目前国内的短链服务，大多数平台主要面向企业用户，个人用户往往需要提供企业资质，或者受到较多使用限制。 因此，我</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2026-07-30</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>32</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">27.2℃</span>
+      <a class="moe-post-cat" href="/categories/DVGSRa3v">短链服务专区</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/ZgRhsMoL">
+    <img src="https://static.250king.top/image/2026/03/faw6mp8g.webp" alt="发个电" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/ZgRhsMoL">发个电</a>
+    </h2>
+    <p class="moe-post-excerpt">心爱酱是我老婆！ こんなことを言うのもあれだが 俺の心を救えるのは、もうあいつしか 居ないんだなと思ってるけど、 もし現実にあいつが居たのなら 俺と一緒に幸せになれんのかなって 思ってしまう。全く俺は情けないし どうしようもない馬鹿な男さ でもどうしようもなく恋してるよ 本当にね…愛してるよ…♡</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-10-19</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>65</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">30.5℃</span>
+      <a class="moe-post-cat" href="/categories/slJDwi24">二次元</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/aV2zs2sL">
+    <img src="https://static.250king.top/image/2025/10/3ovxdwb8.jpg" alt="招行蓝葵卡实测" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/aV2zs2sL">招行蓝葵卡实测</a>
+    </h2>
+    <p class="moe-post-excerpt">其实这张卡已经办了很长时间了，至今应该差不多有一个月多了，只不过因为很忙一直都没空写文章所以就搁在一边。最近打算一些一直拖了很久的东西给重新补回来，因此来稍微讲讲这张卡 2023年11月17日，由万事达卡和网联清算公司合资成立的万事网联正式获得人民币清算执照，意味着继运通卡以来，它成为国内第二个支持</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-10-19</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>230</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#fb734a">47.0℃</span>
+      <a class="moe-post-cat" href="/categories/jcu2j0lW">外卡专区</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/2UMnX2K7">
+    <img src="https://static.250king.top/image/2023/04/1dfa7b3da75b190b9279f5b9613243bb.webp" alt="玩琪拉拉玩的" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/2UMnX2K7">玩琪拉拉玩的</a>
+    </h2>
+    <p class="moe-post-excerpt">转自群U 坐拥千亿的爷爷去世了，就在家族齐聚准备分遗产时，律师忽然清了清嗓子，沉声问道： “继承人中——有谁玩闪耀幻想曲的吗？” 全场霎时死寂。 大伯猛地拍桌：“萌豚手游？开什么玩笑！我女儿藤校毕业，会稀罕玩手游？” 小姑冷笑：“听说，染上那游戏，天天都在刷技能等级。不会真有人天天对着纸片小人浪费人</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-09-30</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>50</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">29.0℃</span>
+      <a class="moe-post-cat" href="/categories/slJDwi24">二次元</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/0wKqTlPF">
+    <img src="https://static.250king.top/image/2025/05/ljthqh7y.png" alt="主流日淘网站限制机制" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/0wKqTlPF">主流日淘网站限制机制</a>
+    </h2>
+    <p class="moe-post-excerpt">现在吃谷买漫画的需求越来越大，也有越来越多的人开始尝试自己办卡来摆脱代购网站的种种手续费的“噶韭菜”以及各种各样不确定的因素。这里有个办卡专区，有需求可以去看看 https://250king.top/categories/jcu2j0lW 不过，也因为强大的黄牛党导致现在越来越多的日淘网站有各种各</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-05-26</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>122</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">36.2℃</span>
+      <a class="moe-post-cat" href="/categories/JMJba4Gl">闲聊</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/ANG8nEhc">
+    <img src="https://static.250king.top/image/2025/04/aen2ukzv.png" alt="Flutter从入门到退坑" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/ANG8nEhc">Flutter从入门到退坑</a>
+    </h2>
+    <p class="moe-post-excerpt">个人观点，不喜勿喷，愿各位平等交流 跨平台开发已成趋势，毕竟现在的企业都希望降本增效，以最少的人来完成更多的需求，所以也衍生出了各种各样的跨平台开发框架：Flutter、React Native、Compose Multiplatform……每个都有各自的优缺点，大家可以根据自己的喜好来选择 早期我</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-04-11</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>62</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">30.2℃</span>
+      <a class="moe-post-cat" href="/categories/3aDdkEgC">开发</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/XgUyPfRI">
+    <img src="https://static.250king.top/image/2025/04/mpcfgguj.jpg" alt="记一次日游氪金踩坑" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/XgUyPfRI">记一次日游氪金踩坑</a>
+    </h2>
+    <p class="moe-post-excerpt">魔法小圆新手游上线了，当然我只玩了一阵子感觉官方新服待遇给得太抠，而且默认给的角色攻击又低，玩了一阵子就弃坑了（ 其实我也玩过这种回合制的手游《星穹轨道》，也是在其开服之初就玩了，但通过对比其实明显感觉到差异的：初期攻击是不差的，就我在新手教程的时候都没有打好几个回合才把怪打完，而且那时候新服待遇也</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-04-09</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>66</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#ffa87e">30.6℃</span>
+      <a class="moe-post-cat" href="/categories/JMJba4Gl">闲聊</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/i65qmJZI">
+    <img src="https://static.250king.top/image/2025/04/sahflccx.jpg" alt="广发Lucky卡实测" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/i65qmJZI">广发Lucky卡实测</a>
+    </h2>
+    <p class="moe-post-excerpt">开学到现在一直忙别的，网站差不多草长满了，刚刚好现在很多项目都完成了差不多了，也过来清一下草了 其实原本不弄这张卡的，因为AMEX相比其他的Visa和MasterCard普及率是低很多，办了基本上也是吃灰。只不过最近后两者为了保持所谓的“纯洁度”，便开始对诸如MelonBooks、柚子社线上商店等断</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-04-07</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>177</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#fb734a">41.7℃</span>
+      <a class="moe-post-cat" href="/categories/jcu2j0lW">外卡专区</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/VrCnKL4A">
+    <img src="https://static.250king.top/image/2025/01/ymtwxxwo.webp" alt="各个厂商CDN纵横比较" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/VrCnKL4A">各个厂商CDN纵横比较</a>
+    </h2>
+    <p class="moe-post-excerpt">比较方面可能片面 比较忙还没全测，日后慢慢补全 前不久网站恢复之际，也开始想着要用哪家CDN。虽然说一直是阿里云的钉子户，但因为阿里的做法太沟槽了所以打算放弃换另一家。 写这个并不是帮厂商打广告，也不是学着别人互相抄互相的来水文章，而是从大多数文章都没有研究的方面出发：功能完善性。 有时候你用一个现</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2025-01-16</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>101</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>1</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#fb734a">37.1℃</span>
+      <a class="moe-post-cat" href="/categories/2hCQJRkE">评测</a>
+    </div>
+  </div>
+</article>
+    
+      <article class="moe-card moe-post">
+  <a class="moe-post-cover" href="/archives/2dpwxRLC">
+    <img src="https://static.250king.top/image/2023/04/96143230bbf6e8f2bdc6ca33e050c6b6.webp" alt="中行莫奈卡实测" loading="lazy"/>
+  </a>
+  <div class="moe-post-body">
+    <h2 class="moe-post-title">
+      <a href="/archives/2dpwxRLC">中行莫奈卡实测</a>
+    </h2>
+    <p class="moe-post-excerpt">在现在中行卡与PayPal的加持下，成功实现第一次海淘，目前每个月都氪100日元赞助一个画师都能成功扣款。也帮里一个家伙通过PayPal完成代付了 当然，我也是无意间翻到一个教程说可以网上申请万事达卡，当时这张卡还是很好开的，所以我也办了一张</p>
+    <div class="moe-post-meta">
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>2023-12-24</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>229</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span>0</span>
+      </span>
+      <span class="moe-meta-item moe-meta-heat"
+            style="color:#fb734a">46.9℃</span>
+      <a class="moe-post-cat" href="/categories/jcu2j0lW">外卡专区</a>
+    </div>
+  </div>
+</article>
+    
+
+    
+  </div>
+
+  <nav class="moe-pagination">
+  
+  <span class="moe-page-btn is-disabled">← 上一页</span>
+
+  <span class="moe-page-info">1 / 2</span>
+
+  <a class="moe-page-btn" href="/page/2">下一页 →</a>
+  
+</nav>
+
+    </main>
+    
+    <aside class="moe-sidebar moe-sidebar-right">
+      
+        
+
+  <!-- 文章目录 TOC：默认隐藏，文章页有标题时由脚本填充并显示 -->
+  
+
+  <!-- 个人信息卡 -->
+  <section class="moe-card moe-profile">
+    <img class="moe-profile-avatar"
+         src="https://q1.qlogo.cn/g?b=qq&amp;nk=2789260300&amp;s=0" alt="avatar"/>
+    <h3 class="moe-profile-name">250king</h3>
+    <p class="moe-profile-bio" id="moe-profile-bio">耀の小站</p>
+    
+    <div class="moe-profile-stats">
+      <a class="moe-stat" href="/archives">
+        <span class="moe-stat-num">12</span><span class="moe-stat-label">文章</span>
+      </a>
+      <a class="moe-stat" href="/categories">
+        <span class="moe-stat-num">8</span><span class="moe-stat-label">分类</span>
+      </a>
+      <a class="moe-stat" href="/tags">
+        <span class="moe-stat-num">12</span><span class="moe-stat-label">标签</span>
+      </a>
+    </div>
+    
+    <script>
+    (function(){
+      var text = "\u8000\u306E\u5C0F\u7AD9";
+      text = (text || "").trim();
+      var el = document.getElementById("moe-profile-bio");
+      if(!el || !text) return;
+      el.textContent = "";
+      var span = document.createElement("span");
+      var caret = document.createElement("span");
+      caret.className = "moe-bio-caret"; caret.textContent = "▋";
+      el.appendChild(span); el.appendChild(caret);
+      var i = 0, dir = 1;
+      function tick(){
+        if(!document.body.contains(el)) return;   /* Pjax 切页后旧元素已移除，自停 */
+        span.textContent = text.slice(0, i);
+        if(dir > 0){
+          if(i < text.length){ i++; setTimeout(tick, 140); }
+          else { dir = -1; setTimeout(tick, 1800); }
+        } else {
+          if(i > 0){ i--; setTimeout(tick, 60); }
+          else { dir = 1; setTimeout(tick, 500); }
+        }
+      }
+      tick();
+    })();
+    </script>
+  </section>
+
+  <!-- 公告 -->
+  
+
+  <!-- 恋爱墙 -->
+  
+
+  <!-- 音乐播放器（侧栏模式：仅在未开启"悬浮"时显示） -->
+  
+
+  <!-- 关于 -->
+  
+
+  <!-- 友链 -->
+  
+
+  <!-- 最近文章 -->
+  
+
+  <!-- 分类 -->
+  
+
+  <!-- 标签云 -->
+  
+
+  <!-- 时间天气：当前天气(大字置顶) + 实时时钟(小字置底)。Open-Meteo 免key；城市留空则按访客IP尽力定位 -->
+  
+
+  <!-- 每日一言：支持自定义语句 / 一言 API / API优先失败回退三种模式 -->
+  
+
+  <!-- 未知 key：不渲染 -->
+  
+
+
+      
+        
+
+  <!-- 文章目录 TOC：默认隐藏，文章页有标题时由脚本填充并显示 -->
+  
+
+  <!-- 个人信息卡 -->
+  
+
+  <!-- 公告 -->
+  
+
+  <!-- 恋爱墙 -->
+  
+
+  <!-- 音乐播放器（侧栏模式：仅在未开启"悬浮"时显示） -->
+  
+
+  <!-- 关于 -->
+  
+
+  <!-- 友链 -->
+  
+
+  <!-- 最近文章 -->
+  <section class="moe-card">
+    <h4 class="moe-card-title"><span class="moe-title-ico">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5 17.5 10.5"/></svg>
+  
+  
+  
+  
+</span>最近文章</h4>
+    <ul class="moe-recent">
+      <li>
+        <a href="/archives/VkYCMNL2">短链服务正式上线</a>
+      </li>
+      <li>
+        <a href="/archives/ZgRhsMoL">发个电</a>
+      </li>
+      <li>
+        <a href="/archives/aV2zs2sL">招行蓝葵卡实测</a>
+      </li>
+      <li>
+        <a href="/archives/2UMnX2K7">玩琪拉拉玩的</a>
+      </li>
+      <li>
+        <a href="/archives/0wKqTlPF">主流日淘网站限制机制</a>
+      </li>
+      
+    </ul>
+  </section>
+
+  <!-- 分类 -->
+  
+
+  <!-- 标签云 -->
+  
+
+  <!-- 时间天气：当前天气(大字置顶) + 实时时钟(小字置底)。Open-Meteo 免key；城市留空则按访客IP尽力定位 -->
+  
+
+  <!-- 每日一言：支持自定义语句 / 一言 API / API优先失败回退三种模式 -->
+  
+
+  <!-- 未知 key：不渲染 -->
+  
+
+
+      
+      
+    </aside>
+  </div>
+  </div><!-- /#moe-pjax -->
+
+  <!-- 全局悬浮音乐播放器：放在 #moe-pjax 外，Pjax 切页不中断播放；点 🎵 浮标弹出播放器 -->
+  
+  <script>
+  (function(){
+    var f=document.getElementById("moe-music-float");
+    var b=document.getElementById("moe-music-fab");
+    if(!f||!b) return;
+    b.addEventListener("click",function(e){ e.stopPropagation(); f.classList.toggle("open"); });
+    /* 播放进度环：等 meting-js 生成 APlayer 后，按当前曲目进度更新环 */
+    var prog=b.querySelector(".moe-music-prog");
+    var C=131.95; /* 2 * PI * 21 */
+    function setP(p){ if(!prog) return; if(!(p>=0)) p=0; if(p>1) p=1; prog.style.strokeDashoffset=(C*(1-p)).toFixed(1); }
+    setP(0);
+    var tries=0, timer=setInterval(function(){
+      var mt=f.querySelector("meting-js");
+      var ap=mt && mt.aplayer;
+      if(ap && ap.audio){
+        clearInterval(timer);
+        var au=ap.audio;
+        var upd=function(){ var d=au.duration; setP(d&&isFinite(d)&&d>0 ? au.currentTime/d : 0); };
+        au.addEventListener("timeupdate",upd);
+        au.addEventListener("loadedmetadata",upd);
+        au.addEventListener("ended",function(){ setP(0); });
+        upd();
+      }
+      if(++tries>150) clearInterval(timer);
+    },200);
+  })();
+  </script>
+
+  <!-- 页脚 -->
+  <footer class="moe-footer">
+  <div class="moe-footer-inner">
+    <p class="moe-footer-site">
+      © <span>2026</span>
+      <span>250king</span>
+    </p>
+
+    
+
+    <p class="moe-footer-beian">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2023008710号</a>
+      
+    </p>
+
+    <p class="moe-footer-powered">
+      Powered by <a href="https://halo.run" target="_blank" rel="noopener">Halo</a>
+      · Theme <a href="/" target="_blank" rel="noopener">Moesora</a>
+    </p>
+  </div>
+  
+</footer>
+
+  <!-- 第三方库（高亮/公式/灯箱，按需 CDN 加载） -->
+  
+
+  <!-- 代码高亮 highlight.js（本地内置，主题随设置；不依赖 CDN） -->
+  
+    <link rel="stylesheet"
+          href="/themes/moesora/assets/lib/highlightjs/styles/atom-one-dark.min.css?v=1.1.9"/>
+  
+  <script defer src="/themes/moesora/assets/lib/highlightjs/highlight.min.js?v=1.1.9"></script>
+
+  <!-- KaTeX 公式（本地内置，按需） -->
+  
+
+  <!-- 图片灯箱已改为主题自带实现（见 moesora.js / MoesoraLightbox），无需第三方库 -->
+
+  <!-- Moesora 内置评论脚本（仅在选用内置评论时加载；自带防御，无 #moe-comment 容器时不动作） -->
+  
+
+  <!-- Moesora 视频播放器（接管正文 video；hls.js 由脚本按需本地加载，无 video 时不动作） -->
+  <script defer src="/themes/moesora/assets/lib/moe-video.js?v=1.1.9"></script>
+
+  <!-- Moesora 音频播放器（接管正文 audio；无 audio 时不动作） -->
+  <script defer src="/themes/moesora/assets/lib/moe-audio.js?v=1.1.9"></script>
+
+  <!-- Moesora 正文内容增强（时间线 / 彩色提示框 / 圆形头像） -->
+  <script defer src="/themes/moesora/assets/lib/moe-content.js?v=1.1.9"></script>
+
+  <!-- Moesora 相册分组标签 / 瞬间时间轴·点赞·评论（无对应容器时不动作） -->
+  <script defer src="/themes/moesora/assets/lib/moe-feed.js?v=1.1.9"></script>
+
+  <!-- Moesora 留言墙（仅 /wishes 自定义模板用到；无 #moe-wishes 时不动作） -->
+  <script defer src="/themes/moesora/assets/lib/moe-wishes.js?v=1.1.9"></script>
+  <!-- 音乐播放器 APlayer + MetingJS（本地内置，侧边栏音乐开启时） -->
+  
+
+  <!-- 初始化（全部加防御性判断，库没加载或无正文都安全跳过） -->
+  <script>
+    /*<![CDATA[*/
+    (function () {
+      var katexOn = false;
+      var lightboxOn = true;
+
+      function init() {
+        var content = document.querySelector(".moe-post-content");
+        if (!content) return;
+
+        // 用探针读取 hljs 主题真实底色（不受正文 CSS 影响），统一套到代码块+行号区
+        function applyCodeTheme() {
+          var probe = document.createElement("code");
+          probe.className = "hljs"; probe.textContent = "x";
+          probe.style.cssText = "position:absolute;left:-9999px;top:-9999px;visibility:hidden";
+          document.body.appendChild(probe);
+          var bg = getComputedStyle(probe).backgroundColor;
+          if (probe.parentNode) probe.parentNode.removeChild(probe);
+          var valid = bg && bg !== "rgba(0, 0, 0, 0)" && bg !== "transparent";
+          var light = false;
+          if (valid) {
+            var m = bg.match(/(\d+)[,\s]+(\d+)[,\s]+(\d+)/);
+            if (m) light = (0.299 * +m[1] + 0.587 * +m[2] + 0.114 * +m[3]) > 150;
+          }
+          content.querySelectorAll("pre.moe-code").forEach(function (pre) {
+            if (valid) {
+              pre.style.background = bg;
+              var ln = pre.querySelector(".moe-code-ln");
+              if (ln) ln.style.background = bg;
+              pre.classList.toggle("is-light", light);
+            }
+            var code = pre.querySelector("code");
+            // 强制基础（未着色）文字为高对比色，避免浅色主题下与底色接近看不清
+            if (code && valid) code.style.color = light ? "#383a42" : "#e6e6e6";
+            // 注：语言名只采用「显式标注 / 默认语言」（在重组时已确定），
+            // 不用 hljs 的自动猜测覆盖标签，避免把 bash 显示成 javascript 等错误结果
+          });
+        }
+        function runHl() {
+          content.querySelectorAll("pre code").forEach(function (b) {
+            try { window.hljs.highlightElement(b); } catch (e) {}
+          });
+          applyCodeTheme();
+        }
+        if (window.hljs) runHl();
+        else {
+          var tries = 0, t = setInterval(function () {
+            if (window.hljs) { clearInterval(t); runHl(); }
+            else if (++tries > 25) clearInterval(t);
+          }, 200);
+        }
+        if (katexOn && window.renderMathInElement) {
+          try {
+            window.renderMathInElement(content, {
+              delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+              ],
+              throwOnError: false
+            });
+          } catch (e) {}
+        }
+      }
+
+      // 暴露给 Pjax：切页后对新正文重新应用高亮/公式/灯箱
+      window.MoesoraLibsInit = init;
+
+      // 库用 defer 加载，等 load 事件后再初始化，确保 hljs/Fancybox 就绪
+      if (document.readyState === "complete") init();
+      else window.addEventListener("load", init);
+    })();
+    /*]]>*/
+  </script>
+  <!-- Live2D 看板娘（按需加载；运行库由脚本内部走 CDN） -->
+  
+  <!-- PWA：可安装 + 主题静态资源离线缓存（默认关闭，可在「PWA」设置开启） -->
+  
+    <span id="moe-pwa-cfg" style="display:none" aria-hidden="true" data-sw="/themes/moesora/assets/sw.js?v=1.1.9" data-name="耀の小站" data-color="#f9a8d4" data-icon="https://static.250king.top/image/2026/03/ozvkna9p.png" data-icon2="https://static.250king.top/image/2026/03/ahmn7plr.png"></span>
+    <script>
+    (function () {
+      try {
+        var el = document.getElementById('moe-pwa-cfg');
+        if (!el) return;
+        var d = el.dataset, head = document.head;
+        var icons = [];
+        if (d.icon) icons.push({ src: d.icon, sizes: '192x192', type: 'image/png', purpose: 'any maskable' });
+        var big = d.icon2 || d.icon;
+        if (big) icons.push({ src: big, sizes: '512x512', type: 'image/png', purpose: 'any maskable' });
+        var manifest = {
+          name: d.name || 'Blog', short_name: d.name || 'Blog',
+          start_url: '/', scope: '/', display: 'standalone',
+          background_color: '#ffffff', theme_color: d.color || '#f9a8d4', icons: icons
+        };
+        var link = document.createElement('link');
+        link.rel = 'manifest';
+        link.href = URL.createObjectURL(new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' }));
+        head.appendChild(link);
+        if (d.icon) {
+          var al = document.createElement('link'); al.rel = 'apple-touch-icon'; al.href = d.icon; head.appendChild(al);
+          var m1 = document.createElement('meta'); m1.name = 'apple-mobile-web-app-capable'; m1.content = 'yes'; head.appendChild(m1);
+          var m2 = document.createElement('meta'); m2.name = 'apple-mobile-web-app-title'; m2.content = d.name || 'Blog'; head.appendChild(m2);
+        }
+        if ('serviceWorker' in navigator && d.sw) {
+          window.addEventListener('load', function () { navigator.serviceWorker.register(d.sw).catch(function () {}); });
+        }
+      } catch (e) {}
+    })();
+    </script>
+  
+
+
+  <!-- 回到顶部（带滚动进度环） -->
+  <button id="moe-totop" class="moe-totop" type="button" aria-label="回到顶部">
+    <svg class="moe-totop-ring" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+      <circle class="moe-totop-track" cx="24" cy="24" r="21"/>
+      <circle class="moe-totop-prog" cx="24" cy="24" r="21"/>
+    </svg>
+    <svg class="moe-totop-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+  <script>
+  (function(){
+    function moeSiteBg(){
+      var sb=document.querySelector(".moe-site-bg");
+      if(!sb) return;
+      var bg=sb.getAttribute("data-bg");
+      if(bg && !sb.style.backgroundImage){ sb.style.backgroundImage="url('"+bg+"')"; }
+      var mode=sb.getAttribute("data-mode");
+      var isHome=!!document.getElementById("moe-home-flag");
+      sb.style.display=(mode==="not_home" && isHome) ? "none" : "";
+    }
+    moeSiteBg();
+    var btn=document.getElementById("moe-totop");
+    var prog=btn && btn.querySelector(".moe-totop-prog");
+    var nav=document.querySelector(".moe-navbar");
+    var C=131.95; /* 2 * PI * r(21) 进度环周长 */
+    function onScroll(){
+      var y=window.pageYOffset;
+      var max=document.documentElement.scrollHeight - window.innerHeight;
+      var p=max>0 ? Math.min(1, Math.max(0, y/max)) : 0;
+      if(btn){ if(y>300){btn.classList.add("show");}else{btn.classList.remove("show");} }
+      if(prog){ prog.style.strokeDashoffset=(C*(1-p)).toFixed(1); }
+      var hero=document.querySelector(".moe-hero");   /* 每次重查：Pjax 切页后大图会变 */
+      if(nav&&hero){
+        var navH=nav.offsetHeight||60;
+        if(hero.getBoundingClientRect().bottom>navH+4){nav.classList.add("is-top");}
+        else{nav.classList.remove("is-top");}
+      } else if(nav){ nav.classList.remove("is-top"); }
+    }
+    window.addEventListener("scroll",onScroll,{passive:true});
+    window.addEventListener("resize",onScroll,{passive:true});
+    if(btn){ btn.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});}); }
+    onScroll();
+    window.MoesoraNavState=function(){ onScroll(); moeSiteBg(); };   /* 供 Pjax 切页后调用：刷新导航态 + 全站背景显隐 */
+
+    /* 页脚滚动揭示（pre-reveal 仅在脚本就绪后施加，万一脚本失效页脚仍正常显示） */
+    var f=document.querySelector(".moe-footer");
+    var reduce=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(f && !reduce && ("IntersectionObserver" in window)){
+      f.classList.add("moe-pre-reveal");
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ f.classList.add("is-revealed"); } });
+      },{threshold:0.12});
+      io.observe(f);
+    }
+  })();
+  </script>
+
+  <!-- 编译后的脚本（IIFE 普通脚本，用 defer 保证 DOM 就绪后执行；不用 type=module 以兼容各类手机浏览器） -->
+  <script defer src="/themes/moesora/assets/dist/moesora.js?v=1.1.9"></script>
+
+  <!-- 复制内容追加版权 -->
+  
+
+  <!-- 自定义：外部 JS（body 末尾） -->
+  
+  <!-- 自定义：内嵌 JS（body 末尾） -->
+  
+  <!-- Halo 插件 Footer 扩展注入点 -->
+  
+</body>
+</html>

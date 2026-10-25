@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html
+  lang="ja"
+
+
+data-admin-domain="//blog.hatena.ne.jp"
+data-admin-origin="https://blog.hatena.ne.jp"
+data-author="halya_11"
+data-avail-langs="ja en"
+data-blog="light11.hatenadiary.com"
+data-blog-host="light11.hatenadiary.com"
+data-blog-is-public="1"
+data-blog-name="LIGHT11"
+data-blog-owner="halya_11"
+data-blog-show-ads=""
+data-blog-show-sleeping-ads=""
+data-blog-uri="https://light11.hatenadiary.com/"
+data-blog-uuid="8599973812338467052"
+data-blogs-uri-base="https://light11.hatenadiary.com"
+data-brand="pro"
+data-data-layer="{&quot;hatenablog&quot;:{&quot;admin&quot;:{},&quot;analytics&quot;:{&quot;brand_property_id&quot;:&quot;&quot;,&quot;measurement_id&quot;:&quot;&quot;,&quot;non_sampling_property_id&quot;:&quot;&quot;,&quot;property_id&quot;:&quot;UA-113479517-1&quot;,&quot;separated_property_id&quot;:&quot;UA-29716941-26&quot;},&quot;blog&quot;:{&quot;blog_id&quot;:&quot;8599973812338467052&quot;,&quot;content_seems_japanese&quot;:&quot;true&quot;,&quot;disable_ads&quot;:&quot;pro&quot;,&quot;enable_ads&quot;:&quot;false&quot;,&quot;entry_show_footer_related_entries&quot;:&quot;false&quot;,&quot;force_pc_view&quot;:&quot;true&quot;,&quot;is_public&quot;:&quot;true&quot;,&quot;is_responsive_view&quot;:&quot;true&quot;,&quot;is_sleeping&quot;:&quot;false&quot;,&quot;lang&quot;:&quot;ja&quot;,&quot;name&quot;:&quot;LIGHT11&quot;,&quot;owner_name&quot;:&quot;halya_11&quot;,&quot;uri&quot;:&quot;https://light11.hatenadiary.com/&quot;},&quot;brand&quot;:&quot;pro&quot;,&quot;page_id&quot;:&quot;entry&quot;,&quot;permalink_entry&quot;:{&quot;author_name&quot;:&quot;halya_11&quot;,&quot;categories&quot;:&quot;Unity&quot;,&quot;character_count&quot;:10175,&quot;date&quot;:&quot;2022-01-11&quot;,&quot;entry_id&quot;:&quot;13574176438041968343&quot;,&quot;first_category&quot;:&quot;Unity&quot;,&quot;hour&quot;:&quot;19&quot;,&quot;title&quot;:&quot;\u3010Unity\u3011\u753b\u9762\u9077\u79fb\u306b\u304a\u3051\u308b\u30d3\u30e5\u30fc\u3068\u30ed\u30b8\u30c3\u30af\u306e\u5206\u96e2\u624b\u6cd5\u3068Unity Screen Navigator\u3092\u4f7f\u3063\u305f\u5177\u4f53\u4f8b&quot;,&quot;uri&quot;:&quot;https://light11.hatenadiary.com/entry/2022/01/11/193925&quot;},&quot;pro&quot;:&quot;pro&quot;,&quot;router_type&quot;:&quot;blogs&quot;}}"
+data-device="pc"
+data-dont-recommend-pro="false"
+data-global-domain="https://hatena.blog"
+data-globalheader-color="b"
+data-globalheader-type="pc"
+data-has-touch-view="1"
+data-help-url="https://help.hatenablog.com"
+data-no-suggest-touch-view="1"
+data-page="entry"
+data-parts-domain="https://hatenablog-parts.com"
+data-plus-available="1"
+data-pro="true"
+data-router-type="blogs"
+data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218"
+data-sentry-environment="production"
+data-sentry-sample-rate="0.1"
+data-show-heading-anchor-link="1"
+data-static-domain="https://cdn.blog.st-hatena.com"
+data-version="d4bf362598b41b8d89b73662365e5f"
+
+
+
+
+
+
+  data-initial-state="{}"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large" />
+
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+  <title>【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例 - LIGHT11</title>
+
+  
+  <link rel="canonical" href="https://light11.hatenadiary.com/entry/2022/01/11/193925"/>
+
+
+
+  
+
+<meta itemprop="name" content="【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例 - LIGHT11"/>
+
+  <meta itemprop="image" content="https://ogimage.blog.st-hatena.com/8599973812338467052/13574176438041968343/1641945471"/>
+
+
+  <meta property="og:title" content="【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例 - LIGHT11"/>
+<meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://light11.hatenadiary.com/entry/2022/01/11/193925"/>
+
+  <meta property="og:image" content="https://ogimage.blog.st-hatena.com/8599973812338467052/13574176438041968343/1641945471"/>
+
+<meta property="og:image:alt" content="【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例 - LIGHT11"/>
+    <meta property="og:description" content="画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例をまとめました。 ビューとロジックを分離することの意義 本記事で作る画面の説明 まずは全部ビューに書く 上記の実装の問題点 ビューとロジックを分離する ダミーデータと共に実行する 最後に 関連" />
+<meta property="og:site_name" content="LIGHT11"/>
+
+  <meta property="article:published_time" content="2022-01-11T10:39:25Z" />
+
+    <meta property="article:tag" content="Unity" />
+      <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:image" content="https://ogimage.blog.st-hatena.com/8599973812338467052/13574176438041968343/1641945471" />  <meta name="twitter:title" content="【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例 - LIGHT11" />    <meta name="twitter:description" content="画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例をまとめました。 ビューとロジックを分離することの意義 本記事で作る画面の説明 まずは全部ビューに書く 上記の実装の問題点 ビューとロジックを分離する ダミーデータと共に実行する 最後に 関連" />  <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+  <meta name="twitter:app:id:iphone" content="583299321" />
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2022%2F01%2F11%2F193925" />
+  
+    <meta name="description" content="画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例をまとめました。 ビューとロジックを分離することの意義 本記事で作る画面の説明 まずは全部ビューに書く 上記の実装の問題点 ビューとロジックを分離する ダミーデータと共に実行する 最後に 関連" />
+    <meta name="google-site-verification" content="WXwvJdhWbKH9bqCSqogf0o-SWGfQnEtDsN6ncLQtLTA" />
+
+
+  
+<script
+  id="embed-gtm-data-layer-loader"
+  data-data-layer-page-specific="{&quot;hatenablog&quot;:{&quot;blogs_permalink&quot;:{&quot;blog_afc_issued&quot;:&quot;false&quot;,&quot;is_blog_sleeping&quot;:&quot;false&quot;,&quot;has_related_entries_with_elasticsearch&quot;:&quot;false&quot;,&quot;is_author_pro&quot;:&quot;true&quot;,&quot;entry_afc_issued&quot;:&quot;false&quot;}}}"
+>
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://light11.hatenadiary.com/icon/favicon">
+<link rel="apple-touch-icon" href="https://light11.hatenadiary.com/icon/touch">
+<link rel="icon" sizes="192x192" href="https://light11.hatenadiary.com/icon/link">
+
+  
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="https://light11.hatenadiary.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="https://light11.hatenadiary.com/rss"/>
+
+  <link rel="alternate" type="application/json+oembed" href="https://hatena.blog/oembed?url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2022%2F01%2F11%2F193925&amp;format=json" title="oEmbed Profile of 【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例"/>
+<link rel="alternate" type="text/xml+oembed" href="https://hatena.blog/oembed?url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2022%2F01%2F11%2F193925&amp;format=xml" title="oEmbed Profile of 【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例"/>
+  
+  <link rel="author" href="http://www.hatena.ne.jp/halya_11/">
+
+  
+
+  
+
+
+  
+    
+<link rel="stylesheet" type="text/css" href="https://cdn.blog.st-hatena.com/css/blog.css?version=d4bf362598b41b8d89b73662365e5f"/>
+
+    
+  <link rel="stylesheet" type="text/css" href="https://usercss.blog.st-hatena.com/blog_style/8599973812338467052/53d8afc80deeb9cb0ed1be13570da6142cfc6cad"/>
+  
+  
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+
+  
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","dateModified":"2022-01-11T10:39:25+09:00","datePublished":"2022-01-11T19:39:25+09:00","description":"画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例をまとめました。 ビューとロジックを分離することの意義 本記事で作る画面の説明 まずは全部ビューに書く 上記の実装の問題点 ビューとロジックを分離する ダミーデータと共に実行する 最後に 関連","headline":"【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例","image":["https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"],"mainEntityOfPage":{"@id":"https://light11.hatenadiary.com/entry/2022/01/11/193925","@type":"WebPage"}}</script>
+
+  
+
+  
+
+  
+
+</head>
+
+  <body class="page-entry category-Unity globalheader-ng-enabled">
+    
+    
+
+<div id="globalheader-container"
+  data-brand="hatenablog"
+  
+  >
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+  
+  
+  
+    <nav class="
+      blog-controlls
+      
+    ">
+      <div class="blog-controlls-blog-icon">
+        <a href="https://light11.hatenadiary.com/">
+          <img src="https://cdn.blog.st-hatena.com/images/admin/blog-icon-noimage.png" alt="LIGHT11"/>
+        </a>
+      </div>
+      <div class="blog-controlls-title">
+        <a href="https://light11.hatenadiary.com/">LIGHT11</a>
+      </div>
+      <a href="https://blog.hatena.ne.jp/halya_11/light11.hatenadiary.com/subscribe?utm_campaign=subscribe_blog&amp;utm_source=blogs_topright_button&amp;utm_medium=button" class="blog-controlls-subscribe-btn test-blog-header-controlls-subscribe">
+        読者になる
+      </a>
+    </nav>
+  
+
+  <div id="container">
+    <div id="container-inner">
+      <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" >
+    <div id="blog-title-content">
+      <h1 id="title"><a href="https://light11.hatenadiary.com/">LIGHT11</a></h1>
+      
+    </div>
+  </div>
+</header>
+
+      
+
+
+      
+      
+
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+
+          
+
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-200 words-100 mode-markdown entry-odd" id="entry-13574176438041968343" data-keyword-campaign="" data-uuid="13574176438041968343" data-publication-type="entry">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="https://light11.hatenadiary.com/archive/2022/01/11" rel="nofollow">
+      <time datetime="2022-01-11T10:39:25Z" title="2022-01-11T10:39:25Z">
+        <span class="date-year">2022</span><span class="hyphen">-</span><span class="date-month">01</span><span class="hyphen">-</span><span class="date-day">11</span>
+      </time>
+    </a>
+      </div>
+  <h1 class="entry-title">
+  <a href="https://light11.hatenadiary.com/entry/2022/01/11/193925" class="entry-title-link bookmark">【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例</a>
+</h1>
+
+  
+  
+
+  <div class="entry-categories categories">
+    
+    <a href="https://light11.hatenadiary.com/archive/category/Unity" class="entry-category-link category-Unity">Unity</a>
+    
+  </div>
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content hatenablog-entry">
+  
+    <p>画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例をまとめました。</p>
+
+<ul class="table-of-contents">
+    <li><a href="#ビューとロジックを分離することの意義">ビューとロジックを分離することの意義</a></li>
+    <li><a href="#本記事で作る画面の説明">本記事で作る画面の説明</a></li>
+    <li><a href="#まずは全部ビューに書く">まずは全部ビューに書く</a></li>
+    <li><a href="#上記の実装の問題点">上記の実装の問題点</a></li>
+    <li><a href="#ビューとロジックを分離する">ビューとロジックを分離する</a></li>
+    <li><a href="#ダミーデータと共に実行する">ダミーデータと共に実行する</a></li>
+    <li><a href="#最後に">最後に</a></li>
+    <li><a href="#関連">関連</a></li>
+</ul>
+
+<p>Unity2019.4.29<br />
+Unity Screen Navigator 1.1.2</p>
+
+<h4 id="ビューとロジックを分離することの意義">ビューとロジックを分離することの意義</h4>
+
+<p>一般的にゲームのUIは要素と状態が多く、複雑です。<br />
+またアニメーションも多用され、細かい調整も必要で、仕様変更による作り直しも多いです。</p>
+
+<p>このような状況下でUIを効率的に構築し、また保守しやすくするためには、<br />
+作成したUIをすぐに確認して、修正し、またすぐ確認できるワークフローを整える必要があります。</p>
+
+<p>これをいわゆるアウトゲームの画面遷移という文脈に当てはめると、アプリケーションを最初から再生しなくても、<br />
+画面単位でダミーデータを使ってすぐに動作確認できる環境を整えると言うことを意味します。</p>
+
+<p>そのためにはビューをロジックと分離して、ビューにダミーデータを渡せる基盤を整える必要があります。<br />
+そこで本記事ではUnity Screen Navigatorを使ってビューとロジックを分離する実装の方法について紹介します。</p>
+
+<p>なおUnity Screen Navigatorの基礎知識については以下の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA">リポジトリ</a>や記事を参照してください。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2FHaruma-K%2FUnityScreenNavigator" title="GitHub - Haruma-K/UnityScreenNavigator: Library for screen transitions, transition animations, transition history stacking, and screen lifecycle management in Unity&#39;s uGUI." class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/Haruma-K/UnityScreenNavigator">github.com</a></cite></p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2021%2F10%2F27%2F221801" title="「Unity Screen Navigator」リリースに寄せて - OSSにした理由や設計意図 - LIGHT11" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://light11.hatenadiary.com/entry/2021/10/27/221801">light11.hatenadiary.com</a></cite></p>
+
+<h4 id="本記事で作る画面の説明">本記事で作る画面の説明</h4>
+
+<p>さて本記事では以下のように、3つの画像が配置された画面を作成します。</p>
+
+<p>左側のFIXEDと書かれた画像は、常にこのページに表示される画像です。<br />
+中央のLOCALと書かれた画像は、アプリ内に保存されたLOCAL 01〜LOCAL 03と書かれた画像をランダムに読み込みます。<br />
+右側のREMOTEと書かれた画像は、ネットワーク上に置かれたREMOTE 01〜REMOTE 03と書かれた画像をランダムに読み込みます。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="画面の説明"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20220104/20220104210541.png" alt="f:id:halya_11:20220104210541p:plain" width="574" height="323" loading="lazy" title="" class="hatena-fotolife" itemprop="image"></span><figcaption>画面の説明</figcaption></figure></p>
+
+<p>各画像はボタンになっており、それぞれをクリックすると対応するモーダルが開きます。<br />
+アニメーションで動作を示すと以下のようになります。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="動作"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211212/20211212233450.gif" alt="f:id:halya_11:20211212233450g:plain" width="574" height="320" loading="lazy" title="" class="hatena-fotolife" itemprop="image"></span><figcaption>動作</figcaption></figure></p>
+
+<h4 id="まずは全部ビューに書く">まずは全部ビューに書く</h4>
+
+<p>それでは前節の画面を実装していきます。<br />
+まずは全ての処理をビューに書いて実装してみます。</p>
+
+<pre class="code lang-cs" data-lang="cs" data-unlink><span class="synStatement">using</span> System.Collections;
+<span class="synStatement">using</span> UnityEngine;
+<span class="synStatement">using</span> UnityEngine.Networking;
+<span class="synStatement">using</span> UnityEngine.UI;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Modal;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Sheet;
+
+<span class="synType">namespace</span> ViewLogicSeparation.Scripts
+{
+    <span class="synType">public</span> <span class="synType">class</span> MainSheet : Sheet
+    {
+        [SerializeField] <span class="synType">private</span> Button _fixedButton;
+        [SerializeField] <span class="synType">private</span> Button _localButton;
+        [SerializeField] <span class="synType">private</span> Button _remoteButton;
+        [SerializeField] <span class="synType">private</span> RawImage _fixedImage;
+        [SerializeField] <span class="synType">private</span> RawImage _localImage;
+        [SerializeField] <span class="synType">private</span> RawImage _remoteImage;
+
+        <span class="synComment">// 初期化処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator Initialize()
+        {
+            _fixedImage.texture = Resources.Load&lt;Texture&gt;(<span class="synConstant">&quot;tex_button_fixed&quot;</span>);
+            _fixedButton.onClick.AddListener(OnFixedButtonClicked);
+            _localButton.onClick.AddListener(OnLocalButtonClicked);
+            _remoteButton.onClick.AddListener(OnRemoteButtonClicked);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synComment">// 破棄時の処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator Cleanup()
+        {
+            _fixedImage.texture = <span class="synConstant">null</span>;
+            _fixedButton.onClick.RemoveListener(OnFixedButtonClicked);
+            _localButton.onClick.RemoveListener(OnLocalButtonClicked);
+            _remoteButton.onClick.RemoveListener(OnRemoteButtonClicked);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synComment">// この画面が表示される前の処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator WillEnter()
+        {
+            _localImage.texture = Resources.Load&lt;Texture&gt;($<span class="synConstant">&quot;tex_button_local_{Random.Range(1, 4):D2}&quot;</span>);
+
+            <span class="synComment">// テクスチャをダウンロードして取得</span>
+            var url = $<span class="synConstant">&quot;http://foo/bar/tex_button_remote_{Random.Range(1, 4):D2}.png&quot;</span>;
+            var uwr = UnityWebRequestTexture.GetTexture(url);
+            <span class="synStatement">yield</span> <span class="synStatement">return</span> uwr.SendWebRequest();
+            _remoteImage.texture = ((DownloadHandlerTexture)uwr.downloadHandler).texture;
+        }
+
+        <span class="synComment">// この画面が非表示になる前の処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> <span class="synType">void</span> DidExit()
+        {
+            _localImage.texture = <span class="synConstant">null</span>;
+            _remoteImage.texture = <span class="synConstant">null</span>;
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnFixedButtonClicked()
+        {
+            <span class="synComment">// Fixedボタンがクリックされたらモーダル01を開く</span>
+           ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal01&quot;</span>, <span class="synConstant">true</span>);
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnLocalButtonClicked()
+        {
+            <span class="synComment">// Localボタンがクリックされたらモーダル02を開く</span>
+           ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal02&quot;</span>, <span class="synConstant">true</span>);
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnRemoteButtonClicked()
+        {
+            <span class="synComment">// Remoteボタンがクリックされたらモーダル03を開く</span>
+            ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal03&quot;</span>, <span class="synConstant">true</span>);
+        }
+    }
+}
+</pre>
+
+
+<p>ビューや<code>ModalContainer</code>は適当に作成し、<code>[SerializeField]</code>に参照を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%B5%A5%A4">アサイ</a>ンします。<br />
+あとは<code>SheetContainer.Show()</code>を使ってこのシートを表示すれば、正常に動作することが確認できます。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="動作"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211212/20211212233450.gif" alt="f:id:halya_11:20211212233450g:plain" width="574" height="320" loading="lazy" title="" class="hatena-fotolife" itemprop="image"></span><figcaption>動作</figcaption></figure></p>
+
+<h4 id="上記の実装の問題点">上記の実装の問題点</h4>
+
+<p>さてここで、前節で作成した画面が大きなアプリケーションに含まれる多数の画面の一部であり、<br />
+何回も画面遷移をしてからやっと到達できる画面であると仮定します。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="何回も遷移してやっと到達できる"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211221/20211221231313.png" alt="f:id:halya_11:20211221231313p:plain:w500" width="1200" height="515" loading="lazy" title="" class="hatena-fotolife" style="width:500px" itemprop="image"></span><figcaption>何回も遷移してやっと到達できる</figcaption></figure></p>
+
+<p>この画面の動作確認をするときに、アプリケーションの最初の画面から毎回遷移していたのでは時間がかかり過ぎてしまいます。<br />
+また例えばログイン画面がうまく動作していなかったら、目的の画面に到達することすらできません。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="ログインが壊れたら確認できない"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211221/20211221231336.png" alt="f:id:halya_11:20211221231336p:plain:w500" width="1200" height="515" loading="lazy" title="" class="hatena-fotolife" style="width:500px" itemprop="image"></span><figcaption>ログインが壊れたら確認できない</figcaption></figure></p>
+
+<p>これはワークフローや<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B3%AB%C8%AF%A5%D7%A5%ED%A5%BB%A5%B9">開発プロセス</a>を考慮できていない設計上の問題であり、<br />
+開発規模が大きくなるにつれて大きな技術的負債となることが想像できます。<br />
+仮にロジックの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%B1%C2%CE%A5%C6%A5%B9%A5%C8">単体テスト</a>を完璧に書いていたとしても、ビューがこれでは片手落ちです。</p>
+
+<p>このような事態を防ぐために、上記の<code>MainScreen</code>をアタッチしたPrefabを単独でシーンに配置して再生できる環境を整えます。</p>
+
+<p>さて単独で動作確認する際に、ここまでの実装では<code>MainScreen</code>には以下の課題があります。</p>
+
+<ul>
+<li>LOCAL 01-03の画像が全て存在しないと動作確認できない</li>
+<li>遷移先のモーダルが壊れていたり未実装だったら動作確認できない</li>
+<li>URLが示す画像 (REMOTE 01-03)が全て存在しなかったら動作確認できない</li>
+</ul>
+
+
+<p>これでは結局、この画面の動作確認が周辺の環境によりできなくなってしまう可能性があります。<br />
+そこで次節ではビューとロジックを分離して、より画面単独での動作確認がしやすい実装を行います。</p>
+
+<h4 id="ビューとロジックを分離する">ビューとロジックを分離する</h4>
+
+<p>それではまずビューから動作確認を妨げるロジックを分離していきます。<br />
+上記の問題点を解決するために、画像のパスやURLは外から与え、クリック時にはイベントだけを外側に通知するようにします。</p>
+
+<pre class="code lang-cs" data-lang="cs" data-unlink><span class="synStatement">using</span> System.Collections;
+<span class="synStatement">using</span> UnityEngine;
+<span class="synStatement">using</span> UnityEngine.Events;
+<span class="synStatement">using</span> UnityEngine.Networking;
+<span class="synStatement">using</span> UnityEngine.UI;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Sheet;
+
+<span class="synType">namespace</span> ViewLogicSeparation.Scripts
+{
+    <span class="synType">public</span> <span class="synType">class</span> MainSheet : Sheet
+    {
+        [SerializeField] <span class="synType">private</span> Button _fixedButton;
+        [SerializeField] <span class="synType">private</span> Button _localButton;
+        [SerializeField] <span class="synType">private</span> Button _remoteButton;
+        [SerializeField] <span class="synType">private</span> RawImage _fixedImage;
+        [SerializeField] <span class="synType">private</span> RawImage _localImage;
+        [SerializeField] <span class="synType">private</span> RawImage _remoteImage;
+
+        <span class="synType">public</span> <span class="synStatement">event</span> UnityAction FixedButtonClicked;
+        <span class="synType">public</span> <span class="synStatement">event</span> UnityAction LocalButtonClicked;
+        <span class="synType">public</span> <span class="synStatement">event</span> UnityAction RemoteButtonClicked;
+
+        <span class="synType">private</span> <span class="synType">string</span> _localImagePath;
+        <span class="synType">private</span> <span class="synType">string</span> _remoteImageUrl;
+
+        <span class="synComment">// LOCAL画像のパスとREMOTE画像のURLは外側から設定する</span>
+        <span class="synType">public</span> <span class="synType">void</span> Setup(<span class="synType">string</span> localImagePath, <span class="synType">string</span> remoteImageUrl)
+        {
+            _localImagePath = localImagePath;
+            _remoteImageUrl = remoteImageUrl;
+        }
+
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator WillEnter()
+        {
+            _localImage.texture = Resources.Load&lt;Texture&gt;(_localImagePath);
+            
+            <span class="synComment">// テクスチャをダウンロードして取得</span>
+            var uwr = UnityWebRequestTexture.GetTexture(_remoteImageUrl);
+            <span class="synStatement">yield</span> <span class="synStatement">return</span> uwr.SendWebRequest();
+            _remoteImage.texture = ((DownloadHandlerTexture)uwr.downloadHandler).texture;
+        }
+
+        <span class="synComment">// 初期化処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator Initialize()
+        {
+            _fixedImage.texture = Resources.Load&lt;Texture&gt;(<span class="synConstant">&quot;tex_button_fixed&quot;</span>);
+            <span class="synComment">// クリックイベントは通知するだけ</span>
+            _fixedButton.onClick.AddListener(FixedButtonClicked);
+            _localButton.onClick.AddListener(LocalButtonClicked);
+            _remoteButton.onClick.AddListener(RemoteButtonClicked);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synComment">// 破棄時の処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> IEnumerator Cleanup()
+        {
+            _fixedImage.texture = <span class="synConstant">null</span>;
+            _fixedButton.onClick.RemoveListener(FixedButtonClicked);
+            _localButton.onClick.RemoveListener(LocalButtonClicked);
+            _remoteButton.onClick.RemoveListener(RemoteButtonClicked);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synComment">// この画面が非表示になる前の処理</span>
+        <span class="synType">public</span> <span class="synType">override</span> <span class="synType">void</span> DidExit()
+        {
+            _localImage.texture = <span class="synConstant">null</span>;
+            _remoteImage.texture = <span class="synConstant">null</span>;
+        }
+    }
+}
+</pre>
+
+
+<p>次にこのビューにパスやURLを渡したり、ビューのイベントを受け取ったりするPresenterを作ります。</p>
+
+<p>画面遷移においては、各画面のライフサイクルイベントはビューからのイベントの一種と見なすことができます。<br />
+Presenterはこの画面のライフサイクルイベントをフックする形で、各タイミングに適した処理を行います。</p>
+
+<p>UnityScreen Navigatorでは以下のように、<code>ISheetLifecycleEvent</code>を各画面に<code>AddLifecycleEvent()</code>することでこれを実現します。</p>
+
+<pre class="code lang-cs" data-lang="cs" data-unlink><span class="synStatement">using</span> System;
+<span class="synStatement">using</span> System.Collections;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Modal;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Sheet;
+<span class="synStatement">using</span> Random = UnityEngine.Random;
+
+<span class="synType">namespace</span> ViewLogicSeparation.Scripts
+{
+    <span class="synType">public</span> <span class="synType">class</span> MainSheetPresenter : ISheetLifecycleEvent, IDisposable
+    {
+        <span class="synType">private</span> <span class="synType">readonly</span> MainSheet _sheet;
+
+        <span class="synType">public</span> MainSheetPresenter(MainSheet sheet)
+        {
+            _sheet = sheet;
+            <span class="synComment">// このPresenterのライフサイクルイベントを画面に追加している</span>
+            <span class="synComment">// 第二引数に0未満の値を与えると、画面のライフサイクルイベントより先に実行される</span>
+            <span class="synComment">// 第二引数に1以上の値を与えると、画面のライフサイクルイベントより後に実行される</span>
+            _sheet.AddLifecycleEvent(<span class="synStatement">this</span>, -<span class="synConstant">1</span>);
+            _sheet.FixedButtonClicked += OnFixedButtonClicked;
+            _sheet.LocalButtonClicked += OnLocalButtonClicked;
+            _sheet.RemoteButtonClicked += OnRemoteButtonClicked;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> Dispose()
+        {
+            _sheet.RemoveLifecycleEvent(<span class="synStatement">this</span>);
+            _sheet.FixedButtonClicked -= OnFixedButtonClicked;
+            _sheet.LocalButtonClicked -= OnLocalButtonClicked;
+            _sheet.RemoteButtonClicked -= OnRemoteButtonClicked;
+        }
+
+        <span class="synType">public</span> IEnumerator Initialize()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> IEnumerator WillEnter()
+        {
+            <span class="synComment">// Sheetで使う画像のパスやURLを設定する</span>
+            var localImagePath = $<span class="synConstant">&quot;tex_button_local_{Random.Range(1, 4):D2}&quot;</span>;
+            var remoteImageUrl = $<span class="synConstant">&quot;http://foo/bar/tex_button_remote_{Random.Range(1, 4):D2}.png&quot;</span>;
+            _sheet.Setup(localImagePath, remoteImageUrl);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> DidEnter()
+        {
+        }
+
+        <span class="synType">public</span> IEnumerator WillExit()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> DidExit()
+        {
+        }
+
+        <span class="synType">public</span> IEnumerator Cleanup()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnFixedButtonClicked()
+        {
+            <span class="synComment">// Fixedボタンがクリックされたらモーダル01を開く</span>
+            ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal01&quot;</span>, <span class="synConstant">true</span>);
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnLocalButtonClicked()
+        {
+            <span class="synComment">// Localボタンがクリックされたらモーダル02を開く</span>
+            ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal02&quot;</span>, <span class="synConstant">true</span>);
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnRemoteButtonClicked()
+        {
+            <span class="synComment">// Remoteボタンがクリックされたらモーダル03を開く</span>
+            ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;Modal03&quot;</span>, <span class="synConstant">true</span>);
+        }
+    }
+}
+</pre>
+
+
+<p>あとはこのPresenterに<code>MainSheet</code>を与えつつ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%B9%A5%BF%A5%F3%A5%B9">インスタンス</a>化すれば、正常に動作することが確認できます。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="動作"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211212/20211212233450.gif" alt="f:id:halya_11:20211212233450g:plain" width="574" height="320" loading="lazy" title="" class="hatena-fotolife" itemprop="image"></span><figcaption>動作</figcaption></figure></p>
+
+<p>なお今回はビューとの分離が目的なのでこれ以上難しく考えず、Presenterに全部処理を書いてます。</p>
+
+<h4 id="ダミーデータと共に実行する">ダミーデータと共に実行する</h4>
+
+<p>さてではビューとロジックを分離して画面を単独で実行確認できるようになったところでダミーデータを使って実行確認してみます。<br />
+今回は適当なダミー画像のパスとURLを固定で与え、各ボタンのクリック時には適当なダミーモーダルを出しておきます。</p>
+
+<p>以下のようなダミー用のPresenterを作りました。</p>
+
+<pre class="code lang-cs" data-lang="cs" data-unlink><span class="synStatement">using</span> System;
+<span class="synStatement">using</span> System.Collections;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Modal;
+<span class="synStatement">using</span> UnityScreenNavigator.Runtime.Core.Sheet;
+
+<span class="synType">namespace</span> ViewLogicSeparation.Scripts
+{
+    <span class="synType">public</span> <span class="synType">class</span> FakeMainSheetPresenter : ISheetLifecycleEvent, IDisposable
+    {
+        <span class="synType">private</span> <span class="synType">readonly</span> MainSheet _sheet;
+
+        <span class="synType">public</span> FakeMainSheetPresenter(MainSheet sheet)
+        {
+            _sheet = sheet;
+            _sheet.AddLifecycleEvent(<span class="synStatement">this</span>, -<span class="synConstant">1</span>);
+            _sheet.FixedButtonClicked += OnFixedButtonClicked;
+            _sheet.LocalButtonClicked += OnLocalButtonClicked;
+            _sheet.RemoteButtonClicked += OnRemoteButtonClicked;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> Dispose()
+        {
+            _sheet.RemoveLifecycleEvent(<span class="synStatement">this</span>);
+            _sheet.FixedButtonClicked -= OnFixedButtonClicked;
+            _sheet.LocalButtonClicked -= OnLocalButtonClicked;
+            _sheet.RemoteButtonClicked -= OnRemoteButtonClicked;
+        }
+
+        <span class="synType">public</span> IEnumerator Initialize()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> IEnumerator WillEnter()
+        {
+            <span class="synComment">// Sheetで使う画像のパスやURLを設定する</span>
+            var localImagePath = <span class="synConstant">&quot;tex_button_dummy&quot;</span>;
+            var remoteImageUrl = $<span class="synConstant">&quot;http://foo/bar/tex_button_dummy.png&quot;</span>;
+            _sheet.Setup(localImagePath, remoteImageUrl);
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> DidEnter()
+        {
+        }
+
+        <span class="synType">public</span> IEnumerator WillExit()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">public</span> <span class="synType">void</span> DidExit()
+        {
+        }
+
+        <span class="synType">public</span> IEnumerator Cleanup()
+        {
+            <span class="synStatement">yield</span> <span class="synStatement">break</span>;
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnFixedButtonClicked()
+        {
+            OpenFakeModal();
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnLocalButtonClicked()
+        {
+            OpenFakeModal();
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OnRemoteButtonClicked()
+        {
+            OpenFakeModal();
+        }
+
+        <span class="synType">private</span> <span class="synType">void</span> OpenFakeModal()
+        {
+            ModalContainer.Find(<span class="synConstant">&quot;Main&quot;</span>).Push(<span class="synConstant">&quot;FakeModal&quot;</span>, <span class="synConstant">true</span>);
+        }
+    }
+}
+</pre>
+
+
+<p>このPresenterにビューとなるMainSheetを渡して初期化すると、実行結果は以下のようになります。</p>
+
+<p><figure class="figure-image figure-image-fotolife" title="実行結果"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/halya_11/20211221/20211221225035.gif" alt="f:id:halya_11:20211221225035g:plain" width="574" height="320" loading="lazy" title="" class="hatena-fotolife" itemprop="image"></span><figcaption>実行結果</figcaption></figure></p>
+
+<p>このように、ローカルやリモートの画像がまだ用意されていなかったり、<br />
+モーダルがまだ出来上がっていなかったりしても、ダミーデータを使って画面の動作確認ができるようになりました。</p>
+
+<h4 id="最後に">最後に</h4>
+
+<p>以上、Unity Sceen Navigatorを使ってビューとロジックを分離する方法についてまとめました。</p>
+
+<p>この記事の例はあくまで一例であり、必ずしもこれが正解ではないことに注意してください。</p>
+
+<p>例えば今回の例ではダイアログを別のビューとして切り出しましたが、<br />
+仕様次第では画面の中のパーツの一部としてビューに組み込んでしまう方がいいかもしれません。<br />
+画面ごとではなく、いくつかの画面をまとめた単位で動作確認できる環境を整えてもいいでしょう。</p>
+
+<p>また、実際のアプリはもっと複雑で、ダミーデータを使った動作環境を整えるのにも多くの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%A9%BF%F4">工数</a>がかかります。<br />
+環境構築よりも目の前の実装を優先するべきだという主張もあるかもしれません。<br />
+しかしながら、「環境構築にかかる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%A9%BF%F4">工数</a>」&lt;「それによって削減できる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%A9%BF%F4">工数</a>」であれば当然やるべきであり、<br />
+それを判断することこそが重要な仕事なのではないかと思います。</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A1%BC%A5%AD%A5%C6%A5%AF%A5%C1%A5%E3">アーキテクチャ</a>の理論に振り回されて<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%B6%CD%FD%BC%E7%B5%C1">原理主義</a>に陥らず、将来を見据えて自分の頭で総合的に判断し、<br />
+その上での道具としてUnity Screen Navigatorを活用していただけたら幸いです。</p>
+
+<h4 id="関連">関連</h4>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2FHaruma-K%2FUnityScreenNavigator" title="GitHub - Haruma-K/UnityScreenNavigator: Library for screen transitions, transition animations, transition history stacking, and screen lifecycle management in Unity&#39;s uGUI." class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/Haruma-K/UnityScreenNavigator">github.com</a></cite></p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2021%2F10%2F27%2F221801" title="「Unity Screen Navigator」リリースに寄せて - OSSにした理由や設計意図 - LIGHT11" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://light11.hatenadiary.com/entry/2021/10/27/221801">light11.hatenadiary.com</a></cite></p>
+
+    
+    
+
+
+
+
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <div class="entry-tags-wrapper">
+  <div class="entry-tags">  </div>
+</div>
+
+    <p class="entry-footer-section track-inview-by-gtm" data-gtm-track-json="{&quot;area&quot;: &quot;finish_reading&quot;}">
+  <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="halya_11" >halya_11</span></span>
+  <span class="entry-footer-time"><a href="https://light11.hatenadiary.com/entry/2022/01/11/193925"><time data-relative datetime="2022-01-11T10:39:25Z" title="2022-01-11T10:39:25Z" class="updated">2022-01-11 19:39</time></a></span>
+  
+  
+  
+    <span class="
+      entry-footer-subscribe
+      
+    " data-test-blog-controlls-subscribe>
+      <a href="https://blog.hatena.ne.jp/halya_11/light11.hatenadiary.com/subscribe?utm_campaign=subscribe_blog&amp;utm_medium=button&amp;utm_source=blogs_entry_footer">
+        読者になる
+      </a>
+    </span>
+  
+</p>
+
+    
+  <div
+    class="hatena-star-container"
+    data-hatena-star-container
+    data-hatena-star-url="https://light11.hatenadiary.com/entry/2022/01/11/193925"
+    data-hatena-star-title="【Unity】画面遷移におけるビューとロジックの分離手法とUnity Screen Navigatorを使った具体例"
+    data-hatena-star-variant="profile-icon"
+    data-hatena-star-profile-url-template="https://blog.hatena.ne.jp/{username}/"
+  ></div>
+
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <a href="https://b.hatena.ne.jp/entry/s/light11.hatenadiary.com/entry/2022/01/11/193925" class="hatena-bookmark-button" data-hatena-bookmark-url="https://light11.hatenadiary.com/entry/2022/01/11/193925" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button" data-layout="box_count" data-href="https://light11.hatenadiary.com/entry/2022/01/11/193925"></div>
+    </div>
+  
+  
+    
+    
+    <div class="social-button-item">
+      <a
+          class="entry-share-button entry-share-button-twitter test-share-button-twitter"
+          href="https://x.com/intent/tweet?text=%E3%80%90Unity%E3%80%91%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%93%E3%83%A5%E3%83%BC%E3%81%A8%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF%E3%81%AE%E5%88%86%E9%9B%A2%E6%89%8B%E6%B3%95%E3%81%A8Unity+Screen+Navigator%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E5%85%B7%E4%BD%93%E4%BE%8B+-+LIGHT11&amp;url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2022%2F01%2F11%2F193925"
+          title="X（Twitter）で投稿する"
+        ></a>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+
+    
+
+    <div class="customized-footer">
+      
+
+        
+
+        
+        
+  <div class="entry-footer-html"><iframe src="https://blog.hatena.ne.jp/halya_11/light11.hatenadiary.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
+</div>
+
+
+      
+    </div>
+    
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="https://light11.hatenadiary.com/entry/2022/02/24/202754" rel="prev">
+          <span class="pager-arrow">&laquo; </span>
+          【Unity】【Addressables】シーンのロード…
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="https://light11.hatenadiary.com/entry/2021/12/28/114503" rel="next">
+          【Unity】Text Mesh Proで表示できない文…
+          <span class="pager-arrow"> &raquo;</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    プロフィール
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="https://light11.hatenadiary.com/about" class="profile-icon-link">
+      <img src="https://cdn.profile-image.st-hatena.com/users/halya_11/profile.png?1561302912"
+      alt="id:halya_11" class="profile-icon" />
+    </a>
+    
+
+    
+
+    
+
+    
+    <div class="profile-description">
+      <p>Haruki Yano / Haruma-K(@harumak_11)<br />
+Unityエンジニア</p>
+
+    </div>
+    
+
+    
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+    
+
+    
+
+    <div class="profile-about">
+      <a href="https://light11.hatenadiary.com/about">このブログについて</a>
+    </div>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="https://light11.hatenadiary.com/search" method="get">
+  <input type="text" name="q" class="search-module-input" value="" placeholder="記事を検索" required>
+  <input type="submit" value="検索" class="search-module-button" />
+</form>
+
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-entries-access-ranking"
+  data-count="10"
+  data-source="access"
+  data-category_name=""
+  data-enable_customize_format="0"
+  data-display_entry_image_size_width="100"
+  data-display_entry_image_size_height="100"
+
+  data-display_entry_category="0"
+  data-display_entry_image="1"
+  data-display_entry_image_size_width="100"
+  data-display_entry_image_size_height="100"
+  data-display_entry_body_length="0"
+  data-display_entry_date="1"
+  data-display_entry_title_length="20"
+  data-restrict_entry_title_length="0"
+  data-display_bookmark_count="0"
+
+>
+  <div class="hatena-module-title">
+    
+      注目記事
+    
+  </div>
+  <div class="hatena-module-body">
+    
+  </div>
+</div>
+
+    
+      
+<div class="hatena-module hatena-module-related-entries" >
+  
+  <div class="hatena-module-title">
+    関連記事
+  </div>
+  <div class="hatena-module-body">
+    <ul class="related-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://light11.hatenadiary.com/entry/2026/06/05/190845">
+  <img alt="【Unity】NuGetForUnityでローカルにあるnupkgをインストールする" src="https://cdn.image.st-hatena.com/image/square/441921cf5ec3b026ea330c5285390e1a2d6a300f/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhalya_11%2F20260601%2F20260601171014.png" class="urllist-image related-entries-image" title="【Unity】NuGetForUnityでローカルにあるnupkgをインストールする" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://light11.hatenadiary.com/archive/2026/06/05" rel="nofollow">
+    <time datetime="2026-06-05T10:08:45Z" title="2026年6月5日">
+      2026-06-05
+    </time>
+  </a>
+</div>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/06/05/190845" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">【Unity】NuGetForUnityでローカルにあるnupkgをインストールする</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://light11.hatenadiary.com/entry/2026/05/08/194110">
+  <img alt="Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった" src="https://cdn.image.st-hatena.com/image/square/8f8b8f69e660cb0c2b830f12994beca8d28e53c9/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhalya_11%2F20260506%2F20260506231350.gif" class="urllist-image related-entries-image" title="Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://light11.hatenadiary.com/archive/2026/05/08" rel="nofollow">
+    <time datetime="2026-05-08T10:41:10Z" title="2026年5月8日">
+      2026-05-08
+    </time>
+  </a>
+</div>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/05/08/194110" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <div class="urllist-date-link related-entries-date-link">
+  <a href="https://light11.hatenadiary.com/archive/2026/05/06" rel="nofollow">
+    <time datetime="2026-05-06T13:35:23Z" title="2026年5月6日">
+      2026-05-06
+    </time>
+  </a>
+</div>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/05/06/223523" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">Unity6.4からInstanceIdがObsoleteになり、EntityIdになった</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <div class="urllist-date-link related-entries-date-link">
+  <a href="https://light11.hatenadiary.com/archive/2026/03/20" rel="nofollow">
+    <time datetime="2026-03-20T14:40:57Z" title="2026年3月20日">
+      2026-03-20
+    </time>
+  </a>
+</div>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/03/20/234057" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">【Unity】RiderのMustUseReturnValueアトリビュートで「戻り値が使われていないとき」に警告またはエラーを出す方法</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <div class="urllist-date-link related-entries-date-link">
+  <a href="https://light11.hatenadiary.com/archive/2025/11/13" rel="nofollow">
+    <time datetime="2025-11-13T10:04:47Z" title="2025年11月13日">
+      2025-11-13
+    </time>
+  </a>
+</div>
+
+          <a href="https://light11.hatenadiary.com/entry/2025/11/13/190447" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">【Unity】Codex CLIを起動する時にUnity Natural MCPのポート番号を上書いて複数のUnityプロジェクトで同時に使う</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="https://light11.hatenadiary.com/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link recent-entries-image-link" href="https://light11.hatenadiary.com/entry/2026/07/31/102711">
+  <img alt="Find Usages Advancedでジェネリックな基底クラスのメソッドのUsageを特定の派生クラス分だけ検索する" src="https://cdn.image.st-hatena.com/image/square/cc6d53e30646d6bb68864e32c939b72a4f6c7030/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhalya_11%2F20260727%2F20260727151718.png" class="urllist-image recent-entries-image" title="Find Usages Advancedでジェネリックな基底クラスのメソッドのUsageを特定の派生クラス分だけ検索する" width="100" height="100" loading="lazy">
+</a>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/07/31/102711" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Find Usages Advancedでジェネリックな基底クラスのメソッドのUsageを特定の派生クラス分だけ検索する</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link recent-entries-image-link" href="https://light11.hatenadiary.com/entry/2026/06/05/190845">
+  <img alt="【Unity】NuGetForUnityでローカルにあるnupkgをインストールする" src="https://cdn.image.st-hatena.com/image/square/441921cf5ec3b026ea330c5285390e1a2d6a300f/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhalya_11%2F20260601%2F20260601171014.png" class="urllist-image recent-entries-image" title="【Unity】NuGetForUnityでローカルにあるnupkgをインストールする" width="100" height="100" loading="lazy">
+</a>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/06/05/190845" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">【Unity】NuGetForUnityでローカルにあるnupkgをインストールする</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link recent-entries-image-link" href="https://light11.hatenadiary.com/entry/2026/05/08/194110">
+  <img alt="Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった" src="https://cdn.image.st-hatena.com/image/square/8f8b8f69e660cb0c2b830f12994beca8d28e53c9/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhalya_11%2F20260506%2F20260506231350.gif" class="urllist-image recent-entries-image" title="Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった" width="100" height="100" loading="lazy">
+</a>
+
+          <a href="https://light11.hatenadiary.com/entry/2026/05/08/194110" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Unity 6.4で「GridとSnap」が再設計、グリッドの回転などが可能になった</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://light11.hatenadiary.com/entry/2026/05/08/191621" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Unity6.4からRender Graph互換モードが完全に削除された（移行必須になった）</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://light11.hatenadiary.com/entry/2026/05/06/223523" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Unity6.4からInstanceIdがObsoleteになり、EntityIdになった</a>
+
+
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+      </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="https://light11.hatenadiary.com/archive">
+  <div class="hatena-module-title">
+    <a href="https://light11.hatenadiary.com/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+    
+      
+        <ul class="hatena-urllist">
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2026">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2026" class="archive-module-year-title archive-module-year-2026">
+                2026
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2026/07" class="archive-module-month-title archive-module-month-2026-7">
+                      2026 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2026/06" class="archive-module-month-title archive-module-month-2026-6">
+                      2026 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2026/05" class="archive-module-month-title archive-module-month-2026-5">
+                      2026 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2026/04" class="archive-module-month-title archive-module-month-2026-4">
+                      2026 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2026/03" class="archive-module-month-title archive-module-month-2026-3">
+                      2026 / 3
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2025">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2025" class="archive-module-year-title archive-module-year-2025">
+                2025
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/11" class="archive-module-month-title archive-module-month-2025-11">
+                      2025 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/10" class="archive-module-month-title archive-module-month-2025-10">
+                      2025 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/09" class="archive-module-month-title archive-module-month-2025-9">
+                      2025 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/08" class="archive-module-month-title archive-module-month-2025-8">
+                      2025 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/07" class="archive-module-month-title archive-module-month-2025-7">
+                      2025 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/06" class="archive-module-month-title archive-module-month-2025-6">
+                      2025 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/05" class="archive-module-month-title archive-module-month-2025-5">
+                      2025 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/04" class="archive-module-month-title archive-module-month-2025-4">
+                      2025 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/03" class="archive-module-month-title archive-module-month-2025-3">
+                      2025 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2025/01" class="archive-module-month-title archive-module-month-2025-1">
+                      2025 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2024">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2024" class="archive-module-year-title archive-module-year-2024">
+                2024
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/12" class="archive-module-month-title archive-module-month-2024-12">
+                      2024 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/11" class="archive-module-month-title archive-module-month-2024-11">
+                      2024 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/10" class="archive-module-month-title archive-module-month-2024-10">
+                      2024 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/09" class="archive-module-month-title archive-module-month-2024-9">
+                      2024 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/08" class="archive-module-month-title archive-module-month-2024-8">
+                      2024 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/07" class="archive-module-month-title archive-module-month-2024-7">
+                      2024 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/05" class="archive-module-month-title archive-module-month-2024-5">
+                      2024 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/04" class="archive-module-month-title archive-module-month-2024-4">
+                      2024 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/03" class="archive-module-month-title archive-module-month-2024-3">
+                      2024 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/02" class="archive-module-month-title archive-module-month-2024-2">
+                      2024 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2024/01" class="archive-module-month-title archive-module-month-2024-1">
+                      2024 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2023">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2023" class="archive-module-year-title archive-module-year-2023">
+                2023
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/12" class="archive-module-month-title archive-module-month-2023-12">
+                      2023 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/11" class="archive-module-month-title archive-module-month-2023-11">
+                      2023 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/10" class="archive-module-month-title archive-module-month-2023-10">
+                      2023 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/08" class="archive-module-month-title archive-module-month-2023-8">
+                      2023 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/07" class="archive-module-month-title archive-module-month-2023-7">
+                      2023 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/06" class="archive-module-month-title archive-module-month-2023-6">
+                      2023 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/05" class="archive-module-month-title archive-module-month-2023-5">
+                      2023 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/04" class="archive-module-month-title archive-module-month-2023-4">
+                      2023 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/02" class="archive-module-month-title archive-module-month-2023-2">
+                      2023 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2023/01" class="archive-module-month-title archive-module-month-2023-1">
+                      2023 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2022">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2022" class="archive-module-year-title archive-module-year-2022">
+                2022
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/12" class="archive-module-month-title archive-module-month-2022-12">
+                      2022 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/11" class="archive-module-month-title archive-module-month-2022-11">
+                      2022 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/10" class="archive-module-month-title archive-module-month-2022-10">
+                      2022 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/09" class="archive-module-month-title archive-module-month-2022-9">
+                      2022 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/08" class="archive-module-month-title archive-module-month-2022-8">
+                      2022 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/07" class="archive-module-month-title archive-module-month-2022-7">
+                      2022 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/06" class="archive-module-month-title archive-module-month-2022-6">
+                      2022 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/05" class="archive-module-month-title archive-module-month-2022-5">
+                      2022 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/04" class="archive-module-month-title archive-module-month-2022-4">
+                      2022 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/03" class="archive-module-month-title archive-module-month-2022-3">
+                      2022 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/02" class="archive-module-month-title archive-module-month-2022-2">
+                      2022 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2022/01" class="archive-module-month-title archive-module-month-2022-1">
+                      2022 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2021">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2021" class="archive-module-year-title archive-module-year-2021">
+                2021
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/12" class="archive-module-month-title archive-module-month-2021-12">
+                      2021 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/11" class="archive-module-month-title archive-module-month-2021-11">
+                      2021 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/10" class="archive-module-month-title archive-module-month-2021-10">
+                      2021 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/09" class="archive-module-month-title archive-module-month-2021-9">
+                      2021 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/08" class="archive-module-month-title archive-module-month-2021-8">
+                      2021 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/07" class="archive-module-month-title archive-module-month-2021-7">
+                      2021 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/06" class="archive-module-month-title archive-module-month-2021-6">
+                      2021 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/05" class="archive-module-month-title archive-module-month-2021-5">
+                      2021 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/04" class="archive-module-month-title archive-module-month-2021-4">
+                      2021 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/03" class="archive-module-month-title archive-module-month-2021-3">
+                      2021 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/02" class="archive-module-month-title archive-module-month-2021-2">
+                      2021 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2021/01" class="archive-module-month-title archive-module-month-2021-1">
+                      2021 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2020">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2020" class="archive-module-year-title archive-module-year-2020">
+                2020
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/08" class="archive-module-month-title archive-module-month-2020-8">
+                      2020 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/07" class="archive-module-month-title archive-module-month-2020-7">
+                      2020 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/06" class="archive-module-month-title archive-module-month-2020-6">
+                      2020 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/05" class="archive-module-month-title archive-module-month-2020-5">
+                      2020 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/04" class="archive-module-month-title archive-module-month-2020-4">
+                      2020 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/03" class="archive-module-month-title archive-module-month-2020-3">
+                      2020 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/02" class="archive-module-month-title archive-module-month-2020-2">
+                      2020 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2020/01" class="archive-module-month-title archive-module-month-2020-1">
+                      2020 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2019">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2019" class="archive-module-year-title archive-module-year-2019">
+                2019
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/12" class="archive-module-month-title archive-module-month-2019-12">
+                      2019 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/11" class="archive-module-month-title archive-module-month-2019-11">
+                      2019 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/10" class="archive-module-month-title archive-module-month-2019-10">
+                      2019 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/09" class="archive-module-month-title archive-module-month-2019-9">
+                      2019 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/08" class="archive-module-month-title archive-module-month-2019-8">
+                      2019 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/07" class="archive-module-month-title archive-module-month-2019-7">
+                      2019 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/06" class="archive-module-month-title archive-module-month-2019-6">
+                      2019 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/05" class="archive-module-month-title archive-module-month-2019-5">
+                      2019 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/04" class="archive-module-month-title archive-module-month-2019-4">
+                      2019 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/03" class="archive-module-month-title archive-module-month-2019-3">
+                      2019 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/02" class="archive-module-month-title archive-module-month-2019-2">
+                      2019 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2019/01" class="archive-module-month-title archive-module-month-2019-1">
+                      2019 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2018">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://light11.hatenadiary.com/archive/2018" class="archive-module-year-title archive-module-year-2018">
+                2018
+              </a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/12" class="archive-module-month-title archive-module-month-2018-12">
+                      2018 / 12
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/11" class="archive-module-month-title archive-module-month-2018-11">
+                      2018 / 11
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/10" class="archive-module-month-title archive-module-month-2018-10">
+                      2018 / 10
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/09" class="archive-module-month-title archive-module-month-2018-9">
+                      2018 / 9
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/08" class="archive-module-month-title archive-module-month-2018-8">
+                      2018 / 8
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/07" class="archive-module-month-title archive-module-month-2018-7">
+                      2018 / 7
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/06" class="archive-module-month-title archive-module-month-2018-6">
+                      2018 / 6
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/05" class="archive-module-month-title archive-module-month-2018-5">
+                      2018 / 5
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/04" class="archive-module-month-title archive-module-month-2018-4">
+                      2018 / 4
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/03" class="archive-module-month-title archive-module-month-2018-3">
+                      2018 / 3
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/02" class="archive-module-month-title archive-module-month-2018-2">
+                      2018 / 2
+                    </a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://light11.hatenadiary.com/archive/2018/01" class="archive-module-month-title archive-module-month-2018-1">
+                      2018 / 1
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+      
+
+      
+
+
+    </div>
+  </div>
+  
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div style="display:none !important" class="guest-footer js-guide-register test-blogs-register-guide" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>halya_11さんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div  class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="https://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div  class="guest-footer-btn js-hide-on-smartphone-app">
+        <a href="https://hatena.blog/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="https://light11.hatenadiary.com/">
+        <img src="https://cdn.blog.st-hatena.com/images/admin/blog-icon-noimage.png" width="16" height="16" alt="LIGHT11"/>
+        <span class="footer-address-name">LIGHT11</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatena.blog/">Hatena Blog</a>
+      |
+        <a href="https://blog.hatena.ne.jp/-/abuse_report?target_url=https%3A%2F%2Flight11.hatenadiary.com%2Fentry%2F2022%2F01%2F11%2F193925" class="report-abuse-link test-report-abuse-link" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+  
+  <script async src="https://s.hatena.ne.jp/js/widget/star.js"></script>
+  
+  
+  <script>
+    if (typeof window.Hatena === 'undefined') {
+      window.Hatena = {};
+    }
+    if (!Hatena.hasOwnProperty('Star')) {
+      Hatena.Star = {
+        VERSION: 2,
+      };
+    }
+  </script>
+
+
+  
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v25.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  
+  
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-stock">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once>
+      <img src="https://cdn.blog.st-hatena.com/images/admin/quote/quote-x-icon.svg?version=d4bf362598b41b8d89b73662365e5f" title="引用して投稿する" >
+    </a>
+  </div>
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+  
+  <div id="hidden-subscribe-button" style="display: none;">
+    <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+  </div>
+
+  
+
+
+
+    
+
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.min.js?v=1.12.4&amp;version=d4bf362598b41b8d89b73662365e5f"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.blog.st-hatena.com/js/texts-ja.js?version=d4bf362598b41b8d89b73662365e5f"></script>
+
+
+
+  <script id="vendors-js" data-env="production" src="https://cdn.blog.st-hatena.com/js/vendors.js?version=d4bf362598b41b8d89b73662365e5f" crossorigin="anonymous"></script>
+
+<script id="hatenablog-js" data-env="production" src="https://cdn.blog.st-hatena.com/js/hatenablog.js?version=d4bf362598b41b8d89b73662365e5f" crossorigin="anonymous" data-page-id="entry"></script>
+
+
+  <script>Hatena.Diary.GlobalHeader.init()</script>
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+  </body>
+</html>
+

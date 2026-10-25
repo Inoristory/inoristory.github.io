@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/umi.4c509b22.css">
+<script src="/framework.eae9c4bb.js"></script>
+<script src="/antd.1d5c225b.js"></script>
+<script src="/vendor.1b4d11f0.js"></script>
+<script async src="//www.googletagmanager.com/gtag/js?id=G-JSZ4QJCG5X"></script>
+<script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JSZ4QJCG5X');</script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/umi.7d8907d7.js"></script>
+<script>(function(){var h=location.hash;if(h&&h.indexOf('#/')===0){location.replace(location.pathname==='/'?h.substring(1):location.pathname+h.substring(1));return;}if(location.pathname==='/'&&location.search.indexOf('code=')>-1&&location.search.indexOf('state=google')===-1){location.replace('/oauth/github'+location.search);}})();</script>
+<script>(function(){var K='__asset_reload',T=3600000;window.addEventListener('error',function(e){if(e.target&&(e.target.tagName==='SCRIPT'||e.target.tagName==='LINK')){var now=Date.now(),prev=+sessionStorage.getItem(K)||0;if(now-prev>T){sessionStorage.setItem(K,''+now);console.warn('[reload] static asset failed, refreshing (once per session)...');setTimeout(function(){location.reload()},300);}else{console.warn('[reload] asset still failing after reload, skipping to avoid loop');}}},true);})();</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+</body>
+</html>

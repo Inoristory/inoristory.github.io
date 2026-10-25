@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta itemprop="image" content="/images/ico64.png" />
+    <meta name="keywords" content="萌备,萌ICP备,MoeICP,萌备案,萌国ICP备案" />
+    <link href="https://fonts.loli.net/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/images/03.svg">
+    <link rel="mask-icon" href="/images/gov.svg" color="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="御坂小屋">
+    <meta property="og:title" content="御坂小屋">
+    <meta property="og:description" content="一个御坂的林中小屋，可能会分享一些技术及动漫漫画等方面的事情qwq">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://icp.gov.moe/poster/20241084.jpg" />
+    <meta property="og:image" content="https://icp.gov.moe/poster/20241084.jpg">
+    <meta property="og:url" content="https://icp.gov.moe/20241084.html">
+    <meta itemprop="name" content="御坂小屋"/>
+    <meta name="description" itemprop="description" content="一个御坂的林中小屋，可能会分享一些技术及动漫漫画等方面的事情qwq" />
+    <script src="https://travel.moe/js/travel.min.js" charset="UTF-8"></script>
+    <title>萌ICP备20241084号</title>
+</head>
+<body>
+<div class="page">
+<div class="bg"></div>
+<div class="container result">
+<h1 class="title">萌国ICP备案查询</h1>
+<div class>
+<div class="info">
+    
+<div class="info-item">
+<div class="lable">网站名称</div>
+<div class="value">御坂小屋</div>
+</div>
+
+<div class="info-item">
+<div class="lable">网站域名</div>
+<div class="value">misaka.sakurakoi.top</div>
+</div>
+
+<div class="info-item">
+<div class="lable">网站首页</div>
+<div class="value"><a style="color:#F08080; text-decoration:none;" href="http://misaka.sakurakoi.top" target="_blank">misaka.sakurakoi.top</a></div>
+</div>
+
+<div class="info-item">
+<div class="lable">网站信息</div>
+<div class="value">一个御坂的林中小屋，可能会分享一些技术及动漫漫画等方面的事情qwq</div>
+</div>
+
+<div class="info-item">
+<div class="lable">萌备案号</div>
+<div class="value">萌ICP备20241084号</div>
+</div>
+
+<div class="info-item">
+<div class="lable">所有者</div>
+<div class="value">misaka10843</div>
+</div>
+<div class="info-item">
+<div class="lable">更新时间</div>
+<div class="value">2024-02-26</div>
+</div>
+<div class="info-item">
+<div class="lable">状态</div>
+
+<div class="value"><form action="feedback.php" method="post">
+<input type="hidden" name="moe_id" value="20241084">正常&nbsp;&nbsp;
+<input style="display:inline-block;padding:.25em .4em;font-size:85%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.15rem;color: #fff;background-color: #5698c3;margin-left: 8px;" type="submit" value="❗️ 反馈">
+</form></div>
+</div>
+</div>
+   
+</div>
+</div>
+<div class="div_foot" style=" text-align:center; "><font style="font-size:16px"><a style=" text-decoration:none; " href="/aboutus.php" ><span style="color:#ffffff">导航</span></a>&nbsp;&nbsp; <a style=" text-decoration:none; " href="join.php"><span style="color:#ffffff">加入</span></a> &nbsp;&nbsp;<a style=" text-decoration:none; " href="moe-icon.zip"><img style="width:32px;height:32px;margin-bottom:-8px" src="/images/gov.svg" /></a>&nbsp;&nbsp; <a style=" text-decoration:none; " href="https://icp.gov.moe/update.php"><span style="color:#ffffff">修改</span></a>&nbsp;&nbsp; <a style=" text-decoration:none; " href="AboutMoeICP.html" ><span style="color:#ffffff">关于</span></a></font></div>
+    </div>
+</body>
+</html>
+
+

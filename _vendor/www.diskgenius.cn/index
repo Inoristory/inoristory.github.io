@@ -1,0 +1,745 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" >
+<meta name="keywords" content="DiskGenius，数据恢复，数据恢复软件，硬盘分区工具，系统备份，硬盘分区，移动硬盘分区，备份软件">
+<meta name="description" content="DiskGenius是专家级数据恢复软件，集数据恢复、硬盘分区、系统备份还原等多种功能于一身的超级工具软件">
+<title>数据恢复软件，硬盘分区工具，系统备份软件 - DiskGenius官方网站</title>
+<link href="public/css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="public/css/swiper.min.css">
+<link rel="canonical" href="https://www.diskgenius.cn/" />
+<!--<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.diskgenius.cn","http://www.diskgenius.cn");</script>-->
+<script async src="https://01993bf2-d2ad-7c9c-bae5-45e4a72e553e.spst2.com/ustat.js"></script></head>
+<body>
+    
+
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<div class="head">
+        <div class="wrap">
+            <div class="leftbox">
+                <a href="/" class="coa-top">
+					<picture>
+						<source type="image/avif" srcset="/public/images/logo-diskgenius.avif 1x, /public/images/logo-diskgenius-150.avif 1.5x,
+					 /public/images/logo-diskgenius-200.avif 2x,
+					 /public/images/logo-diskgenius-300.avif 3x">
+						<source type="image/webp" srcset="/public/images/logo-diskgenius.webp 1x, /public/images/logo-diskgenius-150.webp 1.5x,
+					 /public/images/logo-diskgenius-200.webp 2x,
+					 /public/images/logo-diskgenius-300.webp 3x">
+						<img src="/public/images/logo-diskgenius.png" class="img" alt="DiskGenius" srcset="/public/images/logo-diskgenius-150.png 1.5x,
+					 /public/images/logo-diskgenius-200.png 2x,
+					 /public/images/logo-diskgenius-300.png 3x">
+					</picture>
+                </a>
+                <div class="hd-nav">
+                    <ul>
+                        <li class=" li1 cur">
+                            <a href="/">首页</a>
+                        </li>
+                        <li class="li2 has">
+                            <span class="arrow"></span>
+                            <a href="#">功能</a>
+                            <div class="drop">
+                                <a href="/data-recovery.php" class="lk ico1 clearfix">
+                                    <div class="fl">
+                                        <h5>数据恢复</h5>
+                                        <p>功能丰富，支持多种情况</p>
+                                    </div>
+                                </a>
+                                <a href="/partition-management.php" class="lk ico2 clearfix">
+                                    <div class="fl">
+                                        <h5>分区管理</h5>
+                                        <p>灵活、合理的管理及利用磁盘</p>
+                                    </div>
+                                </a>
+                                <a href="/backup-restore.php" class="lk ico3 clearfix">
+                                    <div class="fl">
+                                        <h5>备份还原</h5>
+                                        <p>功能多样、运行稳定</p>
+                                    </div>
+                                </a>
+                                <a href="/function.php" class="lk ico4 clearfix">
+                                    <div class="fl">
+                                        <h5>更多功能</h5>
+                                        <p>满足您管理数据和磁盘的各种需求</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="li3">
+                            <a href="/download.php">下载</a>
+                        </li>
+                        <li class="li4">
+                            <a href="//www.eassos.cn/dg/buynow.php" target="_blank">购买</a>
+                        </li>
+                        <li class="li5 has">
+                            <span class="arrow"></span>
+                            <a href="#">帮助</a>
+                            <div class="drop">
+                                <a href="/help/" class="lk ico1 clearfix" target="_blank">
+                                    <div class="fl">
+                                        <h5>在线帮助</h5>
+                                        <p>软件教程，操作步骤一目了然</p>
+                                    </div>
+                                </a>
+                                <a href="/resource/" class="lk ico2 clearfix" target="_blank">
+                                    <div class="fl">
+                                        <h5>教程文章</h5>
+                                        <p>了解数据恢复的多种方式</p>
+                                    </div>
+                                </a>
+                                <a href="/resource/news.php" class="lk ico3 clearfix" target="_blank">
+                                    <div class="fl">
+                                        <h5>软件资讯</h5>
+                                        <p>及时了解软件最新资讯</p>
+                                    </div>
+                                </a>
+                                <a href="/bbs/" class="lk ico4 clearfix" target="_blank">
+                                    <div class="fl">
+                                        <h5>软件论坛</h5>
+                                        <p>提出问题，一起探讨</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightbox">
+                <div class="hd-link">
+                    <a href="//www.onekeyrestore.cn" class="lk website" target="_blank">
+                        <em class="icon"></em>
+                        <h6 class="tit">易数一键还原</h6>
+                    </a>
+                    <a href="//www.eassos.cn/remote-data-recovery.php" class="lk remote" target="_blank">
+                        <em class="icon"></em>
+                        <h6 class="tit">远程数据恢复</h6>
+                    </a>
+                </div>
+                <div class="hd-tel">
+                    <div class="flex">
+                        <img src="/public/images/icon_04.png" class="ico" alt="技术支持">
+                        <span class="fz flex-1">技术支持：400-900-5080<br>
+                        (08:30-21:00)</span>
+                    </div>
+                </div>
+            </div>
+            <span class="sj-menu"></span>
+        </div>
+    </div>
+            <div class="idx-ban">
+        <div class="item">
+            <div class="auto box">
+                <div class="info">
+                    <h5 class="title">多功能工具软件</h5>
+                    <h6 class="smtit">二十七年匠心开发</h6>
+                    <div class="txt">
+                        数据恢复 / 分区管理 / 备份还原
+                    </div>
+                    <a href="/download.php" class="pub-more big white"> <em class="arrow"></em>免费下载 </a>
+                    <div class="font">
+                        <p>最新版本：6.2.0&nbsp&nbsp&nbsp&nbsp更新日期：2026-06-08&nbsp&nbsp&nbsp&nbsp软件大小：37.1MB</p>
+                    </div>
+                </div>
+                <img src="public/images/idx_02.png" class="pic" alt="多功能工具软件" />
+            </div>
+        </div>
+    </div>
+    <div class="idx-top">
+        <div class="auto flex">
+            <a href="/help/" class="lk"> <img src="public/images/idx_04.png" class="icon" alt="软件教程">
+                <h6 class="tit">软件教程</h6>
+            </a> <a href="/bbs/" class="lk"> <img src="public/images/idx_05.png" class="icon" alt="软件论坛">
+                <h6 class="tit">软件论坛</h6>
+            </a> <a href="//www.eassos.cn/remote-data-recovery.php" class="lk"> <img src="public/images/idx_06.png" class="icon" alt="远程服务">
+                <h6 class="tit">远程服务</h6>
+            </a> <a href="//www.eassos.cn/dg/buynow.php" class="lk"> <img src="public/images/idx_07.png" class="icon" alt="立即购买">
+                <h6 class="tit">立即购买</h6>
+            </a>
+        </div>
+    </div>
+    <!--<a id="gobuy" href="https://www.eassos.cn/dg/buynow.php"></a>-->
+    
+    <div class="idx-tool">
+        <div class="auto">
+            <div class="idx-titbox">
+                <a href="/data-recovery.php" target="_blank">
+                    <h5 class="en">data recovery</h5>
+                    <h5 class="cn">数据恢复</h5>
+                </a>
+                <div class="desc">
+                    DiskGenius是一款专业级的数据恢复软件，算法精湛、功能强大，用户群体广泛；支持各种情况下的文件恢复和分区恢复，恢复效果好；文件预览、扇区编辑、加密分区恢复、Ext4分区恢复、RAID恢复等高级功能应有尽有，满足个人用户及企业用户对数据恢复的各种需求。
+                </div>
+            </div>
+            <ul class="list flex flex-w">
+                <li class="item"> <img src="public/images/idx_08.png" class="icon" alt="支持多种数据丢失场景">
+                    <h6 class="title">支持多种数据丢失场景</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        安全快速地恢复硬盘、移动硬盘、U盘、内存卡、RAID、虚拟磁盘上因误删除、格式化、分区损坏、分区丢失、病毒破坏、系统崩溃及其他未知原因丢失的数据。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_09.png" class="icon" alt="高效的搜索方法">
+                    <h6 class="title">高效的搜索方法</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        智能的搜索算法可以对磁盘进行深度扫描，识别出丢失的数据；不管数据是什么原因丢失的，只要没有被覆盖，还有残留的文件信息，就可以正常查找到并恢复。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_10.png" class="icon" alt="恢复前预览文件">
+                    <h6 class="title">恢复前预览文件</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        在实际恢复数据之前预览自己的文件，所见即所得，清晰明了；双击文档、图片、视频、音频、文本、PDF等可以查看文件内容，以便准确预判恢复效果。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_11.png" class="icon" alt="服务器数据恢复">
+                    <h6 class="title">服务器数据恢复</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        支持虚拟重组RAID磁盘阵列，重组后就可以像操作常规磁盘一样进行文件恢复与分区恢复了。组建的虚拟RAID是只读的，以防止误操作破坏原始磁盘及数据。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_12.png" class="icon" alt="虚拟机恢复">
+                    <h6 class="title">虚拟机恢复</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        无需运行虚拟机，可直接加载虚拟磁盘文件，并且可像操作普通磁盘一样进行数据恢复。支持VMware、Hyper-V、Parallels、VirtualBox等虚拟机的虚拟磁盘文件。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_13.png" class="icon" alt="紧急恢复">
+                    <h6 class="title">紧急恢复</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        将U盘做成WinPE启动盘，可以用于启动电脑，及时应对电脑紧急情况，例如，电脑出现系统崩溃或无法启动等情况时，可以利用启动盘来备份或恢复数据，安全便捷。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_14.png" class="icon" alt="扇区编辑">
+                    <h6 class="title">扇区编辑</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        集成了强大的十六进制文本编辑与磁盘编辑功能，例如，扇区定位、扇区复制、扇区填充、数据解释、对任意扇区进行编辑等，帮助专业人员分析底层数据和恢复数据。
+                    </div>
+                </li>
+                <li class="item"> <img src="public/images/idx_15.png" class="icon" alt="支持文件系统">
+                    <h6 class="title">支持文件系统</h6>
+                    <span class="line"></span>
+                    <div class="txt">
+                        支持NTFS、FAT32、FAT16、FAT12、exFAT、ReFS、EXT4、EXT3、EXT2等多种文件系统类型的文件恢复、分区恢复、分区管理和数据备份。
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="idx-func">
+        <div class="">
+            <div class="idx-titbox">
+                <h5 class="en">All – In – One</h5>
+                <h5 class="cn">集多种功能于一身</h5>
+            </div>
+            <div class="detail">
+                <div class="list">
+                    <div class="item on">
+                        <div class="imgbox">
+							<picture>
+								<source srcset="public/images/idx_33.avif" type="image/avif">
+								<source srcset="public/images/idx_33.webp" type="image/webp">
+								<img src="public/images/idx_33.jpg" class="img" alt="All – In – One">
+							</picture>
+                        </div>
+                        <div class="shade">
+                            <a href="/partition-management.php" target="_blank">
+                                <h6 class="title">分区管理</h6>
+                            </a> <span class="line"></span> <img src="public/images/idx_20.png" class="icon" alt="分区管理">
+                            <div class="bot">
+                                <div class="txt">
+                                    DiskGenius 是一款经典的硬盘分区工具，功能全面，安全可靠。<a href="help/createpartex.php">创建分区</a>、<a href="help/delpart.php">删除分区</a>、<a href="help/formatpart.php">格式化分区</a>、<a href="help/hidepart.php">隐藏分区</a>、<a href="help/driveletter.php">分配盘符</a>等基本功能外，DiskGenius 还提供<a href="help/fastpart.php">快速分区</a>、<a href="help/partresizing.php">无损调整分区大小</a>，<a href="help/ptbackup.php">分区表备份恢复</a>等更多高阶功能。支持GPT磁盘、存储池、EXT4文件系统。
+                                </div>
+                                <span class="pub-more big"> <a href="/resource/windows-ext4.html"><em class="arrow"></em>如何在Windows下读写Ext4/3/2分区？</a> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgbox">
+							<picture>
+								<source srcset="public/images/idx_36.avif" type="image/avif">
+								<source srcset="public/images/idx_36.webp" type="image/webp">
+								<img src="public/images/idx_36.jpg" class="img" alt="All – In – One">
+							</picture>
+                        </div>
+                        <div class="shade">
+                            <a href="/backup-restore.php" target="_blank">
+                                <h6 class="title">备份还原</h6>
+                            </a> <span class="line"></span> <img src="public/images/idx_21.png" class="icon" alt="备份还原">
+                            <div class="bot">
+                                <div class="txt">
+                                    DiskGenius 同时还是一款强大的备份软件，可以方便地备份或克隆<a href="help/copydisk.php">硬盘</a>和<a href="help/part2file.php">分区</a>以及<a href="help/system-migration.php">迁移系统</a>。安全可靠，是国内开发历史悠长、使用人数众多的硬盘分区备份软件；功能全面，支持增量备份及<a href="help/restorepart.php">多点还原</a>、热备份、系统备份等众多特性，轻松保护数据的安全性和完整性。
+                                </div>
+                                <span class="pub-more big"> <a href="exp/system-migration.php"><em class="arrow"></em>将Windows系统迁移到硬盘、SSD固态硬盘或是U盘</a> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgbox">
+                            <picture>
+								<source srcset="public/images/idx_37.avif" type="image/avif">
+								<source srcset="public/images/idx_37.webp" type="image/webp">
+								<img src="public/images/idx_37.jpg" class="img" alt="All – In – One">
+							</picture>
+                        </div>
+                        <div class="shade">
+                            <a href="/function.php" target="_blank">
+                                <h6 class="title">更多功能</h6>
+                            </a> <span class="line"></span> <img src="public/images/idx_22.png" class="icon" alt="更多功能">
+                            <div class="bot">
+                                <div class="txt">
+                                    DiskGenius 还提供了许多实用、便利的功能：<a href="help/fastpart.php">快速分区</a>、<a href="function/intgb.php">整数分区</a>、<a href="help/checktable.php">分区表错误检查与修复</a>、<a href="help/verify.php">坏道检测与修复</a>、<a href="help/view-SMART-data.php">查看S.M.A.R.T.信息</a>、<a href="help/DeleteFilesPermanently.php">永久删除文件</a>、<a href="help/EraseSectors.php">擦除数据</a>、管理<a href="help/newvmdk.php">虚拟硬盘</a>与<a href="help/ldmsupport.php">动态磁盘</a>、<a href="help/createwinpeusb.php">制作WinPE启动盘</a>、<a href="help/batch-format-usb-disk.php">批量格式化U盘</a>、读写EXT4分区、<a href="help/set-uefi-bios-options.php">管理UEFI启动项</a>等。
+                                </div>
+                                <span class="pub-more big"> <a href="resource/permanently-delete-files.html"><em class="arrow"></em>如何彻底删除文件，防止文件恢复？</a> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="idx-courses">
+        <div class="auto">
+            <div class="idx-titbox">
+                <h5 class="en">Related resources</h5>
+                <h5 class="cn">相关教程</h5>
+            </div>
+            <div class="section section1">
+                <div class="idx-smtit flex flex-align-center flex-pack-justify">
+                    <span class="bt">常用 · <em class="c-org">教程</em></span> <a href="/help/" class="pub-more"> <em class="arrow"></em>查看更多 </a>
+                </div>
+                <div class="detail flex">
+                    <div class="list1 flex flex-1">
+                        <a href="/help/restorefile.php" class="item flex flex-pack-justify">
+                            <h6 class="title clamp">误删除或误格式化后的文件恢复</h6>
+                            <p>不小心把数据删除了还能恢复吗？快速找回因误删除、清空回收站、格式化、分区提示格式化、病毒破坏等原因丢失的数据。</p>
+                            <span class="more"></span> </a> <a href="/help/rebuild.php" class="item flex flex-pack-justify">
+                            <h6 class="title clamp">如何恢复丢失或删除的分区？</h6>
+                            <p>本教程提供可靠的丢失分区数据恢复方案，帮您找回由于重新分区、误ghost、分区删除、分区表损坏等因素丢失的分区。</p>
+                            <span class="more"></span> </a> <a href="/help/save-scan-progress.php" class="item flex flex-pack-justify">
+                            <h6 class="title clamp">如何保存文件恢复进度？</h6>
+                            <p>恢复数据的时候软件会自动保存扫描进度，用户也可以手动保存恢复进度。再次进行恢复的时候就不用重新扫描了，节约时间。</p>
+                            <span class="more"></span> </a> <a href="/resource/recover-damaged-hdd.html" class="item flex flex-pack-justify">
+                            <h6 class="title clamp">硬盘坏了怎么恢复数据？</h6>
+                            <p>硬盘坏了怎么把数据恢复出来？硬盘损坏程度不同，数据恢复方法也会不同。想要从损坏的硬盘提取数据，请参考本文的方法。</p>
+                            <span class="more"></span> </a>
+                    </div>
+                    <div class="hotbox">
+                        <h5 class="title">远程一对一服务</h5>
+                        <div class="tags">
+                            <a href="/exp/hard-disk-data-recovery.php" class="tag">硬盘恢复</a> <a href="/exp/usb-flash-drive-data-recovery.php" class="tag">U盘恢复</a> <a href="/resource/recover-bitlocker-data.html" class="tag">BitLocker加密分区恢复</a> <a href="/exp/sd-card-data-recovery.php" class="tag">SD卡恢复</a> <a href="/exp/server-data-recovery.php" class="tag">RAID恢复</a>
+                        </div>
+                        <a href="//www.eassos.cn/remote-data-recovery.php" class="more">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="idx-smtit hr">
+                    <span class="bt">热门 · <em class="c-org">文章</em></span> <a href="/resource/" class="pub-more"> <em class="arrow"></em>查看更多 </a>
+                </div>
+                <ul class="list2 flex flex-w">
+                    <li class="item">
+                        <h6><a href="/exp/use-tutorial.php" class="title clamp">使用DiskGenius软件恢复数据的详细教程</a></h6>
+                        <div class="txt clamp">
+                            电脑硬盘、移动硬盘或是U盘丢失了数据怎么办？本文详细介绍如何使用DiskGenius数据恢复软件自己完成数据恢复任务...
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h6><a href="/exp/computer-data-recovery.php" class="title clamp">电脑数据丢失了如何恢复？</a></h6>
+                        <div class="txt clamp">
+                            电脑是日常生活和工作中不可缺少的设备，电脑硬盘中为我们保存着十分重要的数据，如果出现数据丢失的问题该怎么办呢？
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h6><a href="/exp/external-hdd-data-recovery.php" class="title clamp">移动硬盘数据丢失了如何恢复?(图文教程)</a></h6>
+                        <div class="txt clamp">
+                            本教程涵盖了关于移动硬盘常见的数据丢失问题以及具体的数据恢复方法，按照文中的图文教程即可找回想要的数据。
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h6><a href="/exp/how-to-recover-deleted-files.php" class="title clamp">如何恢复删除的文件？实用方法不要错过</a></h6>
+                        <div class="txt clamp">
+                            永久删除的文件怎么恢复？本文介绍几个靠谱的方法，手把手教你如何从电脑硬盘、U盘、移动硬盘、SD卡等设备上恢复删除的文件。
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h6><a href="/exp/how-to-recover-recycle-bin-deleted-files.php" class="title clamp">回收站删除的文件怎么恢复？</a></h6>
+                        <div class="txt clamp">
+                            怎么恢复回收站清空的文件？别担心，本文中提供详细的图文教程，帮你恢复因回收站被清空或Shit+Delete永久删除的文件。
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h6><a href="/exp/deleted-photo-recovery.php" class="title clamp">照片恢复：删除的照片如何恢复？</a></h6>
+                        <div class="txt clamp">
+                            数码相机、存储卡、电脑或是手机等设备丢失了照片不要着急，按照本文的方法使用照片恢复软件即可恢复删除的照片。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="idx-compare">
+        <div class="row row1">
+            <div class="auto wrap">
+				<picture>
+					<source srcset="public/images/idx_26.avif" type="image/avif">
+					<img src="public/images/idx_26.png" class="pic img_hover" alt="版本对比">
+				</picture>
+                <div class="info">
+                    <div class="idx-titbox">
+                        <h5 class="en">editions</h5>
+                        <h5 class="cn">版本对比</h5>
+                    </div>
+                    <div class="txt">
+                        <p>DiskGenius 有免费版、标准版与专业版三个版本。不同版本的软件包含不同的功能和特性，可以满足各种不同的用途和用户群体。</p>
+                        <p><a target="_blank" href="/pro/details.php">DiskGenius软件注册前后功能对比</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="auto wrap">
+				<picture>
+					<source srcset="public/images/idx_27.avif" type="image/avif">
+					<img src="public/images/idx_27.png" class="pic img_hover" alt="典型应用">
+				</picture>
+                <div class="info">
+                    <div class="idx-titbox">
+                        <h5 class="en">how to use</h5>
+                        <h5 class="cn">典型应用</h5>
+                    </div>
+                    <div class="txt">
+                        <p><a href="/help/fastpart.php">如何使用分区工具 DiskGenius 快速地给硬盘分区？</a></p>
+                        <p><a href="/resource/erase-data-permanently.html">如何彻底永久地擦除数据，防止数据被恢复？</a></p>
+                        <p><a href="/function/recovery.php">使用 DiskGenius 恢复分区及文件的方法</a></p>
+                        <p><a href="/exp/usb-flash-drive-prompt-format.php">U盘打不开提示未被格式化怎么办？</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="idx-eval">
+        <div class="auto">
+            <div class="idx-titbox">
+                <h5 class="en">User reviews</h5>
+                <h5 class="cn">用户评价</h5>
+            </div>
+            <div class="detail">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="txtbox">
+                                    <div class="txt clamp">
+                                        插上U盘提醒要格式化，都快哭了。在网上找了下说是可能能恢复，据说DiskGenius特牛， 就下载试了下，果然找回来了，全程自助恢复，感觉自己棒棒哒~
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <img src="public/images/avatar_5.png" class="hdpic" alt="头像">
+                                    <div class="info">
+                                        <h6 class="name">章先生</h6>
+                                        <div class="starbox">
+                                            <img src="public/images/idx_31.png" class="star" alt="五星">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="txtbox">
+                                    <div class="txt clamp">
+                                        解决了大问题了，不然最近一个月的工作就白做了。软件扫描速度很快，也就几分钟吧，就把误删除的几个文档找到了，恢复的完好无损。
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <img src="public/images/avatar_6.png" class="hdpic" alt="头像">
+                                    <div class="info">
+                                        <h6 class="name">刘先生</h6>
+                                        <div class="starbox">
+                                            <img src="public/images/idx_31.png" class="star" alt="五星">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="txtbox">
+                                    <div class="txt clamp">
+                                        很不错，技术支持也很到位，客服人员好专业啊，软件也是很强大，现在国产的数据恢复软件做得越来越好了，支持正版，支持国货！
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <img src="public/images/avatar_7.png" class="hdpic" alt="头像">
+                                    <div class="info">
+                                        <h6 class="name">李女士</h6>
+                                        <div class="starbox">
+                                            <img src="public/images/idx_31.png" class="star" alt="五星">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="txtbox">
+                                    <div class="txt clamp">
+                                        非常好用，真是没想到都恢复了呢！我的笔记本ghost的时候出错了，后来系统崩溃，问了下笔记本客服，要好多钱的。自己用DiskGenius恢复，搞定，哈哈!
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <img src="public/images/avatar_8.png" class="hdpic" alt="头像">
+                                    <div class="info">
+                                        <h6 class="name">罗先生</h6>
+                                        <div class="starbox">
+                                            <img src="public/images/idx_31.png" class="star" alt="五星">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="txtbox">
+                                    <div class="txt clamp">
+                                        真的非常不错，被误格式化的移动硬盘的资料基本都用DiskGenius找回来了，攒了好多年的东西，丢了就太可惜了。是正版的，用着放心，数据无价，支持正版。
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <img src="public/images/avatar_9.png" class="hdpic" alt="头像">
+                                    <div class="info">
+                                        <h6 class="name">冯先生</h6>
+                                        <div class="starbox">
+                                            <img src="public/images/idx_31.png" class="star" alt="五星">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-prev">
+                    </div>
+                    <div class="swiper-button swiper-button-next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="idx-news">
+        <div class="auto wrap flex flex-align-start">
+            <div class="lbox">
+                <div class="idx-titbox">
+                    <h5 class="en">Software <br>
+                        news</h5>
+                    <h5 class="cn">软件资讯</h5>
+                </div>
+                <a href="/resource/news.php" class="pub-more big"> <em class="arrow"></em>查看更多 </a>
+            </div>
+            <div class="rbox flex-1">
+                <ul class="list flex flex-pack-justify flex-w">
+                    <li class="item"> <a href="/exp/hot-backup.php">
+                            <h6 class="title clamp1">支持热备份，DiskGenius再添新功能</h6>
+                            <div class="txt clamp">
+                                涉及到系统分区的操作，比如备份、克隆系统分区或克隆系统分区所在的硬盘等，不需要重启电脑进入PE模式，在系统正常运行的情况下即可完成备份操作。
+                            </div>
+                        </a> </li>
+                    <li class="item"> <a href="/resource/windows-ext4.html">
+                            <h6 class="title clamp1">DiskGenius 4.9.5: 支持EXT4文件系统的读写操作</h6>
+                            <div class="txt clamp">
+                                实现在Windows系统下对EXT4/3/2分区的读写操作，例如，写入或导出数据，创建或格式化Ext/4/3/2分区，无损调整分区大小，恢复丢失的数据等。
+                            </div>
+                        </a> </li>
+                    <li class="item"> <a href="/exp/clone-hdd-to-smaller-ssd.php">
+                            <h6 class="title clamp1">如何将硬盘对拷到较小的固态硬盘?</h6>
+                            <div class="txt clamp">
+                                使用 DiskGenius 免费版可以将大硬盘克隆到小硬盘或固态硬盘，实现无损迁移。并且，操作完成后，目标磁盘上的各个分区均是4K对齐的。
+                            </div>
+                        </a> </li>
+                    <li class="item"> <a href="/exp/external-hdd-prompt-format.php">
+                            <h6 class="title clamp1">移动硬盘打不开提示格式化怎么办？可以这样试试!</h6>
+                            <div class="txt clamp">
+                                移动硬盘打不开无法访问数据是比较常见的故障之一，遇到这种情况不要慌张，也不要进行格式化操作，按本文的方法，可以将移动硬盘的数据快速恢复回来。
+                            </div>
+                        </a> </li>
+                    <li class="item"> <a href="/resource/hdd-deleted-recovery.html">
+                            <h6 class="title clamp1">硬盘数据误删了怎么恢复？删除文件恢复方法汇总</h6>
+                            <div class="txt clamp">
+                                回收站被清空了，或是使用Shit + Delete删除文件，看似被永久删除了，其实没有立刻从硬盘上消失。一起学习一下如何找回刚刚删除以及永久删除的资料吧。
+                            </div>
+                        </a> </li>
+                    <li class="item"> <a href="/resource/backup-hdd-to-image.html">
+                            <h6 class="title clamp1">如何备份整个硬盘为镜像文件？给整盘做镜像步骤</h6>
+                            <div class="txt clamp">
+                                怎么对硬盘做全盘镜像？本文详细介绍如何备份整盘为镜像文件，当原始数据遭到破坏的时候，可以轻松地还原数据，确保数据的安全。
+                            </div>
+                        </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+	<div class="auto">
+		<div class="ft-t">
+			<div class="lbox">
+				<a href="/" class="ft-logo">
+					<picture>
+						<source type="image/avif" srcset="/public/images/logo-diskgenius.avif 1x, /public/images/logo-diskgenius-150.avif 1.5x,
+					 /public/images/logo-diskgenius-200.avif 2x,
+					 /public/images/logo-diskgenius-300.avif 3x">
+						<source type="image/webp" srcset="/public/images/logo-diskgenius.webp 1x, /public/images/logo-diskgenius-150.webp 1.5x,
+					 /public/images/logo-diskgenius-200.webp 2x,
+					 /public/images/logo-diskgenius-300.webp 3x">
+						<img src="/public/images/logo-diskgenius.png" class="img" alt="DiskGenius" srcset="/public/images/logo-diskgenius-150.png 1.5x,
+					 /public/images/logo-diskgenius-200.png 2x,
+					 /public/images/logo-diskgenius-300.png 3x">
+					</picture>
+				</a>
+				<div class="ft-info">
+					<p class="fz address">QQ客服：4009005080</p>
+					<p class="fz tel">技术支持: 400-900-5080 (08:30-21:00)</p>
+				</div>
+			</div>
+			<div class="rbox ft-wx">
+				<div class="grp">
+					<img src="/public/images/code-weixin.png" class="pic" alt="微信公众号">
+					<p class="wz">微信公众号</p>
+				</div>
+				<div class="grp">
+					<img src="/public/images/code-weibo.png" class="pic" alt="易数官方微博">
+					<p class="wz">易数官方微博</p>
+				</div>
+			</div>
+		</div>
+		<div class="ft-c">
+			<h6 class="t-tit">友情链接</h6>
+			<div class="lks">
+                <a rel="noopener" target="_blank" href="https://www.pdf365.cn/">pdf转word在线</a>
+                <a rel="noopener" target="_blank" href="http://bbs.wuyou.net">无忧启动论坛</a>
+                <a rel="noopener" target="_blank" href="https://www.zwcad.com/">CAD</a>
+                <a rel="noopener" target="_blank" href="http://www.yibaixun.com/">网站建设</a>
+			</div>
+		</div>
+		<div class="ft-b">
+            <span>版权所有 © 2010-2026 <a href="//www.eassos.cn/">易数科技</a></span><span><a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer">冀ICP备05002509号-2</a></span><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13030202002622" rel="noopener noreferrer nofollow"><img src="/public/img/gwab.png" alt="公网安备" style="margin-bottom:-3px" />冀公网安备 13030202002622号</a></span>
+		</div>
+	</div>
+</div>
+<div class="float_frame">
+    <div class="float_icon">
+        <img src="/public/images/service_online.png" alt="在线咨询" />
+        <button class="float_close"></button>
+    </div>
+    <div class="float_container">
+        <a class="float_service float_web" href="javascript:;" id="btnWebService">
+            <span></span>
+            在线咨询
+        </a>
+        <div class="float_service float_wechat">
+            <span></span>
+            微信咨询
+            <div class="float_content wechat_qrcode">
+                <a href="https://wpa1.qq.com/duEiVkhy?_type=wpa&qidian=true" target="_blank"><img src="/public/images/service_qrcode.png" alt="二维码" /></a>
+                点击二维码可直接咨询
+            </div>
+        </div>
+        <div class="float_service float_qq">
+            <span></span>
+            QQ咨询
+            <div class="float_content qq">
+                <a href="javascript:;" id="btnQQService">QQ: 4009005080</a>
+                点击可直接对话
+            </div>
+        </div>
+        <div class="float_service float_phone">
+            <span></span>
+            客服电话
+            <div class="float_content phone">
+                电话: 4009005080
+            </div>
+        </div>
+        <a class="float_service float_top" target="_blank" onClick="$('body,html').animate({scrollTop: 0},1000);">
+            <span></span>
+            回到顶部
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript" async>
+    $(function(){
+        $('.float_service').mousemove(function(){
+            var inx = $(this).index();
+            $('.float_service').eq(inx).children(".float_content").addClass("float_show");
+            $('.float_service').eq(inx).addClass("cur");
+        }).mouseleave(function(){
+            var inx = $(this).index();
+            $('.float_service').eq(inx).children(".float_content").removeClass("float_show");
+            $('.float_service').eq(inx).removeClass("cur");
+        });
+        function ShoworHideTop() {
+            h = $(window).height();
+            t = $(document).scrollTop();
+            if (t > h) {
+                $('.float_top').show();
+            } else {
+                $('.float_top').hide();
+            }
+        }
+        ShoworHideTop();
+        $(window).scroll(function(e) {
+            ShoworHideTop();
+        });
+        $(".float_icon .float_close").click(function() {
+            $(".float_frame").css("display", "none");
+        });
+    });
+</script>
+<!-- WPA start -->
+<script id="qd23551869174591e872f64a232f6e4e5d9dc064d01d" src="https://wp.qiye.qq.com/qidian/2355186917/4591e872f64a232f6e4e5d9dc064d01d" charset="utf-8" async defer></script>
+<script id="qd2355186917676e30b67dc6efb0ab6d0745aeed19eb" src="https://wp.qiye.qq.com/qidian/2355186917/676e30b67dc6efb0ab6d0745aeed19eb" charset="utf-8" async defer></script>
+<!-- WPA end -->
+<script src="/public/js/common.js"></script>
+    <script type="text/javascript" src="public/js/menu.js" id="page-home" data="0" async></script> 
+    <script src="public/js/swiper.min.js"></script> 
+    <script type="text/javascript" defer>
+	var swiper = new Swiper('.idx-eval .swiper-container', {
+		spaceBetween: 35,
+		slidesPerView: 3,
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		observer: true,
+		observeParents: true,
+		watchOverflow: true,
+		breakpoints:{
+			991:{
+				slidesPerView: 2
+			},
+			767:{
+				slidesPerView: 1,
+				spaceBetween: 15,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				}
+			}
+		}
+	});
+	
+	$(".idx-func .item").hover(function(){
+		$(this).stop(true).addClass('on').siblings().stop(true).removeClass('on');
+	});
+</script>
+</body>
+</html>

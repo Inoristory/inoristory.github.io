@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>週間番組表 | AT-X</title>
+<meta content="本日放送する番組はこちらから。今月～来月の番組表も公開中！" name="description"/>
+<meta content="" name="keywords"/>
+<meta content="" name="author"/>
+<meta content="index, follow" name="robots">
+<meta content="telephone=no" name="format-detection"/>
+<link href="https://www.at-x.com/program/" rel="canonical"/>
+<script src="/js/path_environment.js"></script>
+<script src="/js/api-base-url.js"></script>
+<script src="/js/redirect.js?v=20260602"></script>
+<meta content="https://api.atx-stg.01core.app" name="api-host"/>
+<script src="/js/atx-program.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'cms_version': 'new_cms'});
+  </script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T6D6L35');</script>
+<!-- End Google Tag Manager -->
+<script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.at-x.com/#website",
+      "name": "AT-X ワンランク上のアニメ専門チャンネル",
+      "url": "https://www.at-x.com/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.at-x.com/#organization",
+      "name": "株式会社 エー・ティー・エックス",
+      "url": "https://www.at-x.com/",
+      "logo": "https://www.at-x.com/images/common/logo.png",
+      "sameAs": [
+        "https://x.com/ATX_PR"
+      ]
+    }
+  ]
+  </script>
+<!-- favicon -->
+<link href="/favicon_ios.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon_android.png" rel="icon" sizes="192x192" type="image/png"/>
+<!-- 共通css -->
+<link href="/css/reset.css" rel="stylesheet"/>
+<link href="/css/common.css" rel="stylesheet"/>
+<link href="/css/devices.css" rel="stylesheet"/>
+<link href="/css/custom.css" rel="stylesheet"/>
+<!-- 各ページcss -->
+<link href="/css/pages/program.css" rel="stylesheet"/>
+<!-- 共通js -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/blogparts.js"></script>
+<script src="/js/subscribe.js"></script>
+<script src="/js/normalize-detail-link.js"></script>
+<script type="text/javascript">
+    $(function() {
+      var _subscribe = new Subscribe();
+      _subscribe.init(true);
+    });
+  </script>
+<script type="text/javascript">
+    $(function() {
+      ATXWeb.TimeTable.start();
+    });
+  </script>
+<!--[if lt IE 10]><script src="/js/flexie.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="/js/html5shiv.min.js"></script><script src="/js/selectivizr.min.js"></script><![endif]-->
+<!-- 各ページjs -->
+<!-- スライダー -->
+<!-- 20260605追加 -->
+<script src="https://cdn.jsdelivr.net/npm/axios@1.17.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qs@6.14.1/dist/qs.min.js"></script>
+<script>"use strict";(function(){if("function"==typeof axios.get){const e=t=>Object.fromEntries(Object.entries(t).sort((t,e)=>{if(t[0]!==e[0]){if(t[0]>e[0])return 1;if(t[0]<e[0])return-1}if(t[1]!==e[1]){if(t[1]>e[1])return 1;if(t[1]<e[1])return-1}return 0})),r=axios.get;let i={};async function t(t,n){const s=n&&n.params&&JSON.stringify(e(n.params))||"",f=n&&n.headers&&JSON.stringify(e(n.headers))||"",a=t+s+f;if(!(i[a]||n&&n.disableCache)){const e=r(t,n);i[a]=e}return i[a]}axios.get=t}})();</script>
+</meta>
+<style>#switch_to_sp {
+  display: none;
+}
+html.program-pc-view-on-mobile #switch_to_sp {
+  display: block;
+}</style>
+</head>
+<body class="lower" id="pagetop">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-T6D6L35" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper_pages webapp-layout-root">
+<header class="webapp-layout-header"><div class="inner">
+<div class="logo"><a href="/"><img alt="AT-X" src="/images/common/logo.png" width="90"/></a></div>
+<div class="btn_information"><a href="/information/" title="ご加入はこちら"> <i class="icon-information"><img src="/images/common/icon_info.png"/></i>
+<p><span>ご加入はこちら</span></p>
+</a></div>
+<div class="menu">メニュー</div>
+<div class="menu_inner">
+<div class="menu_close">閉じる</div>
+<div class="nav_link">
+<div id="global_navigation">
+<ul id="g_nav">
+<li id="g_nav_new_arrival"><a href="/new_arrival/" title="新番組情報">
+<p><span>新番組情報</span></p>
+</a></li>
+<li id="g_nav_program"><a href="/program/" title="番組表">
+<p><span>番組表</span></p>
+</a></li>
+<li id="g_nav_search"><a href="/search/title/" title="番組検索">
+<p><span>番組検索</span></p>
+</a></li>
+<li id="g_nav_present"><a href="/present/" title="プレゼント">
+<p><span>プレゼント</span></p>
+</a></li>
+<li id="g_nav_contact"><a href="/contact/" title="ご意見・ご要望">
+<p><span>ご意見・ご要望</span></p>
+</a></li>
+<li id="g_nav_program_request"><a href="/program_request/?formId=a42da33d-8eaa-4d4d-906b-af624ff2066e" title="番組リクエスト">
+<p><span>番組リクエスト</span></p>
+</a></li>
+<li id="g_nav_information"><a href="/information/" title="ご加入はこちら"> <i class="icon-information"><img src="/images/common/icon_info.png"/></i>
+<p><span>ご加入はこちら</span></p>
+</a></li>
+</ul>
+</div>
+<div class="sub_area">
+<div class="header_search"><form action="/search/keyword/"><input name="airdate" type="hidden" value="5"/> <input class="searchText" name="q" placeholder="番組をキーワードで検索" type="text"/> <input type="submit" value=""/></form></div>
+</div>
+</div>
+</div>
+</div></header>
+<div class="webapp-layout-breadcrumbs"><div id="topic_path">
+<ul>
+<li><a href="/">トップ</a></li>
+<li class="current"></li>
+</ul>
+</div></div>
+<div class="webapp-layout-pagebody" id="contents">
+<main class="webapp-layout-main" id="main_contents"><h1 class="ttl01">番組表</h1><div id="content">
+<div class="loading">
+<div class="loading-spinner"></div>
+<p>読み込み中...</p>
+</div>
+</div><div class="block mt10" id="switch_to_sp">
+<div class="switch ac"><a class="switch_sp" href="#goto" id="viewmode-sp" onclick="goToSpVersion(); return false;">スマートフォン版に切り替え</a></div>
+</div></main>
+</div>
+<div class="webapp-layout-footer_sp footer_sp sp"></div>
+<footer class="webapp-layout-footer"><footer>
+<div id="scrolltop"><a href="#pagetop" title="このページの一番上へ"><i aria-hidden="true" class="fa fa-angle-up"></i></a></div>
+<div class="footer_content">
+<div class="site_summary">
+<ul>
+<li><a href="/sitemap">サイトマップ</a></li>
+<li><a href="/privacy">個人情報保護について</a></li>
+<li><a href="https://www.txhd.co.jp/customer_harassment/" rel="noopener noreferrer" target="_blank">カスタマーハラスメントに関する当社の考え方</a></li>
+<li><a href="/recruit">採用情報</a></li>
+<li><a href="/company">会社概要</a></li>
+</ul>
+</div>
+<p class="copy">© AT-X, Inc. All rights reserved.</p>
+</div>
+</footer></footer>
+</div>
+<script>
+    (function () {
+      "use strict";
+      if (sessionStorage.getItem("programForcePcViewport") !== "1") {
+        return;
+      }
+      sessionStorage.removeItem("programForcePcViewport");
+
+      function applyProgramPcViewport() {
+        document.querySelectorAll('meta[name="viewport"]').forEach(function (el) {
+          el.remove();
+        });
+        var meta = document.createElement("meta");
+        meta.name = "viewport";
+        meta.content = "width=1200";
+        document.head.prepend(meta);
+      }
+
+      applyProgramPcViewport();
+      document.addEventListener("DOMContentLoaded", applyProgramPcViewport);
+    })();
+
+    // URLパラメータからidを取得
+    function getScheduleIdFromUrl() {
+      var params = new URLSearchParams(window.location.search);
+      var id = params.get('id');
+      if (id && /^\d+$/.test(id)) {
+        return parseInt(id, 10);
+      }
+      return null;
+    }
+
+    // URLパラメータからurlを取得
+    function getApiUrlFromUrl() {
+      var params = new URLSearchParams(window.location.search);
+      return params.get('url');
+    }
+
+    // ATXライブラリからAPI・ユーティリティを取得
+    // 環境判定は共通ユーティリティ `getApiBaseUrl()` を優先して使用
+    var apis = (typeof getApiBaseUrl === "function")
+      ? ATX.createApis({ baseUrl: getApiBaseUrl() })
+      : ATX.createApis();
+    var schedule = apis.schedule;
+    var escapeHtml = ATX.escapeHtml;
+
+    // api-hostを取得（metaがあれば優先、なければ getApiBaseUrl()、最終フォールバックは本番ホスト）
+    var apiHostMeta = document.querySelector('meta[name="api-host"]');
+    var apiHost = null;
+    if (apiHostMeta && apiHostMeta.content) {
+      apiHost = apiHostMeta.content;
+      if (!/^https?:\/\//.test(apiHost)) {
+        apiHost = 'https://' + apiHost;
+      }
+    } else if (typeof getApiBaseUrl === "function") {
+      apiHost = getApiBaseUrl();
+    } else {
+      apiHost = 'https://api.atx.01core.app';
+    }
+
+    // 現在の番組表ID
+    var scheduleId = getScheduleIdFromUrl();
+    // カスタムAPIのURL
+    var customApiUrl = getApiUrlFromUrl();
+
+    // パンくずリストを構築
+    function renderBreadcrumb(data) {
+      var topicPath = document.getElementById('topic_path');
+      if (!topicPath) return;
+
+      var dateRange = '';
+      if (data && data.start_at && data.end_at) {
+        dateRange = '(' + data.start_at + '～' + data.end_at + ')';
+      }
+
+      var html = '<ul>';
+      html += '<li><a href="/">トップ</a></li>';
+      html += '<li class="current">番組表' + dateRange + '</li>';
+      html += '</ul>';
+      topicPath.innerHTML = html;
+    }
+
+    // エラーメッセージを表示
+    function showError(message) {
+      var content = document.getElementById('content');
+      if (!content) return;
+      content.innerHTML = '<div class="error"><p>' + escapeHtml(message) + '</p></div>';
+    }
+
+    // 番組表が見つからない場合でも.program_block構造を表示
+    function renderEmptySchedule(message, data, schedules) {
+      var content = document.getElementById('content');
+      if (!content) return;
+
+      var html = '';
+
+      // プログラムブロック（上部）
+      html += '<div class="program_block">';
+      html += '<div class="left_area"><ul>';
+      // 番組表がない場合はPDF・印刷ボタンは非表示
+      html += '</ul></div>';
+      html += '<div class="right_area">';
+      html += buildScheduleSelect(schedules, data ? data.id : null, 'up');
+      // 前の週・次の週ナビゲーション
+      html += '<div class="pagenate_week">';
+      html += '<ul>';
+      if (data && data.prev_id) {
+        html += '<li class="prev"><a class="arrow_l" href="'+location.pathname+'?id=' + data.prev_id + '">前の週</a></li>';
+      }
+      if (data && data.next_id) {
+        html += '<li class="next"><a class="arrow_r" href="'+location.pathname+'?id=' + data.next_id + '">次の週</a></li>';
+      }
+      html += '</ul>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+
+      // エラーメッセージ
+      html += '<div class="block" id="pageProgram">';
+      html += '<div class="error"><p>' + escapeHtml(message) + '</p></div>';
+      html += '</div>';
+
+      content.innerHTML = html;
+    }
+
+    // 番組表一覧を保持
+    var scheduleList = [];
+
+    // 番組表を読み込み
+    function loadSchedule(id) {
+      var content = document.getElementById('content');
+      if (!content) return;
+
+      // URLパラメータにurlがある場合は、そのURLを使用してAPI問い合わせ
+      if (customApiUrl) {
+        loadScheduleFromUrl(customApiUrl);
+        return;
+      }
+
+      // /api/schedules?id で番組表一覧と詳細を同時に取得
+      // id指定なし: ?id のみで現在の番組表を取得
+      // id指定あり: ?id=番組表ID で指定の番組表を取得
+      var options = {};
+      if (id) {
+        options.id = id;
+      } else {
+        options.id = true; // id パラメータのみ（値なし）で現在の番組表を取得
+      }
+
+      schedule.getList(options).then(function(data) {
+        scheduleList = data.schedules || [];
+
+        if (data && data.id) {
+          renderSchedule(data, scheduleList);
+        } else if (data && (data.prev_id || data.next_id)) {
+          // idは無いがprev_id/next_idがある場合は.program_block構造を表示
+          renderEmptySchedule('番組表が見つかりませんでした。', data, scheduleList);
+        } else {
+          // dataが無い、またはナビゲーション情報も無い場合
+          renderEmptySchedule('番組表が見つかりませんでした。', data, scheduleList);
+        }
+      }).catch(function(error) {
+        console.error('番組表の取得に失敗しました:', error);
+        renderEmptySchedule('番組表の取得に失敗しました。', null, scheduleList);
+      });
+    }
+
+    // 指定されたURLから番組表を読み込み
+    function loadScheduleFromUrl(url) {
+      var content = document.getElementById('content');
+      if (!content) return;
+
+      // urlが相対パスの場合はapiHostを付与
+      var fullUrl = url;
+      if (url.indexOf('http') !== 0) {
+        fullUrl = apiHost + url;
+      }
+
+      fetch(fullUrl)
+        .then(function(response) {
+          if (!response.ok) {
+            throw new Error('APIリクエストに失敗しました: ' + response.status);
+          }
+          return response.json();
+        })
+        .then(function(data) {
+          scheduleList = data.schedules || [];
+
+          if (data && data.id) {
+            renderSchedule(data, scheduleList);
+          } else if (data && (data.prev_id || data.next_id)) {
+            // idは無いがprev_id/next_idがある場合は.program_block構造を表示
+            renderEmptySchedule('番組表が見つかりませんでした。', data, scheduleList);
+          } else {
+            // dataが無い、またはナビゲーション情報も無い場合
+            renderEmptySchedule('番組表が見つかりませんでした。', data, scheduleList);
+          }
+        })
+        .catch(function(error) {
+          console.error('番組表の取得に失敗しました:', error);
+          renderEmptySchedule('番組表の取得に失敗しました: ' + error.message, null, scheduleList);
+        });
+    }
+
+    // 曜日からクラスを取得
+    function getWeekdayClass(weekday, index, total) {
+      var cls = '';
+      if (weekday === '土') {
+        cls = 'bgSat';
+      } else if (weekday === '日') {
+        cls = 'bgSun';
+      } else {
+        cls = 'bgGray';
+      }
+      // 金曜日（週の5番目、0-indexed=4）に境界線
+      if (weekday === '金' || index === total - 2) {
+        cls += ' bd02';
+      }
+      return cls;
+    }
+
+    // 放送種別からクラスを取得
+    function getTypeClass(type) {
+      switch (type) {
+        case 1: return 'bgPink';    // 新番組
+        case 3: return 'bgBlue';  // 最終回
+        case 4: return 'bgOrange';  // 放送中止
+        default: return '';
+      }
+    }
+
+    // 時間帯からクラスを取得
+    function getTimeClass(timeStr) {
+      // "6:00" などの形式から時間を抽出
+      var hour = parseInt(timeStr.split(':')[0], 10);
+      // 0:00〜5:00は24:00〜29:00と同等に扱う
+      if (hour >= 0 && hour < 6) {
+        hour += 24;
+      }
+      if (hour >= 24 && hour < 30) {
+        return 'bgYellow time05';  // 24:00（or 0:00）以降30:00未満
+      } else if (hour >= 18 && hour < 24) {
+        return 'bgYellow time04';  // 18:00以降24:00未満
+      } else if (hour >= 12 && hour < 18) {
+        return 'bgYellow time02';  // 12:00以降18:00未満
+      } else {
+        return 'bgYellow';         // デフォルト（6:00以降12:00未満）
+      }
+    }
+
+    // 時間帯の区切り行かどうかを判定（12:00, 18:00, 24:00/0:00）
+    function getRowClass(timeStr) {
+      if (timeStr === '12:00' || timeStr === '18:00' || timeStr === '24:00' || timeStr === '0:00') {
+        return 'bd';
+      }
+      return '';
+    }
+
+    // 週選択セレクトボックスを構築
+    function buildScheduleSelect(schedules, currentId, direction) {
+      if (!schedules || schedules.length === 0) return '';
+
+      var arrow = direction === 'up' ? '▼' : '▲';
+      var html = '<div class="select_week">';
+      html += '<select onchange="location.href=location.pathname+\'?id=\'+this.options[this.selectedIndex].value">';
+
+      // 月ごとにグループ化
+      var currentMonth = '';
+      for (var i = 0; i < schedules.length; i++) {
+        var s = schedules[i];
+        if (s.month_jpn !== currentMonth) {
+          if (currentMonth !== '') {
+            html += '</optgroup>';
+          }
+          currentMonth = s.month_jpn;
+          html += '<optgroup label="' + escapeHtml(currentMonth) + '">';
+        }
+        var selected = (String(s.id) === String(currentId)) ? ' selected' : '';
+        html += '<option value="' + s.id + '"' + selected + '>';
+        html += escapeHtml(s.start_at_jpn) + '～' + escapeHtml(s.end_at_jpn);
+        html += '</option>';
+      }
+      if (currentMonth !== '') {
+        html += '</optgroup>';
+      }
+
+      html += '</select>';
+      html += '</div>';
+      return html;
+    }
+
+    // 番組表をレンダリング
+    function renderSchedule(data, schedules) {
+      var content = document.getElementById('content');
+      if (!content) return;
+
+      // パンくずを更新
+      renderBreadcrumb(data);
+
+      // ページタイトルを更新
+      document.title = '週間番組表(' + data.start_at + '～' + data.end_at + ') | AT-X';
+
+      var html = '';
+
+      // プログラムブロック（上部）
+      html += '<div class="program_block">';
+      html += '<div class="left_area"><ul>';
+      if (data.pdf_url) {
+        html += '<li><a class="btn btn03 program_pdf" href="' + escapeHtml(data.pdf_url) + '" target="_blank">';
+        html += '<span>▼の番組表をPDFファイルで表示</span></a></li>';
+      }
+      html += '<li><a class="btn btn02 program_print" href="#" onclick="window.print(); return false;">';
+      html += '<span>▼の番組表を印刷</span></a></li>';
+      html += '</ul></div>';
+      html += '<div class="right_area">';
+      html += buildScheduleSelect(schedules, data.id, 'up');
+      // 前の週・次の週ナビゲーション
+      html += '<div class="pagenate_week">';
+      html += '<ul>';
+      if (data.prev_id) {
+        html += '<li class="prev"><a class="arrow_l" href="'+location.pathname+'?id=' + data.prev_id + '">前の週</a></li>';
+      }
+      if (data.next_id) {
+        html += '<li class="next"><a class="arrow_r" href="'+location.pathname+'?id=' + data.next_id + '">次の週</a></li>';
+      }
+      html += '</ul>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+
+      // 凡例 + テーブル を #pageProgram に内包
+      html += '<div class="block" id="pageProgram">';
+      html += '<ul class="biko mb10 formstyle">';
+      html += '<li class="pink_box"><span>新番組</span></li>';
+      html += '<li class="blue_box"><span>最終回</span></li>';
+      html += '<li class="orange_box"><span>放送休止</span></li>';
+      html += '<li class="ml05">▲ 字幕あり（一部プラットフォーム）</li>';
+      html += '</ul>';
+
+      // 日付がない場合
+      if (!data.dates || data.dates.length === 0) {
+        html += '<div class="error"><p>番組表データがありません。</p></div>';
+        html += '</div>'; // #pageProgram を閉じる
+        content.innerHTML = html;
+        return;
+      }
+
+      // ヘッダーテーブル（曜日・日付）
+      html += '<table id="timeTableHead"><tbody><tr>';
+      for (var i = 0; i < data.dates.length; i++) {
+        var date = data.dates[i];
+        var cls = getWeekdayClass(date.week_day_jpn, i, data.dates.length);
+        html += '<th class="' + cls + '">';
+        html += '<span>' + escapeHtml(date.week_day_jpn) + '</span>';
+        html += '<em>' + escapeHtml(date.date_jpn) + '</em>';
+        html += '</th>';
+      }
+      html += '</tr></tbody></table>';
+
+      // タイムテーブルがない場合
+      if (!data.time_table || data.time_table.length === 0) {
+        html += '<div class="error"><p>番組データがありません。</p></div>';
+        html += '</div>'; // #pageProgram を閉じる
+        content.innerHTML = html;
+        return;
+      }
+
+      // タイムテーブル
+      html += '<table id="timeTable"><tbody>';
+
+      // 日付ごとの残りrowspanを追跡
+      var remainingRows = [];
+      for (var d = 0; d < data.dates.length; d++) {
+        remainingRows.push(0);
+      }
+
+      for (var t = 0; t < data.time_table.length; t++) {
+        var timeRow = data.time_table[t];
+        var rowClass = getRowClass(timeRow.time);
+        html += '<tr' + (rowClass ? ' class="' + rowClass + '"' : '') + '>';
+
+        // 左側の時間
+        html += '<th class="' + getTimeClass(timeRow.time) + '">' + escapeHtml(timeRow.time) + '</th>';
+
+        // 番組を日付順に並べるためのマップを作成
+        var programsByDate = {};
+        if (timeRow.programs) {
+          for (var p = 0; p < timeRow.programs.length; p++) {
+            var prog = timeRow.programs[p];
+            programsByDate[prog.date] = prog;
+          }
+        }
+
+        // 各日付のセルを出力
+        for (var d = 0; d < data.dates.length; d++) {
+          var dateStr = data.dates[d].date;
+          var weekday = data.dates[d].week_day_jpn;
+
+          // まだrowspanが残っている場合はスキップ
+          if (remainingRows[d] > 0) {
+            remainingRows[d]--;
+            continue;
+          }
+
+          var prog = programsByDate[dateStr];
+          if (prog) {
+            var typeClass = getTypeClass(prog.type);
+            var bdClass = (weekday === '金') ? ' bd02' : '';
+            var rows = prog.rows || 1;
+
+            html += '<td class="' + typeClass + bdClass + '" data-program-id="' + prog.program_id + '"';
+            if (rows > 1) {
+              html += ' rowspan="' + rows + '"';
+              remainingRows[d] = rows - 1;
+            }
+            html += '>';
+            if (prog.program_id) {
+              html += '<a href="/program/detail/?id=' + prog.program_id + '">';
+            }
+            html += escapeHtml(prog.program_title);
+            if (prog.episode) {
+              html += '　' + escapeHtml(prog.episode);
+            }
+            if (prog.program_id) {
+              html += '</a>';
+            }
+            html += '</td>';
+          } else {
+            // 番組がない場合は空セル
+            var bdClass = (weekday === '金') ? ' bd02' : '';
+            html += '<td class="' + bdClass + '"></td>';
+          }
+        }
+
+        // 右側の時間
+        html += '<th class="' + getTimeClass(timeRow.time) + '">' + escapeHtml(timeRow.time) + '</th>';
+
+        html += '</tr>';
+      }
+
+      html += '</tbody></table>';
+
+      // 凡例（下部）
+      html += '<ul class="biko mb10 formstyle">';
+      html += '<li class="pink_box"><span>新番組</span></li>';
+      html += '<li class="blue_box"><span>最終回</span></li>';
+      html += '<li class="orange_box"><span>放送休止</span></li>';
+      html += '<li class="ml05">▲ 字幕あり（一部プラットフォーム）</li>';
+      html += '</ul>';
+
+      // #pageProgram を閉じる
+      html += '</div>';
+
+      // プログラムブロック（下部）
+      html += '<div class="program_block">';
+      html += '<div class="left_area"><ul>';
+      if (data.pdf_url) {
+        html += '<li><a class="btn btn03 program_pdf" href="' + escapeHtml(data.pdf_url) + '" target="_blank">';
+        html += '<span>▲の番組表をPDFファイルで表示</span></a></li>';
+      }
+      html += '<li><a class="btn btn02 program_print" href="#" onclick="window.print(); return false;">';
+      html += '<span>▲の番組表を印刷</span></a></li>';
+      html += '</ul></div>';
+      html += '<div class="right_area">';
+      html += buildScheduleSelect(schedules, data.id, 'down');
+      // 前の週・次の週ナビゲーション
+      html += '<div class="pagenate_week">';
+      html += '<ul>';
+      if (data.prev_id) {
+        html += '<li class="prev"><a class="arrow_l" href="'+location.pathname+'?id=' + data.prev_id + '">前の週</a></li>';
+      }
+      if (data.next_id) {
+        html += '<li class="next"><a class="arrow_r" href="'+location.pathname+'?id=' + data.next_id + '">次の週</a></li>';
+      }
+      html += '</ul>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
+
+      content.innerHTML = html;
+
+      // ヘッダー固定処理のセットアップ
+      setupTimeTableHeadFixed();
+    }
+
+    /**
+     * スクロール時のヘッダー固定処理をセットアップ
+     */
+    function setupTimeTableHeadFixed() {
+      var week = document.getElementById('timeTableHead');
+      if (!week) return;
+
+      var weekPos = week.getBoundingClientRect().top + window.pageYOffset;
+      var fixedClass = 'fixed';
+
+      function handleScroll() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > weekPos) {
+          week.classList.add(fixedClass);
+        } else {
+          week.classList.remove(fixedClass);
+        }
+      }
+
+      // 横スクロール対応（画面幅1100px以下の場合）
+      function handleHorizontalScroll() {
+        if (window.matchMedia('(max-width:1100px)').matches) {
+          var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+          if (week.classList.contains(fixedClass)) {
+            //week.style.left = -scrollLeft + 'px';
+          }
+        }
+      }
+
+      // イベントリスナー登録
+      window.addEventListener('scroll', function() {
+        handleScroll();
+        handleHorizontalScroll();
+      });
+
+      // 初回実行
+      handleScroll();
+    }
+
+    // SP版切り替えボタンのhrefを設定
+    function setupViewModeSwitch() {
+    }
+
+    // 初期表示
+    loadSchedule(scheduleId);
+
+    // SP版切り替えボタンのhref設定
+    setupViewModeSwitch();
+</script>
+</body>
+</html>

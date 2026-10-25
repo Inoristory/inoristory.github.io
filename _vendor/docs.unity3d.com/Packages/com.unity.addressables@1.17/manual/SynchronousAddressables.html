@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]--><html><head><base href="/Packages/com.unity.addressables@1.17/manual/SynchronousAddressables.html">
+<!-- OneTrust Cookies Consent Notice start -->
+<script charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript"></script>
+<script type="text/javascript">
+  function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-5V25JL6');</script>
+<script type="text/javascript">thisPackageMetaData = { name: "com.unity.addressables", version: "1.17.17", displayTitle:"Addressables 1.17.17", lang: "en" };</script><style>/* this styling formats the links in the footer required for legal compliance 
+* it's derived from the demo supplied here: https://github.com/Unity-Technologies/onetrust-integration-demo/blob/main/styles.css
+*/
+
+/* pmdt specific footer customisations */
+ul.unity-footer-menu-legal, ul.unity-footer-menu-legal li {
+  padding: 0;
+  margin: 0;
+}
+ul.unity-footer-menu-legal li {
+  list-style-type: none;
+  padding-right: 20px;
+  display: inline;
+}
+
+/* the injected one-trust widget will overlap all the footer content obscuring some legal links */
+.footer .container .onetrust-inset {
+  padding-left: 50px;
+}
+
+/* cookie settings button */
+.footer #ot-sdk-btn-container {
+  display: inline-block;
+  line-height: 20px;
+}
+.footer #ot-sdk-btn.ot-sdk-show-settings {
+  color: #337ab7;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  transition: inherit;
+}
+.footer #ot-sdk-btn.ot-sdk-show-settings:hover {
+  background-color: inherit;
+  color: #23527c;
+  border-bottom: 1px solid #FFF;
+}
+.footer #ot-sdk-btn.ot-sdk-show-settings:before {
+  content: "";
+  display: inline-block;
+  /* path is relative to the build directory, pmdt will copy the image in the expected location */
+  background: transparent url(../privacyoptions.svg) no-repeat center center;
+  width: 30px;
+  text-decoration: none;
+  height: 14px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+footer .copyright-line {
+  font-size: 0.8em; line-height: 22px;
+}   
+
+/* override the docfx.css to accomodate the enlarged footer */
+.article {
+  margin-bottom: 135px;
+}</style>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<title>Synchronous Workflow | Addressables | 1.17.17 </title>
+<meta content="width=device-width" name="viewport"/>
+<meta content="Synchronous Workflow | Addressables | 1.17.17 " name="title"/>
+<meta content="docfx 2.51.0.0" name="generator"/>
+<link href="../favicon.ico" rel="shortcut icon"/>
+<link href="../styles/docfx.vendor.css" rel="stylesheet"/>
+<link href="../styles/docfx.css" rel="stylesheet"/>
+<link href="../styles/main.css" rel="stylesheet"/>
+<link href="../styles/version-switcher.css" rel="stylesheet"/>
+<link href="../styles/language-switcher.css" rel="stylesheet"/>
+<meta content="../toc.html" property="docfx:navrel"/>
+<meta content="toc.html" property="docfx:tocrel"/>
+<meta content="Addressables | 1.17.17" property="unity:packageTitle"/>
+<meta content="../" property="docfx:rel"/>
+</head>
+<body class="" data-spy="scroll" data-target="#affix">
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5V25JL6" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<div id="wrapper">
+<header>
+<nav class="navbar navbar-inverse ng-scope" id="autocollapse" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="../index.html">
+<img alt="" class="svg" id="logo" src="../logo.svg"/>
+</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar">
+<form class="navbar-form navbar-right" id="search" role="search">
+<div class="form-group">
+<input autocomplete="off" class="form-control" id="search-query" placeholder="Search" type="text"/>
+</div>
+<div class="back-to-unity-group">
+<a class="back-to-unity" href="http://docs.unity3d.com/">docs.unity3d.com</a>
+</div>
+</form>
+</div>
+</div>
+</nav>
+<div class="subnav navbar navbar-default">
+<div class="container hide-when-search" id="breadcrumb">
+</div>
+</div>
+</header>
+<div class="container body-content">
+<div id="search-results">
+<div class="search-list"></div>
+<div class="sr-items"></div>
+<ul id="pagination"></ul>
+</div>
+</div>
+<div class="container body-content hide-when-search" role="main">
+<div class="sidenav hide-when-search">
+<a aria-controls="sidetoggle" aria-expanded="false" class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle">Show / Hide Table of Contents</a>
+<div class="sidetoggle collapse" id="sidetoggle">
+<div id="sidetoc"></div>
+</div>
+</div>
+<div class="article row grid-right">
+<div class="col-md-10" id="main_content">
+<div id="breadcrumb_placeholder"></div>
+<article class="content wrap" data-uid="" id="_content">
+<h2 id="synchronous-workflow">Synchronous Workflow</h2>
+<p>Synchronous Addressables APIs help to more closely mirror Unity asset loading workflows.  <code>AsyncOperationHandles</code> now have a method called <code>WaitForCompletion()</code> that force the async operation to complete and return the <code>Result</code> of the operation.</p>
+<h2 id="api">API</h2>
+<p><code>TObject WaitForCompletion()</code></p>
+<h2 id="result">Result</h2>
+<p>The result of <code>WaitForCompletion</code> is the <code>Result</code> of the async operation it is called on.  If the operation fails, this returns <code>default(TObject)</code>.</p>
+<p>It is possible to get a <code>default(TObject)</code> for a result when the operation doesn't fail.  Async operations that auto release their <code>AsyncOperationHandles</code> on completion are such cases.  <code>Addressables.InitializeAsync()</code> and any API with a <code>autoReleaseHandle</code> parameter set to true will return <code>default(TObject)</code> even though the operations themselves succeeded.</p>
+<h2 id="performance">Performance</h2>
+<p>It is worth noting that calling <code>WaitForCompletion</code> may have performance implications on your runtime when compared to <code>Resources.Load</code> or <code>Instantiate</code> calls directly.  If your <code>AssetBundle</code> is local or has been previously downloaded and cached, these performance hits are likely to be negligible.  However, this may not be the case for your individual project setup.</p>
+<p>All currently active Asset Load operations are completed when <code>WaitForCompletion</code> is called on any Asset Load operation, due to how Async operations are handled in the Engine. To avoid unexpected stalls, use <code>WaitForCompletion</code> when the current operation count is known, and the intention is for all active operations to complete synchronously.</p>
+<p>When using <code>WaitForCompletion</code>, there are performance implications. When using 2021.2.0 or newer, these are minimal. Using an older version can result in delays that scale with the number of Engine Asset load calls that are loading when <code>WaitForCompletion</code> is called.</p>
+<p>It is not recommended that you call <code>WaitForCompletion</code> on an operation that is going to fetch and download a remote <code>AssetBundle</code>.  Though, it is possible if that fits your specific situation. </p>
+<h2 id="code-sample">Code Sample</h2>
+<pre><code>void Start()
+{
+    //Basic use case of forcing a synchronous load of a GameObject
+    var op = Addressables.LoadAssetAsync&lt;GameObject&gt;("myGameObjectKey");
+    GameObject go = op.WaitForCompletion();
+
+    //Do work...
+
+    Addressables.Release(op);
+}
+</code></pre></article>
+</div>
+<div class="hidden-sm col-md-2" role="complementary">
+<div class="sideaffix">
+<div class="contribution">
+<ul class="nav">
+</ul>
+</div>
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+<!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+</nav>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="grad-bottom"></div>
+<div class="footer">
+<div class="container">
+<span class="pull-right">
+<a href="#top">Back to top</a>
+</span>
+<br/>
+<a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a>
+<div class="onetrust-inset">
+  Copyright © 2023 Unity Technologies — <a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a>
+<ul class="unity-footer-menu-legal">
+<li><a href="https://unity.com/legal">Legal</a></li>
+<li><a href="https://unity.com/legal/privacy-policy">Privacy Policy</a></li>
+<li><a href="https://unity.com/legal/cookie-policy">Cookies</a></li>
+<li><a href="https://unity.com/legal/do-not-sell-my-personal-information">Do Not Sell or Share My Personal Information</a></li>
+<li><a class="ot-sdk-show-settings" href="javascript:void(0);" id="ot-sdk-btn">Your Privacy Choices (Cookie Settings)</a></li>
+</ul>
+<span class="copyright-line">"Unity", Unity logos, and other Unity trademarks are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere (more info <a href="https://unity.com/legal/trademarks">here</a>). Other names or brands are trademarks of their respective owners.
+  <br/>Generated by <strong>DocFX</strong> on 18 October 2023</span>
+</div></div>
+</div>
+</footer>
+</div>
+<script src="../styles/docfx.vendor.js" type="text/javascript"></script>
+<script src="../styles/docfx.js" type="text/javascript"></script>
+<script src="../styles/main.js" type="text/javascript"></script>
+<script src="../styles/version-switcher.js" type="text/javascript"></script>
+<script src="../styles/language-switcher.js" type="text/javascript"></script>
+<script src="../styles/metadata-collector.js" type="text/javascript"></script>
+</body></html>

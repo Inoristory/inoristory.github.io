@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <title>SakuraKoi Docs</title>
+    <meta name="theme-color" content="#FFF" />
+    <meta name="slack-app-id" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp;amp; more…" />
+    <meta name="darkreader-lock" />
+    
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/api/attachments.redirect?id=3f87e401-f919-45f7-b081-26967166ea35"
+      sizes="32x32"
+    />
+    <link rel="prefetch" href="/static/assets/index.B2Khpv-E.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/decorate.Doz1ketW.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-react.BDv3YiQX.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/rolldown-runtime.CMxvf4Kt.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-shared.BQZUQcdb.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/styles.DkxmiD73.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Fade.DoZVoUzz.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Flex.DJ6mR3Bq.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Input.B_pst7bc.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Text.ChaouWsf.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Tooltip.D20LQIZf.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/env.DFiVzB6Q.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/usePersistedState.BabqVwJj.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/usePrevious.DSWAD__5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useStores.C2HL3oms.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/slugify.Vefc0gg7.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Document.BAYaQjdY.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/User.wOm37pTn.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/ParanoidModel.DFpbVUsT.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/ApiClient.BCs8qGNL.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Desktop.YvZPTfe5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Logger.ou9UiVWn.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/routeHelpers.Dp2pk1Po.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/urls.CDcIGGB5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/keyboard.BX0JV9UF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/i18next.2XaSjmF7.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-mermaid.B0iQibsF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-framer-motion.CmOZgGZV.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-styled.BLG-ZaDH.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-sentry.njTJ9ygv.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-date.DdRVOm94.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/query-string.BZ_VmwFF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/collections.EFgMmSOK.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-es-toolkit.B_cmoebr.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/mobxreact.esm.BaBZO6aD.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/mobx.module.gU7FYxy2.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/lib.CIyroSo6.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useIsMounted.B8xt3cH5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/tiny-cookie.Ot6E6ho9.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/constants.CMPXEbl7.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/EditorStyleHelper.Du4eR0FF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/domains.DYgLGGi6.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/styles.3HqXuy1I.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/theme.Cw4irqiD.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/types.DBUTXMnF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Storage.C4A_JESP.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/error.vBZ69-kD.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/files.0y2gCJoz.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/rtl.CZannbeg.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/urls.RrLjymkE.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/editor.CezUrfRv.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/decorate.Doz1ketW.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-react.BDv3YiQX.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/rolldown-runtime.CMxvf4Kt.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/index.B2Khpv-E.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/CommentThread.EBgTCG8e.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Actions.B8zShC8m.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Editor.fRrrAGsK.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/CopyToClipboard.BXtoeqvo.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/DocumentContext.DsMtWjiL.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Fade.DoZVoUzz.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Flex.DJ6mR3Bq.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/LoadingIndicator.ByiNnFx6.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/NudeButton.CI0F8lrL.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Popover.DkfZRQyJ.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Scrollable.737saOcH.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Tooltip.D20LQIZf.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/HStack.CJJZAD6g.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/EditorContext.Dhq-5v0H.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useCurrentUser.yDT7QBRq.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useKeyDown.BfkjHshT.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/usePersistedState.BabqVwJj.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/usePolicy.CPwNtdBL.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useStores.C2HL3oms.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Desktop.YvZPTfe5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/Logger.ou9UiVWn.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/keyboard.BX0JV9UF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-prosemirror.B8HX3W5y.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-mermaid.B0iQibsF.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-styled.BLG-ZaDH.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/vendor-es-toolkit.B_cmoebr.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/mobxreact.esm.BaBZO6aD.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/mobx.module.gU7FYxy2.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/lib.CIyroSo6.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/ProsemirrorHelper.DfPxd1zk.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/useIsMounted.B8xt3cH5.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/styles.3HqXuy1I.js" as="script" crossorigin="anonymous" data-reactroot=""/><link rel="prefetch" href="/static/assets/urls.RrLjymkE.js" as="script" crossorigin="anonymous" data-reactroot=""/>
+    <link rel="manifest" href="/static/manifest.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/images/icon-maskable-192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/images/icon-maskable-512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/images/icon-maskable-1024.png"
+      sizes="1024x1024"
+    />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="/opensearch.xml"
+      title="Outline"
+    />
+    
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-display: swap;
+        font-feature-settings: "ss03", "cv05";
+        src: url("/fonts/Inter.var.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-display: swap;
+        font-feature-settings: "ss03", "cv05";
+        font-style: italic;
+        src: url("/fonts/Inter-italic.var.woff2") format("woff2");
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media print {
+        body {
+          display: block;
+        }
+      }
+
+      #root {
+        flex: 1;
+        min-height: 100%;
+        width: 100%;
+      }
+
+      .screenreader-only {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+
+      @media print {
+        .screenreader-only {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <script nonce="6addba86d336dffde7d6b50825a06569">
+      window.env = {"analytics":[],"ENVIRONMENT":"production","URL":"https://docs.sakurakoi.top","COLLABORATION_URL":"wss://docs.sakurakoi.top","DEFAULT_LANGUAGE":"zh_CN","EMAIL_ENABLED":false,"AWS_S3_ACCELERATE_URL":"","AWS_S3_UPLOAD_BUCKET_URL":"","FILE_STORAGE_IMPORT_MAX_SIZE":10485760,"APP_NAME":"Outline","OIDC_DISABLE_REDIRECT":true,"OIDC_LOGOUT_URI":"https://oidc.sakurakoi.top/oidc/session/end"};
+    </script>
+  
+    <script nonce="6addba86d336dffde7d6b50825a06569">
+      if (
+        window.localStorage &&
+        window.localStorage.getItem("theme") === "dark"
+      ) {
+        var color = "#111319";
+        document.querySelector("#root").style.background = color;
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", color);
+      }
+    </script>
+    <script type="module" nonce="6addba86d336dffde7d6b50825a06569" src="/static/assets/index.B2Khpv-E.js"></script>
+    <div class="screenreader-only"></div>
+  <script nonce="6addba86d336dffde7d6b50825a06569">window.__CF$cv$params={r:'a4faa3af4af168f5',t:'MTc5Mjg2MjI5Mg==',u:'01a16eeb8a4e76fe8c2ecf4194584d7e',ut:'j3_otSI64iEXBRnVhvJgEZeK.TP6FJFLqavnTXpczjA-1792862292-1.2.1.1-A00Jb5NUVc8sI9lgiadOyl8Nc8r7dkDrYukGsVIJbFwh1O3AN9k7TswYZIPrmjowfj4klc0zraIY5FAnFqmrl2.EoO8CcTOdDUOUXEDFMJ8',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.nonce='6addba86d336dffde7d6b50825a06569';s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script></body>
+</html>

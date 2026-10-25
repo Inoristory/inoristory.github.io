@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="description" content="">
+    <meta name="keywords" content="" lang="ja">
+    <title>番組表 - フジテレビ</title>
+    <link type="text/css" rel="stylesheet" href="/fp/css/fp.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style_weekly.css" />
+    <link type="text/css" rel="stylesheet" href="/style/default.css" />
+    <!--
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    -->
+    <script type="text/javascript" src="https://www.fujitv.co.jp/common/js/libs/jquery/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/common/js/cx_video.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/fujimenu.js"></script>
+    <script type="text/javascript" src="../js/timetable_weekly.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+    <script type="text/javascript" src="../js/datebar.js"></script>
+    <script type="text/javascript" src="../js/vtip.js"></script>
+    <!-- <script type="text/javascript" src="/bangumi/daily/timetable_daily.js"></script> -->
+    <script type="text/javascript" src="https://www.fujitv.co.jp/bangumi/daily/timetable_daily.js"></script>
+    <script type="text/javascript">
+        _RedirectToSP("/s_cx/timetable/index.html");
+
+    </script>
+</head>
+
+<body>
+    <noscript><div id="noscriptMsg">お使いの状態ではページが正しく表示されません。<br />ブラウザの設定でJavaScriptを有効にしてから再度ご確認ください。</div></noscript>
+    <div id="wrap" class="current">
+        <script type="text/javascript">
+            writeFujimenu('timetable');
+
+        </script>
+        <script type="text/javascript">
+            ttFunc.set_cookie("CX_TIMETABLE_VIEWFLAG", "weekly");
+
+        </script>
+        <div id="fp-contents">
+            <div id="header" class="clearfix">
+                <div class="headlink clearfix">
+                    <h1>番組表</h1>
+                    <ul id="_current" class="dateHead">
+                        <li class="l_arrow"><a>前日</a></li>
+                        <li>
+                            <h2>0000年00月00日<span class="s18">()</span></h2>
+                        </li>
+                        <li class="r_arrow"><a>翌日</a></li>
+                    </ul>
+                    <div class="bt_detail" id="_detail">[ 通常表示 | サムネイル表示 ]</div>
+                    <div class="bt_telop" style="float: left;height: 20px;line-height: 20px;padding-left: 30px;">
+                        <form name="frmtelop"><input type="checkbox" id="_telop" value="0.1" style="vertical-align: middle;">&nbsp;<label for="_telop">字幕対応のみ</label></form>
+                    </div>
+                    <ul class="etc_bangumi">
+                        <li><a target="_blank" href="https://otn.fujitv.co.jp/schedule/one/index.html" class="fujione">フジテレビONE</a></li>
+                        <li><a target="_blank" href="https://otn.fujitv.co.jp/schedule/two/index.html" class="fujitwo">フジテレビTWO</a></li>
+                        <li><a target="_blank" href="https://otn.fujitv.co.jp/schedule/next/index.html" class="fujinext">フジテレビNEXT</a></li>
+                        <li><a target="_blank" href="http://www.bsfuji.tv/top/timetable/2K_weekly2.html" class="fujibs">BS FUJI</a></li>
+                    </ul>
+                </div>
+                <div class="timeslot clearfix">
+                    <ul class="weektimes" id="_week">
+                        <li class="bt_prevweek"><a>先週</a></li>
+                        <li class="bt_thisweek"><a>今週</a></li>
+                        <li class="bt_nextweek"><a>来週</a></li>
+                    </ul>
+                    <ul class="bt_dayweek">
+                        <li class="daybangumi"><a class="active">週間表示</a></li>
+                        <li class="weekbangumi"><a href="../daily/index.html">日別表示</a></li>
+                    </ul>
+                    <ul class="daytimes">
+                        <li class="bt_morning"><a href="#morning">朝</a></li>
+                        <li class="bt_noon"><a href="#noon">昼</a></li>
+                        <li class="bt_night"><a href="#night">夜</a></li>
+                        <li class="bt_midnight"><a href="#midnight">深夜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div id="date"></div>
+                <div id="thum"></div>
+                <p id="bottomText">
+                    放送内容、放送時間は予告なく変更されることがあります。変更内容は随時更新中です。変更のご案内は<a href="http://www.fujitv.co.jp/onair_info/index.html" target="_blank">こちら</a>をご覧ください。 当サイトの情報は(株)フジテレビジョンの放送エリアに関するものです。最寄りのフジテレビ系列局の情報は
+                    <a href="http://www.fuji-network.com/" target="_blank">こちら</a>。
+                    <span>cFuji Television Network, inc. All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+        <div id="loading" style="display: none;"><a>番組表 読み込み中...</a><br /><img src="../img/loading_160.gif" alt="Loading..." /></div>
+        <div id="bottomBtns">
+            <div class="iconinfo"><a href="javascript:void(0);">アイコンについて</a></div>
+            <div class="pagetop"><a href="#gbheader">ページトップに戻る</a></div>
+            <div class="property">
+                <table class="bg_table" cellpadding="0" cellspacing="5" border="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top">
+                                <table cellspacing="2">
+                                    <tr>
+                                        <th><img width="16" height="16" alt="番組連動データ放送" src="../img/data.gif"></th>
+                                        <td>番組連動データ放送</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <th><img width="16" height="16" alt="HD制作番組" src="../img/hd.gif"></th>
+                                        <td>HD制作番組</td>
+                                    </tr> -->
+                                    <tr>
+                                        <th><img width="16" height="16" alt="HD制作5.1ステレオ番組" src="../img/hds.gif"></th>
+                                        <td>HD制作5.1ステレオ番組</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="auto" height="16" alt="予告動画あり" src="../img/yokoku.png"></th>
+                                        <td>予告動画あり</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <th><img width="auto" height="16" alt="最新話無料配信" src="../img/muryo.png"></th>
+                                        <td>最新話無料配信</td>
+                                    </tr> -->
+                                    <tr>
+                                        <th><img width="auto" height="16" alt="最新話無料配信" src="../img/tver.png"></th>
+                                        <td>最新話無料配信</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="auto" height="16" alt="リアルタイム配信" src="../img/riatai.png"></th>
+                                        <td>リアルタイム配信</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="ln_table"></td>
+                            <td valign="top">
+                                <table cellspacing="2">
+                                    <tr>
+                                        <th><img width="16" height="16" alt="字幕" src="../img/jimaku.gif"></th>
+                                        <td>字幕</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="二カ国語" src="../img/nikakoku.gif"></th>
+                                        <td>二カ国語</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="音声多重" src="../img/taju.gif"></th>
+                                        <td>音声多重</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="解説" src="../img/kai.gif"></th>
+                                        <td>解説</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="手話" src="../img/shu.gif"></th>
+                                        <td>手話</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top">
+                                <table cellspacing="2">
+                                    <tr>
+                                        <th><img width="16" height="16" alt="新番組" src="../img/new.gif"></th>
+                                        <td>新番組</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="最終回" src="../img/end.gif"></th>
+                                        <td>最終回</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img width="16" height="16" alt="再放送" src="../img/sai.gif"></th>
+                                        <td>再放送</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+            fujimenu.writeGbfooter();
+        </script>
+    </div>
+</body>
+
+</html>

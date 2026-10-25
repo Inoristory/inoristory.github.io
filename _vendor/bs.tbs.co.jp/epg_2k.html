@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <title>BS-TBS｜番組表</title>
+    <meta property="og:title" content="番組表">
+    <meta property="og:type" content="article">
+        
+    
+    <!-- 共通meta -->   
+    <meta name="description" content="BS-TBSのオフィシャルサイト。おすすめ番組や番組表など、BS-TBSの様々な情報をご覧いただけます。いつでも無料全国どこでもBS6チャンネル。">
+    <meta property="og:description" content="BS-TBSのオフィシャルサイト。おすすめ番組や番組表など、BS-TBSの様々な情報をご覧いただけます。いつでも無料全国どこでもBS6チャンネル。">
+    <meta property="og:url" content="https://bs.tbs.co.jp/">
+    <meta property="og:image" content="https://bs.tbs.co.jp/resources/images/ogp_logo.jpg?20200401">
+    <meta property="og:site_name" content="BS-TBS">
+    <meta property="fb:admins" content="100000935328614">
+    <link rel="icon" href="https://bs.tbs.co.jp/favicon.ico?20200401">
+    <link rel="apple-touch-icon" href="https://bs.tbs.co.jp/apple-touch-icon.png?20200401">
+    <!-- /共通meta -->
+
+    <!-- IPG -->
+    <link rel="stylesheet" href="//rakuraku2.bangumi.org/sdk/epg2.css">
+    <link rel="stylesheet" href="//rakuraku2.bangumi.org/sdk/detail2.css">
+    <script src="//rakuraku2.bangumi.org/sdk/rakuraku.js"></script>
+        <!-- 共通style -->
+    <link rel="stylesheet" href="/resources/css/style.css?20210401">
+    <!-- /共通style -->
+
+        <!-- [共通]Javascript -->
+    <script src="/resources/js/common.js"></script>
+    <script src="/resources/lib/vue.min.js"></script>
+    <script src="/resources/lib/axios.min.js"></script>
+    <script src="/resources/lib/es6-promise.min.js"></script>
+    <script src="/resources/lib/es6-promise.auto.min.js"></script>
+    <script src="/resources/lib/platform.js"></script>
+    <!-- [共通]アクセス解析 -->
+    <script src="/resources/js/ga.js"></script>
+
+    <!-- IPG: Vue対応 -->
+    <style>
+      [v-cloak] { display: block;  }
+      [v-cloak] .bannerBox { visibility: hidden; }
+    </style>
+  </head>
+  <body>
+    
+    <!-- 共通ヘッダー: include -->
+<header id="commonHeader" @touchmove="killScroll" v-cloak>
+  <div class="fixed">
+    <h1 class="logo"><a href="/">BS-TBS</a></h1>
+    <div class="buttonBox"><a href="/epg_2k.html">番組表</a></div>
+    <div class="bannerBox" v-if="banner && getLinkURL(banner.url)">
+      <a href="" :href="getLinkURL(banner.url)" v-if="banner">
+        <picture>
+          <source media="(max-width: 999px)" srcset="" :srcset="banner.src_pc + '?20200401' + ' 1x, ' + banner.src_2x + '?20200401' + ' 2x'">
+          <source media="(min-width: 1000px)" srcset="" :srcset="banner.src_pc + '?20200401' + ' 1x'">
+          <img src="" alt="" :src="banner.src_pc + '?20200401'" :alt="banner.title">
+        </picture>
+      </a>
+    </div>
+    <div class="bannerBox" v-else-if="banner && !getLinkURL(banner.url)">
+      <picture>
+        <source media="(max-width: 999px)" srcset="" :srcset="banner.src_pc + '?20200401' + ' 1x, ' + banner.src_2x + '?20200401' + ' 2x'">
+        <source media="(min-width: 1000px)" srcset="" :srcset="banner.src_pc + '?20200401' + ' 1x'">
+        <img src="" alt="" :src="banner.src_pc + '?20200401'" :alt="banner.title">
+      </picture>
+    </div>
+  </div>
+  <div class="sticky">
+    <div id="navToggleButton" @click="menu = !menu" :class="{on: menu}"><span></span><span></span><span></span><span></span></div>
+    <div id="navToggleBox">
+      <nav>
+        <div id="topNav">
+          <h1 class="logo"><a href="/">BS-TBS</a></h1>
+          <div class="buttonBox"><a href="/epg_2k.html">番組表</a></div>
+        </div>
+        <!-- トップ画面のみ -->
+        <div id="nowOA" v-if="isTop && nowOA">
+          <div class="title" v-if="nowOA.url"><p><a href="" v-html="nowOA.title" :href="nowOA.url"></a></p></div>
+          <div class="title" v-else><p v-html="nowOA.title"></p></div>
+          <div class="time"><p class="oa_2k" v-html="nowOA.time"></p></div>
+          <div class="thumb" v-if="nowOA.src"><a href=""><img src="" alt=""></a></div>
+        </div>
+        <!-- /トップ画面のみ -->
+        <div id="mainNav">
+          <ul class="navList">
+            <li class="nav"><a href="/drama/">ドラマ</a></li>
+            <li class="nav"><a href="/movie/">映画</a></li>
+            <li class="nav"><a href="/journey/">紀行</a></li>
+            <li class="nav"><a href="/news/">報道</a></li>
+            <li class="nav"><a href="/culture/">教養</a></li>
+            <li class="nav"><a href="/sports/">スポーツ</a></li>
+            <li class="nav"><a href="/music/">音楽</a></li>
+            <li class="nav"><a href="/entertainment/">エンタメ</a></li>
+            <li class="nav"><a href="/anime/">アニメ</a></li>
+            <li class="nav"><a href="https://fanclub.bs-tbs.co.jp/">ファンクラブ</a></li>
+          </ul>
+        </div>
+        <div id="subNav">
+          <ul class="navList">
+            <li><div class="searchBox"><input type="search" placeholder="番組名、出演者名を入力" v-model="word" @keypress.13="search"><button class="button" id="searchButton" @click="search">検索</button></div></li>
+            <li class="nav"><a href="/bshowto/">視聴方法</a></li>
+            <li class="nav"><a href="/4k/">4K放送</a></li>
+            <li class="nav"><a href="/event/">イベント</a></li>
+            <li class="nav"><a href="/shopping/">ショッピング</a></li>
+            <li class="nav"><a href="/sns/">公式SNS</a></li>
+            <li class="nav"><a href="/present/">プレゼント</a></li>
+            <li class="nav"><a href="/inquiry/">ご意見・ご感想</a></li>
+            <li class="nav"><a href="/company/">会社情報</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /共通ヘッダー -->
+
+
+    <!-- メインコンテンツ -->
+    <section id="program_epg" class="mainContent">
+
+      <header class="contentHeader">
+        <div class="wrapper">
+          <h1>番組表</h1>
+        </div>
+      </header>
+
+      <!-- EPG -->
+      <div id="epgBox">
+        <div class="wrapper note">
+          <p>※急な編成変更が番組表に反映されない場合がございます。予めご了承ください。</p>
+        </div>
+        <div class="wrapper">
+          <h2 class="on"><a href="/epg_2k.html"><img src="/resources/images/logo-epg-161ch.svg?20230914" alt="BS-TBS"></a></h2>
+          <h2><a href="/epg_4k.html"><img src="/resources/images/logo-epg-4k.svg?20230914" alt="BS-TBS 4K"></a></h2>
+          <div id="ipg-rakuraku-epg" data-channelindex="1,3"></div>
+        </div>
+      </div>
+      <!-- /EPG -->
+
+    </section>
+    <!-- /メインコンテンツ -->
+
+    <!-- 共通フッター: include -->
+<footer id="commonFooter" v-cloak>
+  <div class="fixed">
+    <h1 class="logo"><a href="/">BS-TBS</a></h1>
+    <p>Copyright &copy; BS-TBS, INC. All rights reserved. </p>
+  </div>
+  <div class="nav">
+    <div class="section">
+      <h2 @click="toggleSection">番組表・番組ジャンル</h2>
+      <ul class="main">
+        <li><h3><a href="/epg_2k.html">番組表</a></h3></li>
+        <li class="on">
+          <h3>番組ジャンル</h3>
+          <ul class="sub">
+            <li><h4><a href="/drama/">ドラマ</a></h4></li>
+            <li><h4><a href="/movie/">映画</a></h4></li>
+            <li><h4><a href="/journey/">紀行</a></h4></li>
+            <li><h4><a href="/news/">報道</a></h4></li>
+            <li><h4><a href="/culture/">教養</a></h4></li>
+            <li><h4><a href="/sports/">スポーツ</a></h4></li>
+            <li><h4><a href="/music/">音楽</a></h4></li>
+            <li><h4><a href="/entertainment/">エンタメ</a></h4></li>
+            <li><h4><a href="/anime/">アニメ</a></h4></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2 @click="toggleSection">お知らせ・情報</h2>
+      <ul class="main">
+        <li><h3><a href="/information/">新着情報</a></h3></li>
+        <li><h3><a href="/announce/">お知らせ</a></h3></li>
+        <li><h3><a href="/event/">イベント</a></h3></li>
+        <li><h3><a href="/shopping/">ショッピング</a></h3></li>
+        <li><h3><a href="/present/">プレゼント</a></h3></li>
+        <li><h3><a href="https://fanclub.bs-tbs.co.jp/">ファンクラブ</a></h3></li>
+        <li><h3><a href="/sns/">公式SNS</a></h3></li>
+        <li><h3><a href="/4k/">4K放送</a></h3></li>
+        <li><h3><a href="/bshowto/">視聴方法</a></h3></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2 @click="toggleSection">会社情報</h2>
+      <ul class="main">
+        <li><h3><a href="/company/">会社概要</a><br>（<a href="/company/en/">Company Information</a>）</h3></li>
+        <li><h3><a href="/company/recruit/">採用情報</a></h3></li>
+        <li><h3><a href="/company/edit_standard/">放送番組基準</a></h3></li>
+        <li><h3><a href="/company/program_council/">放送番組審議会</a></h3></li>
+        <li><h3><a href="/company/program_public/">番組種別の公表</a></h3></li>
+        <li><h3><a href="/company/youth/">青少年に見てもらいたい番組</a></h3></li>
+        <li><h3><a href="/privacy/index9.html">民間放送ガバナンス指針に基づく公表事項</a></h3></li>
+        <li><h3><a href="/company/indicator/">反社会的勢力排除についての指針</a></h3></li>
+        <li><h3><a href="/privacy/">個人情報について</a></h3></li>
+        <li><h3><a href="/press/">プレス</a></h3></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2 @click="toggleSection">このサイトについて</h2>
+      <ul class="main">
+        <li><h3><a href="/copyright_and_link_policy/">著作権とリンク</a></h3></li>
+        <li><h3><a href="/sitepolicy/">サイトポリシー</a></h3></li>
+        <li><h3><a href="/inquiry/">ご意見・ご感想</a></h3></li>
+      </ul>
+    </div>
+    <div class="section relations">
+      <h2 @click="toggleSection">関連サイト</h2>
+      <ul class="main">
+        <li class="logo"><h3><a href="https://www.tbsholdings.co.jp" target="new">TBS HOLDINGS</a></h3></li>
+        <li class="logo"><h3><a href="https://www.tbs.co.jp" target="new">TBS</a></h3></li>
+        <li class="logo"><h3><a href="https://www.tbsradio.jp" target="new">TBS RADIO</a></h3></li>
+        <li class="logo"><h3><a href="https://www.tbs.co.jp/tbs-ch/" target="new">TBSチャンネル</a></h3></li>
+        <li class="logo"><h3><a href="https://www.tbs.co.jp/cstbsnews/" target="new">TBS NEWS</a></h3></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- /共通フッター -->
+
+  </body>
+</html>
