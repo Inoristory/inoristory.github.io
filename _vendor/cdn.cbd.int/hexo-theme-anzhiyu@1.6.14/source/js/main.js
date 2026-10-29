@@ -680,8 +680,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!($article && (isToc || isAnchor))) return;
 
     let $tocLink, $cardToc, autoScrollToc, isExpand;
-    if (isToc) {
-      const $cardTocLayout = document.getElementById("card-toc");
+    const $cardTocLayout = isToc ? document.getElementById("card-toc") : null;
+    if ($cardTocLayout) {
       $cardToc = $cardTocLayout.querySelector(".toc-content");
       $tocLink = $cardToc.querySelectorAll(".toc-link");
       isExpand = $cardToc.classList.contains("is-expand");
@@ -737,7 +737,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (detectItem === currentIndex) return;
       if (isAnchor) anzhiyu.updateAnchor(currentId);
       detectItem = currentIndex;
-      if (isToc) {
+      if (isToc && $cardToc) {
         $cardToc.querySelectorAll(".active").forEach(i => {
           i.classList.remove("active");
         });
@@ -746,6 +746,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
         const currentActive = $tocLink[currentIndex];
+        if (!currentActive) return;
         currentActive.classList.add("active");
 
         setTimeout(() => {
@@ -755,7 +756,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isExpand) return;
         let parent = currentActive.parentNode;
 
-        for (; !parent.matches(".toc"); parent = parent.parentNode) {
+        // 防御：目录 HTML 畸形（ol 提前闭合）时，向上遍历会越过 ol.toc 一直走到 document，
+        // document 没有 matches() 会抛 TypeError。加 nodeType===1 边界以终止遍历。
+        for (; parent && parent.nodeType === 1 && !parent.matches(".toc"); parent = parent.parentNode) {
           if (parent.matches("li")) parent.classList.add("active");
         }
       }
